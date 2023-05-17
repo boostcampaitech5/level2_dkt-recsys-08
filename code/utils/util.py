@@ -34,7 +34,7 @@ def parse_args():
     parser.add_argument("--device", default="cpu", type=str, help="cpu or gpu")
     parser.add_argument(
         "--data_dir",
-        default="data/",
+        default="../data/",
         type=str,
         help="data directory",
     )
@@ -51,10 +51,10 @@ def parse_args():
         "--model_name", default="best_model.pt", type=str, help="model file name"
     )
     parser.add_argument(
-        "--save_dir", default="saved/", type=str, help="output directory"
+        "--save_dir", default="saved_models/", type=str, help="output directory"
     )
     parser.add_argument(
-        "--output_dir", default="output/", type=str, help="output directory"
+        "--submit_dir", default="submit/", type=str, help="submit directory"
     )
     parser.add_argument(
         "--test_file_name", default="test_data.csv", type=str, help="test file name"
