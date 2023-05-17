@@ -34,8 +34,8 @@ def main(args):
             output = model(**batch)
             output = activation(output[:, -1])
             total_outputs += list(output.cpu().detach().numpy())
-    write_path = os.path.join(args.data_dir, "submission.csv")
-    os.makedirs(name=args.data_dir, exist_ok=True)
+    write_path = os.path.join(args.submit_dir, "submission.csv")
+    os.makedirs(name=args.submit_dir, exist_ok=True)
     with open(write_path, "w", encoding="utf8") as w:
         w.write("id,prediction\n")
         for id, p in enumerate(total_outputs):
