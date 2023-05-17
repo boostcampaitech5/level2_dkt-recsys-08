@@ -37,6 +37,7 @@ __pycache__/
 /code/notebook/
 /code/saved_models/
 /code/submit/
+/code/model/model.py
 
 # Data
 /data/
