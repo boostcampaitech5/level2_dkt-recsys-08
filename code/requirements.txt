@@ -1,229 +1,186 @@
-# packages in environment at /opt/conda:
-#
-# Name                    Version                   Build  Channel
-_libgcc_mutex             0.1                        main  
-aiofiles                  22.1.0                   pypi_0    pypi
-aiosqlite                 0.19.0                   pypi_0    pypi
-anyio                     3.6.2                    pypi_0    pypi
-appdirs                   1.4.4                    pypi_0    pypi
-argon2-cffi               21.3.0                   pypi_0    pypi
-argon2-cffi-bindings      21.2.0                   pypi_0    pypi
-arrow                     1.2.3                    pypi_0    pypi
-asttokens                 2.2.1                    pypi_0    pypi
-attrs                     23.1.0                   pypi_0    pypi
-babel                     2.12.1                   pypi_0    pypi
-backcall                  0.2.0                      py_0  
-bcrypt                    4.0.1                    pypi_0    pypi
-beautifulsoup4            4.9.3              pyha847dfd_0  
-blas                      1.0                         mkl  
-bleach                    6.0.0                    pypi_0    pypi
-boto3                     1.26.115                 pypi_0    pypi
-botocore                  1.29.115                 pypi_0    pypi
-brotlipy                  0.7.0           py38h27cfd23_1003  
-bzip2                     1.0.8                h7b6447c_0  
-ca-certificates           2021.1.19            h06a4308_0  
-catboost                  1.2                      pypi_0    pypi
-certifi                   2020.12.5        py38h06a4308_0  
-cffi                      1.14.3           py38h261ae71_2  
-cfgv                      3.3.1                    pypi_0    pypi
-chardet                   3.0.4           py38h06a4308_1003  
-charset-normalizer        3.1.0                    pypi_0    pypi
-click                     8.1.3                    pypi_0    pypi
-comm                      0.1.3                    pypi_0    pypi
-conda                     4.9.2            py38h06a4308_0  
-conda-build               3.21.4           py38h06a4308_0  
-conda-package-handling    1.7.2            py38h03888b9_0  
-contourpy                 1.0.7                    pypi_0    pypi
-cryptography              40.0.2                   pypi_0    pypi
-cudatoolkit               11.0.221             h6bb024c_0  
-cycler                    0.11.0                   pypi_0    pypi
-debugpy                   1.6.7                    pypi_0    pypi
-decorator                 4.4.2                      py_0  
-defusedxml                0.7.1                    pypi_0    pypi
-distlib                   0.3.6                    pypi_0    pypi
-dnspython                 2.1.0                    pypi_0    pypi
-docker-pycreds            0.4.0                    pypi_0    pypi
-executing                 1.2.0                    pypi_0    pypi
-fastjsonschema            2.16.3                   pypi_0    pypi
-filelock                  3.12.0                   pypi_0    pypi
-fonttools                 4.39.3                   pypi_0    pypi
-fqdn                      1.5.1                    pypi_0    pypi
-freetype                  2.10.4               h5ab3b9f_0  
-fsspec                    2023.5.0                 pypi_0    pypi
-gevent                    22.10.2                  pypi_0    pypi
-gitdb                     4.0.10                   pypi_0    pypi
-gitpython                 3.1.31                   pypi_0    pypi
-glob2                     0.7                pyhd3eb1b0_0  
-greenlet                  2.0.2                    pypi_0    pypi
-huggingface-hub           0.14.1                   pypi_0    pypi
-icu                       58.2                 he6710b0_3  
-identify                  2.5.24                   pypi_0    pypi
-idna                      2.10                       py_0  
-importlib-metadata        6.5.0                    pypi_0    pypi
-importlib-resources       5.12.0                   pypi_0    pypi
-inotify-simple            1.2.1                    pypi_0    pypi
-intel-openmp              2020.2                      254  
-ipykernel                 6.22.0                   pypi_0    pypi
-ipython                   8.12.0                   pypi_0    pypi
-ipython_genutils          0.2.0              pyhd3eb1b0_1  
-isoduration               20.11.0                  pypi_0    pypi
-jedi                      0.17.2           py38h06a4308_1  
-jinja2                    3.1.2                    pypi_0    pypi
-jmespath                  1.0.1                    pypi_0    pypi
-joblib                    1.2.0                    pypi_0    pypi
-jpeg                      9b                   h024ee3a_2  
-json5                     0.9.11                   pypi_0    pypi
-jsonpointer               2.3                      pypi_0    pypi
-jsonschema                4.17.3                   pypi_0    pypi
-jupyter-client            8.2.0                    pypi_0    pypi
-jupyter-core              5.3.0                    pypi_0    pypi
-jupyter-events            0.6.3                    pypi_0    pypi
-jupyter-server            2.5.0                    pypi_0    pypi
-jupyter-server-fileid     0.9.0                    pypi_0    pypi
-jupyter-server-terminals  0.4.4                    pypi_0    pypi
-jupyter-server-ydoc       0.8.0                    pypi_0    pypi
-jupyter-ydoc              0.2.4                    pypi_0    pypi
-jupyterlab                3.6.3                    pypi_0    pypi
-jupyterlab-pygments       0.2.2                    pypi_0    pypi
-jupyterlab-server         2.22.1                   pypi_0    pypi
-kiwisolver                1.4.4                    pypi_0    pypi
-lcms2                     2.11                 h396b838_0  
-ld_impl_linux-64          2.33.1               h53a641e_7  
-libarchive                3.4.2                h62408e4_0  
-libedit                   3.1.20191231         h14c3975_1  
-libffi                    3.3                  he6710b0_2  
-libgcc-ng                 9.1.0                hdf63c60_0  
-liblief                   0.10.1               he6710b0_0  
-libpng                    1.6.37               hbc83047_0  
-libstdcxx-ng              9.1.0                hdf63c60_0  
-libtiff                   4.1.0                h2733197_1  
-libuv                     1.40.0               h7b6447c_0  
-libxml2                   2.9.10               hb55368b_3  
-lightgbm                  3.3.5                    pypi_0    pypi
-lz4-c                     1.9.2                heb0550a_3  
-markupsafe                2.0.1                    pypi_0    pypi
-matplotlib                3.7.1                    pypi_0    pypi
-matplotlib-inline         0.1.6                    pypi_0    pypi
-mistune                   2.0.5                    pypi_0    pypi
-mkl                       2020.2                      256  
-mkl-service               2.3.0            py38he904b0f_0  
-mkl_fft                   1.2.0            py38h23d657b_0  
-mkl_random                1.1.1            py38h0573a6f_0  
-nbclassic                 0.5.5                    pypi_0    pypi
-nbclient                  0.7.3                    pypi_0    pypi
-nbconvert                 7.3.1                    pypi_0    pypi
-nbformat                  5.8.0                    pypi_0    pypi
-ncurses                   6.2                  he6710b0_1  
-nest-asyncio              1.5.6                    pypi_0    pypi
-ninja                     1.10.2           py38hff7bd54_0  
-nodeenv                   1.8.0                    pypi_0    pypi
-notebook                  6.5.4                    pypi_0    pypi
-notebook-shim             0.2.2                    pypi_0    pypi
-numpy                     1.24.2                   pypi_0    pypi
-nvidia-cublas-cu11        11.10.3.66               pypi_0    pypi
-nvidia-cuda-nvrtc-cu11    11.7.99                  pypi_0    pypi
-nvidia-cuda-runtime-cu11  11.7.99                  pypi_0    pypi
-nvidia-cudnn-cu11         8.5.0.96                 pypi_0    pypi
-olefile                   0.46                       py_0  
-openssl                   1.1.1i               h27cfd23_0  
-packaging                 23.1                     pypi_0    pypi
-pandas                    2.0.1                    pypi_0    pypi
-pandocfilters             1.5.0                    pypi_0    pypi
-paramiko                  3.1.0                    pypi_0    pypi
-parso                     0.7.0                      py_0  
-patchelf                  0.12                 h2531618_1  
-pathtools                 0.1.2                    pypi_0    pypi
-pexpect                   4.8.0              pyhd3eb1b0_3  
-pickleshare               0.7.5           pyhd3eb1b0_1003  
-pillow                    8.1.0            py38he98fc37_0  
-pip                       23.1.2                   pypi_0    pypi
-pkginfo                   1.7.0            py38h06a4308_0  
-pkgutil-resolve-name      1.3.10                   pypi_0    pypi
-platformdirs              3.2.0                    pypi_0    pypi
-plotly                    5.14.1                   pypi_0    pypi
-pre-commit                3.3.1                    pypi_0    pypi
-prometheus-client         0.16.0                   pypi_0    pypi
-prompt-toolkit            3.0.38                   pypi_0    pypi
-protobuf                  3.20.3                   pypi_0    pypi
-psutil                    5.9.5                    pypi_0    pypi
-ptyprocess                0.7.0              pyhd3eb1b0_2  
-pure-eval                 0.2.2                    pypi_0    pypi
-py-lief                   0.10.1           py38h403a769_0  
-pycosat                   0.6.3            py38h7b6447c_1  
-pycparser                 2.20                       py_2  
-pygments                  2.7.4              pyhd3eb1b0_0  
-pynacl                    1.5.0                    pypi_0    pypi
-pyopenssl                 23.1.1                   pypi_0    pypi
-pyparsing                 3.0.9                    pypi_0    pypi
-pyrsistent                0.19.3                   pypi_0    pypi
-pysocks                   1.7.1            py38h06a4308_0  
-python                    3.8.5                h7579374_1  
-python-dateutil           2.8.2                    pypi_0    pypi
-python-etcd               0.4.5                    pypi_0    pypi
-python-graphviz           0.20.1                   pypi_0    pypi
-python-json-logger        2.0.7                    pypi_0    pypi
-python-libarchive-c       2.9                pyhd3eb1b0_0  
-pytz                      2020.5             pyhd3eb1b0_0  
-pyyaml                    5.3.1            py38h7b6447c_1  
-pyzmq                     25.0.2                   pypi_0    pypi
-readline                  8.0                  h7b6447c_0  
-regex                     2023.5.5                 pypi_0    pypi
-requests                  2.28.2                   pypi_0    pypi
-retrying                  1.3.4                    pypi_0    pypi
-rfc3339-validator         0.1.4                    pypi_0    pypi
-rfc3986-validator         0.1.1                    pypi_0    pypi
-ripgrep                   12.1.1                        0  
-ruamel_yaml               0.15.87          py38h7b6447c_1  
-s3transfer                0.6.0                    pypi_0    pypi
-sagemaker-training        4.4.10                   pypi_0    pypi
-scikit-learn              1.2.2                    pypi_0    pypi
-scipy                     1.10.1                   pypi_0    pypi
-seaborn                   0.12.2                   pypi_0    pypi
-send2trash                1.8.0                    pypi_0    pypi
-sentry-sdk                1.22.2                   pypi_0    pypi
-setproctitle              1.3.2                    pypi_0    pypi
-setuptools                50.3.1           py38h06a4308_1  
-six                       1.15.0           py38h06a4308_0  
-smmap                     5.0.0                    pypi_0    pypi
-sniffio                   1.3.0                    pypi_0    pypi
-soupsieve                 2.1                pyhd3eb1b0_0  
-sqlite                    3.33.0               h62c20be_0  
-stack-data                0.6.2                    pypi_0    pypi
-tenacity                  8.2.2                    pypi_0    pypi
-terminado                 0.17.1                   pypi_0    pypi
-threadpoolctl             3.1.0                    pypi_0    pypi
-tinycss2                  1.2.1                    pypi_0    pypi
-tk                        8.6.10               hbc83047_0  
-tokenizers                0.13.3                   pypi_0    pypi
-tomli                     2.0.1                    pypi_0    pypi
-torch                     1.13.1                   pypi_0    pypi
-torch-geometric           2.3.1                    pypi_0    pypi
-torchaudio                0.13.1                   pypi_0    pypi
-torchelastic              0.2.1                    pypi_0    pypi
-torchvision               0.14.1                   pypi_0    pypi
-tornado                   6.3                      pypi_0    pypi
-tqdm                      4.51.0             pyhd3eb1b0_0  
-traitlets                 5.9.0                    pypi_0    pypi
-transformers              4.28.1                   pypi_0    pypi
-typing_extensions         3.7.4.3                    py_0  
-tzdata                    2023.3                   pypi_0    pypi
-uri-template              1.2.0                    pypi_0    pypi
-urllib3                   1.26.15                  pypi_0    pypi
-virtualenv                20.23.0                  pypi_0    pypi
-wandb                     0.15.2                   pypi_0    pypi
-wcwidth                   0.2.5                      py_0  
-webcolors                 1.13                     pypi_0    pypi
-webencodings              0.5.1                    pypi_0    pypi
-websocket-client          1.5.1                    pypi_0    pypi
-werkzeug                  2.2.3                    pypi_0    pypi
-wheel                     0.35.1             pyhd3eb1b0_0  
-xgboost                   1.7.5                    pypi_0    pypi
-xz                        5.2.5                h7b6447c_0  
-y-py                      0.5.9                    pypi_0    pypi
-yaml                      0.2.5                h7b6447c_0  
-ypy-websocket             0.8.2                    pypi_0    pypi
-zipp                      3.15.0                   pypi_0    pypi
-zlib                      1.2.11               h7b6447c_3  
-zope-event                4.6                      pypi_0    pypi
-zope-interface            6.0                      pypi_0    pypi
-zstd                      1.4.5                h9ceee32_0  
+aiofiles==22.1.0
+aiosqlite==0.19.0
+anyio==3.6.2
+appdirs==1.4.4
+argon2-cffi==21.3.0
+argon2-cffi-bindings==21.2.0
+arrow==1.2.3
+asttokens==2.2.1
+attrs==23.1.0
+Babel==2.12.1
+backcall==0.2.0
+bcrypt==4.0.1
+beautifulsoup4 @ file:///home/linux1/recipes/ci/beautifulsoup4_1610988766420/work
+bleach==6.0.0
+boto3==1.26.115
+botocore==1.29.115
+brotlipy==0.7.0
+catboost==1.2
+certifi==2020.12.5
+cffi @ file:///tmp/build/80754af9/cffi_1605538068321/work
+cfgv==3.3.1
+chardet @ file:///tmp/build/80754af9/chardet_1605303185383/work
+charset-normalizer==3.1.0
+click==8.1.3
+comm==0.1.3
+conda==4.9.2
+conda-build==3.21.4
+conda-package-handling @ file:///tmp/build/80754af9/conda-package-handling_1603018141399/work
+contourpy==1.0.7
+cryptography==40.0.2
+cycler==0.11.0
+debugpy==1.6.7
+decorator==4.4.2
+defusedxml==0.7.1
+distlib==0.3.6
+dnspython==2.1.0
+docker-pycreds==0.4.0
+executing==1.2.0
+fastjsonschema==2.16.3
+filelock==3.12.0
+fonttools==4.39.3
+fqdn==1.5.1
+fsspec==2023.5.0
+gevent==22.10.2
+gitdb==4.0.10
+GitPython==3.1.31
+glob2 @ file:///home/linux1/recipes/ci/glob2_1610991677669/work
+graphviz==0.20.1
+greenlet==2.0.2
+huggingface-hub==0.14.1
+identify==2.5.24
+idna @ file:///tmp/build/80754af9/idna_1593446292537/work
+importlib-metadata==6.5.0
+importlib-resources==5.12.0
+inotify-simple==1.2.1
+ipykernel==6.22.0
+ipython==8.12.0
+ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+isoduration==20.11.0
+jedi @ file:///tmp/build/80754af9/jedi_1606932564285/work
+Jinja2==3.1.2
+jmespath==1.0.1
+joblib==1.2.0
+json5==0.9.11
+jsonpointer==2.3
+jsonschema==4.17.3
+jupyter-events==0.6.3
+jupyter-ydoc==0.2.4
+jupyter_client==8.2.0
+jupyter_core==5.3.0
+jupyter_server==2.5.0
+jupyter_server_fileid==0.9.0
+jupyter_server_terminals==0.4.4
+jupyter_server_ydoc==0.8.0
+jupyterlab==3.6.3
+jupyterlab-pygments==0.2.2
+jupyterlab_server==2.22.1
+kiwisolver==1.4.4
+libarchive-c @ file:///home/linux1/recipes/ci/python-libarchive-c_1610974153025/work
+lightgbm==3.3.5
+MarkupSafe==2.0.1
+matplotlib==3.7.1
+matplotlib-inline==0.1.6
+mistune==2.0.5
+mkl-fft==1.2.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+nbclassic==0.5.5
+nbclient==0.7.3
+nbconvert==7.3.1
+nbformat==5.8.0
+nest-asyncio==1.5.6
+nodeenv==1.8.0
+notebook==6.5.4
+notebook_shim==0.2.2
+numpy==1.24.2
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cudnn-cu11==8.5.0.96
+olefile==0.46
+packaging==23.1
+pandas==2.0.1
+pandocfilters==1.5.0
+paramiko==3.1.0
+parso==0.7.0
+pathtools==0.1.2
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow @ file:///tmp/build/80754af9/pillow_1609786786540/work
+pkginfo==1.7.0
+pkgutil_resolve_name==1.3.10
+platformdirs==3.2.0
+plotly==5.14.1
+pre-commit==3.3.1
+prometheus-client==0.16.0
+prompt-toolkit==3.0.38
+protobuf==3.20.3
+psutil==5.9.5
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval==0.2.2
+pycosat==0.6.3
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+Pygments @ file:///tmp/build/80754af9/pygments_1610565767015/work
+PyNaCl==1.5.0
+pyOpenSSL==23.1.1
+pyparsing==3.0.9
+pyrsistent==0.19.3
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305779399/work
+python-dateutil==2.8.2
+python-etcd==0.4.5
+python-json-logger==2.0.7
+pytz @ file:///tmp/build/80754af9/pytz_1608922264688/work
+PyYAML==5.3.1
+pyzmq==25.0.2
+regex==2023.5.5
+requests==2.28.2
+retrying==1.3.4
+rfc3339-validator==0.1.4
+rfc3986-validator==0.1.1
+ruamel_yaml==0.15.87
+s3transfer==0.6.0
+sagemaker-training==4.4.10
+scikit-learn==1.2.2
+scipy==1.10.1
+seaborn==0.12.2
+Send2Trash==1.8.0
+sentry-sdk==1.22.2
+setproctitle==1.3.2
+six @ file:///tmp/build/80754af9/six_1605205327372/work
+smmap==5.0.0
+sniffio==1.3.0
+soupsieve @ file:///tmp/build/80754af9/soupsieve_1607965878077/work
+stack-data==0.6.2
+tenacity==8.2.2
+terminado==0.17.1
+threadpoolctl==3.1.0
+tinycss2==1.2.1
+tokenizers==0.13.3
+tomli==2.0.1
+torch==1.13.1
+torch-geometric==2.3.1
+torchaudio==0.13.1
+torchelastic==0.2.1
+torchvision==0.14.1
+tornado==6.3
+tqdm @ file:///tmp/build/80754af9/tqdm_1605303662894/work
+traitlets==5.9.0
+transformers==4.28.1
+typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1598376058250/work
+tzdata==2023.3
+uri-template==1.2.0
+urllib3==1.26.15
+virtualenv==20.23.0
+wandb==0.15.2
+wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
+webcolors==1.13
+webencodings==0.5.1
+websocket-client==1.5.1
+Werkzeug==2.2.3
+xgboost==1.7.5
+y-py==0.5.9
+ypy-websocket==0.8.2
+zipp==3.15.0
+zope.event==4.6
+zope.interface==6.0
