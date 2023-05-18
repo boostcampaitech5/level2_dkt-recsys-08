@@ -60,8 +60,11 @@ def parse_args():
         "--test_file_name", default="test_data.csv", type=str, help="test file name"
     )
 
-    # Model(LSTM, Transformer..)
+    # Model(Transformer)
     parser.add_argument("--n_heads", default=2, type=int, help="number of heads")
+    parser.add_argument("--mlp_dim", default=64, type=int, help="number of heads")
+
+    # Model(LSTM, Transformer..)
     parser.add_argument(
         "--max_seq_len", default=20, type=int, help="max sequence length"
     )
@@ -85,7 +88,7 @@ def parse_args():
     parser.add_argument(
         "--scheduler", default="plateau", type=str, help="scheduler type"
     )
-    parser.add_argument("--n_epochs", default=20, type=int, help="number of epochs")
+    parser.add_argument("--n_epochs", default=100, type=int, help="number of epochs")
     parser.add_argument("--lr", default=0.0001, type=float, help="learning rate")
     parser.add_argument("--weight_decay", default=0.01, type=float, help="weight decay")
     parser.add_argument("--clip_grad", default=10, type=int, help="clip grad")
@@ -105,12 +108,14 @@ def parse_args():
 
     # 중요
     parser.add_argument("--dataset", default="DKTDataset", type=str, help="dataset")
-    parser.add_argument("--model", default="LSTM", type=str, help="model type")
     parser.add_argument(
-        "--data_loader", default="LSTMDataLoader", type=str, help="data loader"
+        "--model", default="TransformerEncoder", type=str, help="model type"
     )
     parser.add_argument(
-        "--trainer", default="LSTMTrainer", type=str, help="data trainer"
+        "--data_loader", default="DKTDataLoader", type=str, help="data loader"
+    )
+    parser.add_argument(
+        "--trainer", default="DKTTrainer", type=str, help="data trainer"
     )
 
     args = parser.parse_args()

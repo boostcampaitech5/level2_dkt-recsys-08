@@ -85,7 +85,7 @@ class FMDataLoader(BaseDataLoader):
         return dataset
 
 
-class LSTMDataLoader(BaseDataLoader):
+class DKTDataLoader(BaseDataLoader):
     def __init__(self, args, training=True):
         super().__init__()
         self.args = args

@@ -15,7 +15,7 @@ import wandb
 logger = get_logger(logger_conf=logging_conf)
 
 
-class LSTMTrainer(BaseTrainer):
+class DKTTrainer(BaseTrainer):
     def __init__(self, args):
         super().__init__()
         args.dataset = getattr(module_data_loader, args.dataset)
