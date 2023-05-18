@@ -38,9 +38,12 @@ __pycache__/
 /code/saved_models/
 /code/submit/
 /code/model/model.py
+/code/run.log
 
 # Data
 /data/
 
-# Logs
-/log/
+# Double Check
+*.csv
+*.pt
+*.json
