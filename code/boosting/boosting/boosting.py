@@ -21,21 +21,21 @@ class boosting_model:
         self.feature = FEATURE
         if args.model == "CAT":
             self.model = CatBoostClassifier(
-                learning_rate=float(self.args.learning_rate),
-                iterations=int(self.args.iterations),
+                learning_rate=self.args.learning_rate,
+                iterations=self.args.iterations,
                 task_type="GPU",
             )
         elif args.model == "XG":
             self.model = xgb.XGBClassifier(
-                learning_rate=float(self.args.learning_rate),
-                # n_estimators=int(self.args.iterations),
-                # max_depth=self.args.max_depth,
+                learning_rate=self.args.learning_rate,
+                n_estimators=int(self.args.iterations),
+                max_depth=self.args.max_depth,
             )
         elif args.model == "LGBM":
             self.model = lgbm.LGBMClassifier(
                 learning_rate=int(self.args.learning_rate),
-                # n_estimators=self.args.iterations,
-                # max_depth=self.args.max_depth,
+                n_estimators=self.args.iterations,
+                num_leaves=self.args.num_leaves,
             )
         else:
             raise Exception("cat,xg,lgbm 중 하나의 모델을 선택해주세요")
@@ -43,8 +43,6 @@ class boosting_model:
     def training(self, data, args):
         print("###start MODEL training ###")
         if args.model == "CAT":
-            print(self.feature)
-            print(data["train_x"][self.feature])
             self.model.fit(
                 data["train_x"][self.feature],
                 data["train_y"],
