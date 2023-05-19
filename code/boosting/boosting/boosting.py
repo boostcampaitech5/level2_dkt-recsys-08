@@ -40,20 +40,30 @@ class boosting_model:
         else:
             raise Exception("cat,xg,lgbm 중 하나의 모델을 선택해주세요")
 
-    def training(self, data):
+    def training(self, data, args):
         print("###start MODEL training ###")
-        self.model.fit(
-            self.train[self.feature],
-            self.train_value,
-            early_stopping_rounds=100,
-            cat_features=list(self.train[FEATURE]),
-            verbose=500,
-        )
+        if args.model == "CAT":
+            print(self.feature)
+            print(data["train_x"][self.feature])
+            self.model.fit(
+                data["train_x"][self.feature],
+                data["train_y"]["answerCode"],
+                early_stopping_rounds=100,
+                cat_features=list(self.train[FEATURE]),
+                verbose=500,
+            )
+        else:
+            self.model.fit(
+                data["train_x"][self.feature],
+                data["train_y"]["answerCode"],
+                early_stopping_rounds=100,
+                verbose=500,
+            )
 
     def inference(self):
         # submission 제출하기 위한 코드
         print("### Inference && Save###")
-        test_pred = self.model.predict_proba(self.test[self.feature])[:, 1]
+        test_pred = self.model.predict_proba(data["test"][self.feature])[:, 1]
         self.test["prediction"] = _test_pred
         submission = self.test["prediction"].reset_index(drop=True).reset_index()
         submission.rename(columns={"index": "id"}, inplace=True)
