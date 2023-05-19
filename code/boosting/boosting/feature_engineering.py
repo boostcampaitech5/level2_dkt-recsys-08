@@ -3,7 +3,7 @@ import pandas as pd
 
 
 class FE:
-    def __init__(self, df_1: pd.DataFrame):
+    def __init__(self, df: pd.DataFrame):
         self.df = df
 
     def elapsed_time(df: pd.DataFrame) -> pd.Series:
@@ -148,20 +148,17 @@ def add_new_feature(df):
     return df_user, df_assessment
 
 
-def final_feature_engineering(data: pd.DataFrame, is_train: bool) -> dict:
+def final_feature_engineering(
+    df_1: pd.DataFrame, df_2: pd.DataFrame, is_train: bool
+) -> pd.DataFrame:
     """
     위에 작성한 함수 호출하고 최종적으로 완성된 data 반환
     """
+    df = FE(df_1)
+    df_user, df_assessment = add_new_feature(df)
     if is_train:
-        FE()
-        df_user, df_assessment = add_new_feature(df)
         df = pd.merge(df_user, df_assessment, on=["userID", "assessmentID"])
     else:
-        df = self.df_2.merge(df_user, how="left", on="userID")
+        df = df_2.merge(df_user, how="left", on="userID")
         df = df.merge(df_assessment, how="left", on="assessmentID")
-    # data['train'] =
-    data["test"] = FE(data["train"], data["test"], False)
-    data["valid"] = FE(data["train_split"], data["valid"], False)
-    data["train"] = FE(data[""], data[""], True)
-
-    return data
+    return df
