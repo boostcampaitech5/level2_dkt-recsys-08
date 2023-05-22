@@ -2,12 +2,16 @@ import numpy as np
 import pandas as pd
 
 
-class FE:
-    def __init__(self):
-        pass
-        # self.df = df
+def percentile(s):
+    return np.sum(s) / len(s)
 
-    def elapsed_time(self, df: pd.DataFrame) -> pd.Series:
+
+def basic_feature_engineering(df: pd.DataFrame):
+    """
+    aggregation 하기 전에 전체 DataFrame에 대해 추가되는 Feature
+    """
+
+    def elapsed_time(df: pd.DataFrame) -> pd.Series:
         """
         문제 풀이 시간
 
@@ -47,35 +51,53 @@ class FE:
         df.drop("session", axis=1, inplace=True)
         return df["elapsed"]
 
+    def timeDelta_from_user_average(df: pd.DataFrame) -> pd.Series:
+        """
+        해당 문제 풀이 시간 - 해당 유저 평균 문제 풀이 시간
+
+        Input
+        df: train or test data
+
+        Output
+        df_time['timeDelta_userAverage'] : problem-solving time deviation from user average
+
+        """
+        df_time = (
+            df.loc[:, ["userID", "elapsed"]]
+            .groupby(["userID"])
+            .agg("mean")
+            .reset_index()
+        )
+        df_time.rename(columns={"elapsed": "user_mean_elapsed"}, inplace=True)
+        df_time = df.merge(df_time, on="userID", how="left")
+        df_time["timeDelta_userAverage"] = (
+            df_time["elapsed"] - df_time["user_mean_elapsed"]
+        )
+        return df_time["timeDelta_userAverage"]
+
+    df["elapsed"] = elapsed_time(df)
+    df["timeDelta_userAverage"] = timeDelta_from_user_average(df)
+
+    # 이 전에 정답을 맞췄는지로 시간적 요소 반영
+    df["timestep_1"] = df.groupby("userID")["answerCode"].shift(1).fillna(1).astype(int)
+    df["timestep_2"] = df.groupby("userID")["answerCode"].shift(2).fillna(1).astype(int)
+    df["timestep_3"] = df.groupby("userID")["answerCode"].shift(3).fillna(1).astype(int)
+    df["timestep_4"] = df.groupby("userID")["answerCode"].shift(4).fillna(1).astype(int)
+    df["timestep_5"] = df.groupby("userID")["answerCode"].shift(5).fillna(1).astype(int)
+
+    # 대분류 feature 추가
+    df["category_high"] = df["testId"].apply(lambda x: x[2])
+    return df
+
+
+class FE_aggregation:
+    def __init__(self):
+        pass
+        # self.df = df
+
     ##### 유저 단위
     def feature_per_user(self, df: pd.DataFrame) -> pd.DataFrame:
-        #         def timeDelta_from_user_average(df: pd.DataFrame) -> pd.Series:
-        #             """
-        #             해당 문제 풀이 시간 - 해당 유저 평균 문제 풀이 시간
-
-        #             Input
-        #             df: train or test data
-
-        #             Output
-        #             df_time['timeDelta_userAverage'] : problem-solving time deviation from user average
-
-        #             """
-        #             df_time = (
-        #                 df.loc[:, ["userID", "elapsed"]]
-        #                 .groupby(["userID"])
-        #                 .agg("mean")
-        #                 .reset_index()
-        #             )
-        #             df_time.rename(columns={"elapsed": "user_mean_elapsed"}, inplace=True)
-        #             df_time = df.merge(df_time, on="userID", how="left")
-        #             df_time["timeDelta_userAverage"] = (
-        #                 df_time["elapsed"] - df_time["user_mean_elapsed"]
-        #             )
-        #             return df_time["timeDelta_userAverage"]
-        #         df_temp = df[['userID','assessmentItemID']]
-        #         df_temp['timeDelta_userAverage'] = timeDelta_from_user_average(df)
-
-        # 유저별 정답룰, 정답 맞춘 횟수, 평균 소요시간
+        # 유저별 정답률, 정답 맞춘 횟수, 평균 소요시간
         tem1 = df.groupby("userID")["answerCode"]
         tem1 = pd.DataFrame(
             {"user_answer_mean": tem1.mean(), "user_answer_cnt": tem1.count()}
@@ -87,71 +109,35 @@ class FE:
 
     ##### 문제 단위
     def feature_per_item(self, df: pd.DataFrame):
-        #             def mean_elapsed_per_assessmentID_correct_or_not(
-        #                 df: pd.DataFrame,
-        #             ) -> pd.DataFrame:
-        #                 """
-        #                 해당 문제에 대한 정답자들의 평균 문제 풀이 시간, 오답자들의 평균 문제 풀이 시간
-        #                 Input
-        #                 df : train or test data
-        #                 answerCode: 정답 / 오답 여부
+        def mean_elapsed_per_assessmentID(
+            df: pd.DataFrame, answerCode: int
+        ) -> pd.DataFrame:
+            """
+            해당 문제에 대한 정답자들의 평균 문제 풀이 시간, 오답자들의 평균 문제 풀이 시간
+            Input
+            df : train or test data
+            answerCode: 정답 / 오답 여부
 
-        #                 Output
-        #                 df_mean_elapsed_per_assessmentID : 해당 문제 정답/오답자의 풀이 시간 평균
+            Output
+            df_mean_elapsed : 해당 문제 정답/오답자의 풀이 시간 평균
 
-        #                 """
+            """
+            col_name = ["wrong_users_mean_elapsed", "correct_users_mean_elapsed"]
+            df_mean_elapsed = (
+                df.loc[:, ["assessmentItemID", "answerCode", "elapsed"]]
+                .groupby(["assessmentItemID", "answerCode"])
+                .agg("mean")
+                .reset_index()
+            )
+            df_mean_elapsed = df_mean_elapsed[
+                df_mean_elapsed["answerCode"] == answerCode
+            ].drop("answerCode", axis=1)
+            df_mean_elapsed.rename(
+                columns={"elapsed": col_name[answerCode]}, inplace=True
+            )
+            return df_mean_elapsed
 
-        #                 def mean_elapsed_per_assessmentID(
-        #                     df: pd.DataFrame, answerCode: int
-        #                 ) -> pd.Series:
-        #                     col_name = ["wrong_users_mean_elapsed", "correct_users_mean_elapsed"]
-        #                     df_assessment = (
-        #                         df.loc[:, ["assessmentItemID", "answerCode", "elapsed"]]
-        #                         .groupby(["assessmentItemID", "answerCode"])
-        #                         .agg("mean")
-        #                         .reset_index()
-        #                     )
-        #                     df_assessment = df_assessment[
-        #                         df_assessment["answerCode"] == answerCode
-        #                     ].drop("answerCode", axis=1)
-        #                     df_assessment.rename(
-        #                         columns={"elapsed": col_name[answerCode]}, inplace=True
-        #                     )
-        #                     df_mean_elapsed_per_assessmentID = df.loc[
-        #                         :, ["assessmentItemID"]
-        #                     ].merge(df_assessment, on="assessmentItemID", how="left")[
-        #                         [col_name[answerCode]]
-        #                     ]
-
-        #                     return df_mean_elapsed_per_assessmentID
-
-        #                 df_correct_wrong = pd.DataFrame()
-        #                 df_correct_wrong["assessmentItemID"] = df["assessmentItemID"]
-        #                 df_correct_wrong[
-        #                     "wrong_users_mean_elapsed"
-        #                 ] = mean_elapsed_per_assessmentID(df, 0)
-        #                 df_correct_wrong[
-        #                     "correct_users_mean_elapsed"
-        #                 ] = mean_elapsed_per_assessmentID(df, 1)
-        #                 df["wrong_users_mean_elapsed"] = df_correct_wrong[
-        #                     "wrong_users_mean_elapsed"
-        #                 ]
-        #                 df["correct_users_mean_elapsed"] = df_correct_wrong[
-        #                     "correct_users_mean_elapsed"
-        #                 ]
-        #                 df_correct_wrong = df_correct_wrong.drop_duplicates()
-        #                 df_users_mean_elapsed = df.merge(
-        #                     df_correct_wrong, on="assessmentItemID", how="left"
-        #                 )[["wrong_users_mean_elapsed", "correct_users_mean_elapsed"]]
-        #                 print(df_users_mean_elapsed.columns)
-        #                 return df_users_mean_elapsed
-        #             df_new_col = mean_elapsed_per_assessmentID_correct_or_not(df)
-        #             df_temp = df[['userID','assessmentItemID']]
-        #             df_temp["wrong_users_mean_elapsed"] = df_new_col['wrong_users_mean_elapsed']
-        #             df_temp['correct_users_mean_elapsed'] = df_new_col['correct_users_mean_elapsed']
-        #             return df_temp
-
-        # 문제별 정답룰, 정답 맞춘 횟수, 평균 소요시간
+        # 문제별 정답률, 정답 맞춘 횟수, 평균 소요시간
         tem1 = df.groupby("assessmentItemID")["answerCode"]
         tem1 = pd.DataFrame(
             {"item_answer_mean": tem1.mean(), "item_answer_cnt": tem1.count()}
@@ -159,26 +145,39 @@ class FE:
         tem2 = df.groupby("assessmentItemID")["elapsed"]
         tem2 = pd.DataFrame({"item_time_mean": tem2.mean()}).reset_index()
         df_item = pd.merge(tem1, tem2, on=["assessmentItemID"], how="left")
+
+        # 해당 문제에 대한 정답자들의 평균 문제 풀이 시간, 오답자들의 평균 문제 풀이 시간
+        tem3 = mean_elapsed_per_assessmentID(df, 0)
+        df_item = pd.merge(df_item, tem3, on=["assessmentItemID"], how="left")
+        tem4 = mean_elapsed_per_assessmentID(df, 1)
+        df_item = pd.merge(df_item, tem4, on=["assessmentItemID"], how="left")
         return df_item
 
+    def feature_per_tag(self, df: pd.DataFrame):
+        tem1 = (
+            df.groupby("KnowledgeTag")
+            .agg({"userID": "count", "answerCode": percentile})
+            .reset_index()
+        )
+        tem1.rename(
+            columns={"userID": "tag_exposed", "answerCode": "tag_answer_rate"},
+            inplace=True,
+        )
+        return tem1
 
-def final_feature_engineering(
-    df_1: pd.DataFrame, df_2: pd.DataFrame, is_train: bool
-) -> pd.DataFrame:
+
+def final_feature_engineering(df_1: pd.DataFrame, df_2: pd.DataFrame) -> pd.DataFrame:
     """
     위에 작성한 함수 호출하고 최종적으로 완성된 data 반환
     df_1 : 기준점이 되는 DataFrame
     """
-    fe = FE()
-    df_1["elapsed"] = fe.elapsed_time(df_1)
+    fe = FE_aggregation()
     df_user = fe.feature_per_user(df_1)
     df_assessment = fe.feature_per_item(df_1)
+    df_tag = fe.feature_per_tag(df_1)
 
-    if is_train:
-        df = df_1.merge(df_user, how="left", on="userID")
-        df = df.merge(df_assessment, how="left", on="assessmentItemID")
-    else:
-        # elapsed를 계산할 수가 없군요
-        df = df_2.merge(df_user, how="left", on="userID")
-        df = df.merge(df_assessment, how="left", on="assessmentItemID")
+    df = df_2.merge(df_user, how="left", on="userID")
+    df = df.merge(df_assessment, how="left", on="assessmentItemID")
+    df = df.merge(df_tag, how="left", on="KnowledgeTag")
+
     return df
