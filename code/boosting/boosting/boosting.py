@@ -29,13 +29,13 @@ class boosting_model:
         elif args.model == "XG":
             self.model = xgb.XGBClassifier(
                 learning_rate=self.args.learning_rate,
-                n_estimators=int(self.args.iterations),
+                n_estimators=self.args.iterations,
                 max_depth=self.args.max_depth,
                 eval_metric="AUC",
             )
         elif args.model == "LGBM":
             self.model = lgbm.LGBMClassifier(
-                learning_rate=int(self.args.learning_rate),
+                learning_rate=self.args.learning_rate,
                 n_estimators=self.args.iterations,
                 num_leaves=self.args.num_leaves,
             )
