@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import torch
 from sklearn import preprocessing
-from .feature_engineering import final_feature_engineering
+from .feature_engineering import basic_feature_engineering, final_feature_engineering
 
 
 class Dataset:
@@ -29,6 +29,7 @@ class Dataset:
             drop=True
         )
         df = pd.concat([self.train, self.test], axis=0)
+        df = basic_feature_engineering(df)
         train = df[df["answerCode"] >= 0]
         test = df[df["answerCode"] == -1]
         data["train"], data["test"] = train, test
@@ -56,29 +57,31 @@ class Dataset:
 
 
 class Preprocess:
-    def __init__(self, args, data: dict, FEATURE: list):
+    def __init__(self, args, data: dict):
         self.args = args
-        self.feature = FEATURE
         self.data = data
 
     def apply_feature_engineering(self) -> dict:
+        """
+        merge 하기 전에 전체 데이터셋에 대한 Feature 추가하고 Merge 시킴
+        """
         self.data["test"] = final_feature_engineering(
-            self.data["train"], self.data["test"], False
+            self.data["train"], self.data["test"]
         )
         self.data["valid"] = final_feature_engineering(
-            self.data["train_split"], self.data["valid"], False
+            self.data["train_split"], self.data["valid"]
         )
         self.data["train"] = final_feature_engineering(
-            self.data["train"], self.data["train"], True
+            self.data["train"], self.data["train"]
         )
 
-        self.data["train_x"] = self.data["train"][self.feature]
+        self.data["train_x"] = self.data["train"].drop("answerCode", axis=1)
         self.data["train_y"] = self.data["train"]["answerCode"]
 
-        self.data["valid_x"] = self.data["valid"][self.feature]
+        self.data["valid_x"] = self.data["valid"].drop("answerCode", axis=1)
         self.data["valid_y"] = self.data["valid"]["answerCode"]
 
-        self.data["test"] = self.data["test"][self.feature]
+        self.data["test"] = self.data["test"].drop("answerCode", axis=1)
         return self.data
 
     def type_conversion(self) -> dict:
@@ -96,6 +99,6 @@ class Preprocess:
 
     def preprocess(self) -> dict:
         data = self.apply_feature_engineering()
-        if self.args.model == "CAT":
-            data = self.type_conversion()
+        # xgboost와 lgbm에 대해서도 동일하게 적용
+        data = self.type_conversion()
         return data
