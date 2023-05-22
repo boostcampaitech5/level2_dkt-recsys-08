@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
 
 
 def percentile(s):
@@ -166,6 +167,89 @@ class FE_aggregation:
         return tem1
 
 
+def elo(df, feature, elo_feat):
+    def get_new_theta(is_good_answer, beta, left_asymptote, theta, nb_previous_answers):
+        return theta + learning_rate_theta(nb_previous_answers) * (
+            is_good_answer - probability_of_good_answer(theta, beta, left_asymptote)
+        )
+
+    def get_new_beta(is_good_answer, beta, left_asymptote, theta, nb_previous_answers):
+        return beta - learning_rate_beta(nb_previous_answers) * (
+            is_good_answer - probability_of_good_answer(theta, beta, left_asymptote)
+        )
+
+    def learning_rate_theta(nb_answers):
+        return max(0.3 / (1 + 0.01 * nb_answers), 0.04)
+
+    def learning_rate_beta(nb_answers):
+        return 1 / (1 + 0.05 * nb_answers)
+
+    def probability_of_good_answer(theta, beta, left_asymptote):
+        return left_asymptote + (1 - left_asymptote) + sigmoid(theta - beta)
+
+    def sigmoid(x):
+        return 1 / (1 + np.exp(-x))
+
+    def estimate_parameters(answers_df, granularity_feature_name=feature):
+        item_parameters = {
+            granularity_feature_value: {"beta": 0, "nb_answers": 0}
+            for granularity_feature_value in np.unique(
+                answers_df[granularity_feature_name]
+            )
+        }
+        student_parameters = {
+            student_id: {"theta": 0, "nb_answers": 0}
+            for student_id in np.unique(answers_df.userID)
+        }
+
+        for student_id, item_id, left_asymptote, answered_correctly in zip(
+            answers_df.userID.values,
+            answers_df[granularity_feature_name].values,
+            answers_df.left_asymptote.values,
+            answers_df.answerCode.values,
+        ):
+            theta = student_parameters[student_id]["theta"]
+            beta = item_parameters[item_id]["beta"]
+
+            item_parameters[item_id]["beta"] = get_new_beta(
+                answered_correctly,
+                beta,
+                left_asymptote,
+                theta,
+                item_parameters[item_id]["nb_answers"],
+            )
+            student_parameters[student_id]["theta"] = get_new_theta(
+                answered_correctly,
+                beta,
+                left_asymptote,
+                theta,
+                student_parameters[student_id]["nb_answers"],
+            )
+
+            item_parameters[item_id]["nb_answers"] += 1
+            student_parameters[student_id]["nb_answers"] += 1
+
+        return student_parameters, item_parameters
+
+    def gou_func(theta, beta):
+        return 1 / (1 + np.exp(-(theta - beta)))
+
+    new_df = df.copy()
+    new_df["left_asymptote"] = 0
+    student_parameters, item_parameters = estimate_parameters(new_df)
+
+    prob = [
+        gou_func(student_parameters[student]["theta"], item_parameters[item]["beta"])
+        for student, item in zip(new_df.userID.values, new_df[feature].values)
+    ]
+
+    new_df[elo_feat] = prob
+    col_list = list(new_df.columns[6:-1])
+    new_df.drop(columns=col_list, inplace=True)
+
+    return new_df
+
+
 def final_feature_engineering(df_1: pd.DataFrame, df_2: pd.DataFrame) -> pd.DataFrame:
     """
     위에 작성한 함수 호출하고 최종적으로 완성된 data 반환
@@ -176,8 +260,51 @@ def final_feature_engineering(df_1: pd.DataFrame, df_2: pd.DataFrame) -> pd.Data
     df_assessment = fe.feature_per_item(df_1)
     df_tag = fe.feature_per_tag(df_1)
 
+    # 문제 난이도 계산
+    df_elo_assessment = elo(df_1, "assessmentItemID", "elo_assessment")
+    # test 난이도 계산
+    df_elo_test = elo(df_1, "testId", "elo_test")
+    # KnowledgeTag 난이도 계산
+    df_elo_tag = elo(df_1, "KnowledgeTag", "elo_tag")
+
     df = df_2.merge(df_user, how="left", on="userID")
     df = df.merge(df_assessment, how="left", on="assessmentItemID")
     df = df.merge(df_tag, how="left", on="KnowledgeTag")
+    df = df.merge(
+        df_elo_assessment,
+        how="left",
+        on=[
+            "userID",
+            "assessmentItemID",
+            "testId",
+            "answerCode",
+            "Timestamp",
+            "KnowledgeTag",
+        ],
+    )
+    df = df.merge(
+        df_elo_test,
+        how="left",
+        on=[
+            "userID",
+            "assessmentItemID",
+            "testId",
+            "answerCode",
+            "Timestamp",
+            "KnowledgeTag",
+        ],
+    )
+    df = df.merge(
+        df_elo_tag,
+        how="left",
+        on=[
+            "userID",
+            "assessmentItemID",
+            "testId",
+            "answerCode",
+            "Timestamp",
+            "KnowledgeTag",
+        ],
+    )
 
     return df

@@ -48,9 +48,12 @@ def main(args):
     ]
     FEATURE_TAG = ["tag_exposed", "tag_answer_rate"]
 
+    FEATURE_ELO = ["elo_assessment", "elo_test", "elo_tag"]
+
     FEATURE += FEATURE_USER
     FEATURE += FEATURE_ITEM
     FEATURE += FEATURE_TAG
+    FEATURE += FEATURE_ELO
 
     ######################## DATA PREPROCESSING
 
