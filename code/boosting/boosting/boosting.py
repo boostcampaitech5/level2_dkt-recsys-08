@@ -23,13 +23,15 @@ class boosting_model:
             self.model = CatBoostClassifier(
                 learning_rate=self.args.learning_rate,
                 iterations=self.args.iterations,
-                task_type="GPU",
+                # task_type="GPU",
+                eval_metric="AUC",
             )
         elif args.model == "XG":
             self.model = xgb.XGBClassifier(
                 learning_rate=self.args.learning_rate,
                 n_estimators=int(self.args.iterations),
                 max_depth=self.args.max_depth,
+                eval_metric="AUC",
             )
         elif args.model == "LGBM":
             self.model = lgbm.LGBMClassifier(
@@ -42,20 +44,26 @@ class boosting_model:
 
     def training(self, data, args):
         print("###start MODEL training ###")
+        print(self.feature)
         if args.model == "CAT":
             self.model.fit(
                 data["train_x"][self.feature],
                 data["train_y"],
-                early_stopping_rounds=100,
+                early_stopping_rounds=50,
                 cat_features=list(data["train_x"][self.feature]),
-                verbose=500,
+                eval_set=[(data["valid_x"][self.feature], data["valid_y"])],
+                verbose=10,
             )
+            print(self.model.get_best_score())
+            print(self.model.get_all_params())
         else:
             self.model.fit(
                 data["train_x"][self.feature],
                 data["train_y"],
-                early_stopping_rounds=100,
-                verbose=500,
+                early_stopping_rounds=50,
+                eval_set=[(data["valid_x"][self.feature], data["valid_y"])],
+                eval_metric="AUC",
+                verbose=10,
             )
 
     def inference(self, data):
