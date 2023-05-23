@@ -58,21 +58,12 @@ def main(args):
         "wrong_users_median_elapsed",
         "correct_users_median_elapsed",
     ]
-    FEATURE_TAG = [
-        "tag_exposed",
-        "answerRate_per_tag",
-        "tag_elp",
-        "tag_elp_o",
-        "tag_elp_x",
-    ]
+    FEATURE_TAG = ["tag_exposed", "answerRate_per_tag"]
     FEATURE_TEST = ["elapsed_median_per_test", "answerRate_per_test"]
     FEATURE_CAT = ["elapsed_median_per_cat", "answerRate_per_cat"]
     FEATURE_PROBLEM_NUM = [
         "elapsed_median_per_problem_num",
         "answerRate_per_problem_num",
-        "prb_elp",
-        "prb_elp_o",
-        "prb_elp_x",
     ]
 
     FEATURE_ELO = ["elo_assessment", "elo_test", "elo_tag"]
