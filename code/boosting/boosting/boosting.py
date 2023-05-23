@@ -29,14 +29,15 @@ class boosting_model:
         elif args.model == "XG":
             self.model = xgb.XGBClassifier(
                 learning_rate=self.args.learning_rate,
-                n_estimators=self.args.iterations,
+                n_estimators=self.args.n_estimators,
                 max_depth=self.args.max_depth,
                 eval_metric="AUC",
             )
         elif args.model == "LGBM":
             self.model = lgbm.LGBMClassifier(
+                random_state=42,
                 learning_rate=self.args.learning_rate,
-                n_estimators=self.args.iterations,
+                n_estimators=self.args.n_estimators,
                 num_leaves=self.args.num_leaves,
             )
         else:
@@ -63,7 +64,7 @@ class boosting_model:
                 early_stopping_rounds=50,
                 eval_set=[(data["valid_x"][self.feature], data["valid_y"])],
                 eval_metric="AUC",
-                verbose=10,
+                verbose=200,
             )
 
     def inference(self, data):
