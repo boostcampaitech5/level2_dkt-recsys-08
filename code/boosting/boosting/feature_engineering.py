@@ -66,18 +66,43 @@ def basic_feature_engineering(df: pd.DataFrame):
         df_time = (
             df.loc[:, ["userID", "elapsed"]]
             .groupby(["userID"])
-            .agg("mean")
+            .agg("median")
             .reset_index()
         )
-        df_time.rename(columns={"elapsed": "user_mean_elapsed"}, inplace=True)
+        df_time.rename(columns={"elapsed": "user_median_elapsed"}, inplace=True)
         df_time = df.merge(df_time, on="userID", how="left")
         df_time["timeDelta_userAverage"] = (
-            df_time["elapsed"] - df_time["user_mean_elapsed"]
+            df_time["elapsed"] - df_time["user_median_elapsed"]
         )
         return df_time["timeDelta_userAverage"]
 
+        cumcount = (
+            df.loc[:, ["userID", "answerCode"]]
+            .groupby("userID")
+            .agg({"answerCode": "cumcount"})
+            + 1
+        )
+        cum_ans = cumsum / cumcount
+        return cum_ans
+
     df["elapsed"] = elapsed_time(df)
+    df["elapsed_log"] = np.log1p(df["elapsed"])
     df["timeDelta_userAverage"] = timeDelta_from_user_average(df)
+    # 누적 푼 문제수, 누적 맞춘 문제 갯수
+    df["problem_correct_per_user"] = (
+        df.loc[:, ["userID", "answerCode"]]
+        .groupby("userID")
+        .agg({"answerCode": "cumsum"})
+    )
+    df["problem_solved_per_user"] = (
+        df.loc[:, ["userID", "answerCode"]]
+        .groupby("userID")
+        .agg({"answerCode": "cumcount"})
+        + 1
+    )
+    df["cum_answerRate_per_user"] = (
+        df["problem_correct_per_user"] / df["problem_solved_per_user"]
+    )
 
     # 이 전에 정답을 맞췄는지로 시간적 요소 반영
     df["timestep_1"] = df.groupby("userID")["answerCode"].shift(1).fillna(1).astype(int)
@@ -88,6 +113,12 @@ def basic_feature_engineering(df: pd.DataFrame):
 
     # 대분류 feature 추가
     df["category_high"] = df["testId"].apply(lambda x: x[2])
+    # 문항 순서 Feature 추가
+    df["problem_num"] = df["assessmentItemID"].apply(lambda x: x[-3:])
+    # 시간 관련 요소 추가
+    df["hour"] = df["Timestamp"].dt.hour
+    df["weekofyear"] = df["Timestamp"].dt.isocalendar().week
+
     return df
 
 
@@ -98,19 +129,27 @@ class FE_aggregation:
 
     ##### 유저 단위
     def feature_per_user(self, df: pd.DataFrame) -> pd.DataFrame:
-        # 유저별 정답률, 정답 맞춘 횟수, 평균 소요시간
+        # 유저별 정답률, 정답 맞춘 횟수, 평균 소요시간, 푼 문제수
         tem1 = df.groupby("userID")["answerCode"]
         tem1 = pd.DataFrame(
-            {"user_answer_mean": tem1.mean(), "user_answer_cnt": tem1.count()}
+            {"answerRate_per_user": tem1.mean(), "answer_cnt_per_user": tem1.count()}
         ).reset_index()
         tem2 = df.groupby("userID")["elapsed"]
-        tem2 = pd.DataFrame({"user_time_mean": tem2.mean()}).reset_index()
+        tem2 = pd.DataFrame(
+            {"elapsed_time_median_per_user": tem2.median()}
+        ).reset_index()
         df_user = pd.merge(tem1, tem2, on=["userID"], how="left")
+
+        tem3 = df.groupby("userID").agg({"assessmentItemID": "count"})
+        df_user = pd.merge(df_user, tem3, on=["userID"], how="left")
+        df_user.rename(
+            columns={"assessmentItemID": "assessment_solved_per_user"}, inplace=True
+        )
         return df_user
 
     ##### 문제 단위
     def feature_per_item(self, df: pd.DataFrame):
-        def mean_elapsed_per_assessmentID(
+        def median_elapsed_per_assessmentID(
             df: pd.DataFrame, answerCode: int
         ) -> pd.DataFrame:
             """
@@ -120,50 +159,107 @@ class FE_aggregation:
             answerCode: 정답 / 오답 여부
 
             Output
-            df_mean_elapsed : 해당 문제 정답/오답자의 풀이 시간 평균
+            df_median_elapsed : 해당 문제 정답/오답자의 풀이 시간 중위수
 
             """
-            col_name = ["wrong_users_mean_elapsed", "correct_users_mean_elapsed"]
-            df_mean_elapsed = (
+            col_name = ["wrong_users_median_elapsed", "correct_users_median_elapsed"]
+            df_median_elapsed = (
                 df.loc[:, ["assessmentItemID", "answerCode", "elapsed"]]
                 .groupby(["assessmentItemID", "answerCode"])
-                .agg("mean")
+                .agg("median")
                 .reset_index()
             )
-            df_mean_elapsed = df_mean_elapsed[
-                df_mean_elapsed["answerCode"] == answerCode
+            df_median_elapsed = df_median_elapsed[
+                df_median_elapsed["answerCode"] == answerCode
             ].drop("answerCode", axis=1)
-            df_mean_elapsed.rename(
+            df_median_elapsed.rename(
                 columns={"elapsed": col_name[answerCode]}, inplace=True
             )
-            return df_mean_elapsed
+            return df_median_elapsed
 
-        # 문제별 정답률, 정답 맞춘 횟수, 평균 소요시간
+        # 문제별 정답률, 정답 맞춘 횟수, 소요시간 median
         tem1 = df.groupby("assessmentItemID")["answerCode"]
         tem1 = pd.DataFrame(
-            {"item_answer_mean": tem1.mean(), "item_answer_cnt": tem1.count()}
+            {"answerRate_per_item": tem1.mean(), "answer_cnt_per_item": tem1.count()}
         ).reset_index()
         tem2 = df.groupby("assessmentItemID")["elapsed"]
-        tem2 = pd.DataFrame({"item_time_mean": tem2.mean()}).reset_index()
+        tem2 = pd.DataFrame(
+            {"elapsed_time_median_per_item": tem2.median()}
+        ).reset_index()
         df_item = pd.merge(tem1, tem2, on=["assessmentItemID"], how="left")
 
         # 해당 문제에 대한 정답자들의 평균 문제 풀이 시간, 오답자들의 평균 문제 풀이 시간
-        tem3 = mean_elapsed_per_assessmentID(df, 0)
+        tem3 = median_elapsed_per_assessmentID(df, 0)
         df_item = pd.merge(df_item, tem3, on=["assessmentItemID"], how="left")
-        tem4 = mean_elapsed_per_assessmentID(df, 1)
+        tem4 = median_elapsed_per_assessmentID(df, 1)
         df_item = pd.merge(df_item, tem4, on=["assessmentItemID"], how="left")
         return df_item
 
+    # tag 단위
     def feature_per_tag(self, df: pd.DataFrame):
+        # tag가 풀린 횟수, tag별 정답률
         tem1 = (
             df.groupby("KnowledgeTag")
             .agg({"userID": "count", "answerCode": percentile})
             .reset_index()
         )
         tem1.rename(
-            columns={"userID": "tag_exposed", "answerCode": "tag_answer_rate"},
+            columns={"userID": "tag_exposed", "answerCode": "answerRate_per_tag"},
             inplace=True,
         )
+
+        return tem1
+
+    # 시험지(testId) 단위
+    def feature_per_test(self, df: pd.DataFrame):
+        # 시험지별 문제 푼 시간의 중위수, 정답률
+        tem1 = (
+            df.groupby("testId")
+            .agg({"elapsed": "median", "answerCode": percentile})
+            .reset_index()
+        )
+        tem1.rename(
+            columns={
+                "elapsed": "elapsed_median_per_test",
+                "answerCode": "answerRate_per_test",
+            },
+            inplace=True,
+        )
+        return tem1
+
+    # category 단위
+    def feature_per_category(self, df: pd.DataFrame):
+        # category별 문제 푼 시간의 중위수, 정답률
+        tem1 = (
+            df.groupby("category_high")
+            .agg({"elapsed": "median", "answerCode": percentile})
+            .reset_index()
+        )
+        tem1.rename(
+            columns={
+                "elapsed": "elapsed_median_per_cat",
+                "answerCode": "answerRate_per_cat",
+            },
+            inplace=True,
+        )
+        return tem1
+
+    # item num 단위
+    def feature_per_problem_num(self, df: pd.DataFrame):
+        # 문항 순서별 문제 푼 시간의 중위수, 정답률
+        tem1 = (
+            df.groupby("problem_num")
+            .agg({"elapsed": "median", "answerCode": percentile})
+            .reset_index()
+        )
+        tem1.rename(
+            columns={
+                "elapsed": "elapsed_median_per_problem_num",
+                "answerCode": "answerRate_per_problem_num",
+            },
+            inplace=True,
+        )
+
         return tem1
 
 
@@ -259,6 +355,9 @@ def final_feature_engineering(df_1: pd.DataFrame, df_2: pd.DataFrame) -> pd.Data
     df_user = fe.feature_per_user(df_1)
     df_assessment = fe.feature_per_item(df_1)
     df_tag = fe.feature_per_tag(df_1)
+    df_test = fe.feature_per_test(df_1)
+    df_cat = fe.feature_per_category(df_1)
+    df_problem_num = fe.feature_per_problem_num(df_1)
 
     # 문제 난이도 계산
     df_elo_assessment = elo(df_1, "assessmentItemID", "elo_assessment")
@@ -270,6 +369,9 @@ def final_feature_engineering(df_1: pd.DataFrame, df_2: pd.DataFrame) -> pd.Data
     df = df_2.merge(df_user, how="left", on="userID")
     df = df.merge(df_assessment, how="left", on="assessmentItemID")
     df = df.merge(df_tag, how="left", on="KnowledgeTag")
+    df = df.merge(df_test, how="left", on="testId")
+    df = df.merge(df_cat, how="left", on="category_high")
+    df = df.merge(df_problem_num, how="left", on="problem_num")
     df = df.merge(
         df_elo_assessment,
         how="left",

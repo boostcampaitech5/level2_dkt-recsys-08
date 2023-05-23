@@ -30,29 +30,59 @@ def main(args):
         "assessmentItemID",
         "KnowledgeTag",
         "elapsed",
+        "elapsed_log",
         "category_high",
+        "problem_num",
+        "cum_answerRate_per_user",
+        "problem_correct_per_user",
+        "problem_solved_per_user",
         "timeDelta_userAverage",
         "timestep_1",
         "timestep_2",
         "timestep_3",
         "timestep_4",
         "timestep_5",
+        "hour",
+        "weekofyear",
     ]
-    FEATURE_USER = ["user_answer_mean", "user_answer_cnt", "user_time_mean"]
+    FEATURE_USER = [
+        "answerRate_per_user",
+        "answer_cnt_per_user",
+        "elapsed_time_median_per_user",
+        "assessment_solved_per_user",
+    ]
     FEATURE_ITEM = [
-        "item_answer_mean",
-        "item_answer_cnt",
-        "item_time_mean",
-        "wrong_users_mean_elapsed",
-        "correct_users_mean_elapsed",
+        "answerRate_per_item",
+        "answer_cnt_per_item",
+        "elapsed_time_median_per_item",
+        "wrong_users_median_elapsed",
+        "correct_users_median_elapsed",
     ]
-    FEATURE_TAG = ["tag_exposed", "tag_answer_rate"]
+    FEATURE_TAG = [
+        "tag_exposed",
+        "answerRate_per_tag",
+        "tag_elp",
+        "tag_elp_o",
+        "tag_elp_x",
+    ]
+    FEATURE_TEST = ["elapsed_median_per_test", "answerRate_per_test"]
+    FEATURE_CAT = ["elapsed_median_per_cat", "answerRate_per_cat"]
+    FEATURE_PROBLEM_NUM = [
+        "elapsed_median_per_problem_num",
+        "answerRate_per_problem_num",
+        "prb_elp",
+        "prb_elp_o",
+        "prb_elp_x",
+    ]
 
     FEATURE_ELO = ["elo_assessment", "elo_test", "elo_tag"]
 
     FEATURE += FEATURE_USER
     FEATURE += FEATURE_ITEM
     FEATURE += FEATURE_TAG
+    FEATURE += FEATURE_TEST
+    FEATURE += FEATURE_CAT
+    FEATURE += FEATURE_PROBLEM_NUM
     FEATURE += FEATURE_ELO
 
     ######################## DATA PREPROCESSING
