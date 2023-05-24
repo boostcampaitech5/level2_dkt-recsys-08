@@ -72,7 +72,7 @@ def main(args):
         "answerRate_per_problem_num",
     ]
 
-    # FEATURE_ELO = ["elo_assessment", "elo_test", "elo_tag"]
+    FEATURE_ELO = ["elo_assessment", "elo_test", "elo_tag"]
 
     FEATURE += FEATURE_USER
     FEATURE += FEATURE_ITEM
@@ -80,7 +80,7 @@ def main(args):
     FEATURE += FEATURE_TEST
     FEATURE += FEATURE_CAT
     FEATURE += FEATURE_PROBLEM_NUM
-    # FEATURE += FEATURE_ELO
+    FEATURE += FEATURE_ELO
 
     ######################## DATA PREPROCESSING
 
