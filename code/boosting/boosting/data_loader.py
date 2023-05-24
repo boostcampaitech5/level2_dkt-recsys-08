@@ -85,20 +85,18 @@ class Preprocess:
         return self.data
 
     def type_conversion(self) -> dict:
-        # CatBoost에 적용하기 위해선 문자열 데이터로 변환 필요.
-        # 카테고리형 feature
+        # 카테고리형 feature type 변환
         for state in ["train_x", "valid_x", "test"]:
             df = self.data[state]
             le = preprocessing.LabelEncoder()
             for feature in df.columns:
-                if df[feature].dtypes != "int":  # float, str type -> int로 전환
+                if df[feature].dtypes != "int" or df[feature].dtypes != "float":
                     df[feature] = le.fit_transform(df[feature])
-                df[feature] = df[feature].astype("category")
+                    # df[feature] = df[feature].astype("category")
             self.data[state] = df
         return self.data
 
     def preprocess(self) -> dict:
         data = self.apply_feature_engineering()
-        # xgboost와 lgbm에 대해서도 동일하게 적용
         data = self.type_conversion()
         return data
