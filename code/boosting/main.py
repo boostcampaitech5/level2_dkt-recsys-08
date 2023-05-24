@@ -30,12 +30,15 @@ def main(args):
         "assessmentItemID",
         "KnowledgeTag",
         "elapsed",
-        "elapsed_log",
         "category_high",
         "problem_num",
         "cum_answerRate_per_user",
+        "acc_elapsed_per_user",
         "problem_correct_per_user",
         "problem_solved_per_user",
+        "correct_answer_per_cat",
+        "acc_count_per_cat",
+        "acc_answerRate_per_cat",
         "timeDelta_userAverage",
         "timestep_1",
         "timestep_2",
@@ -44,6 +47,9 @@ def main(args):
         "timestep_5",
         "hour",
         "weekofyear",
+        "problem_correct_per_woy",
+        "problem_solved_per_woy",
+        "cum_answerRate_per_woy",
     ]
     FEATURE_USER = [
         "answerRate_per_user",
@@ -66,7 +72,7 @@ def main(args):
         "answerRate_per_problem_num",
     ]
 
-    FEATURE_ELO = ["elo_assessment", "elo_test", "elo_tag"]
+    # FEATURE_ELO = ["elo_assessment", "elo_test", "elo_tag"]
 
     FEATURE += FEATURE_USER
     FEATURE += FEATURE_ITEM
@@ -74,7 +80,7 @@ def main(args):
     FEATURE += FEATURE_TEST
     FEATURE += FEATURE_CAT
     FEATURE += FEATURE_PROBLEM_NUM
-    FEATURE += FEATURE_ELO
+    # FEATURE += FEATURE_ELO
 
     ######################## DATA PREPROCESSING
 
@@ -84,7 +90,7 @@ def main(args):
     print("Succesfully Preprocess Data")
 
     ######################## MODEL INIT
-
+    print("number of selected features:", len(FEATURE))
     model = boosting_model(args, FEATURE)
 
     ######################## TRAIN
