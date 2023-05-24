@@ -85,14 +85,13 @@ class Preprocess:
         return self.data
 
     def type_conversion(self) -> dict:
-        # 카테고리형 feature type 변환
+        # 카테고리형 feature
         for state in ["train_x", "valid_x", "test"]:
             df = self.data[state]
             le = preprocessing.LabelEncoder()
             for feature in df.columns:
-                if df[feature].dtypes != "int" or df[feature].dtypes != "float":
+                if df[feature].dtypes == "object" or df[feature].dtypes == "UInt32":
                     df[feature] = le.fit_transform(df[feature])
-                    # df[feature] = df[feature].astype("category")
             self.data[state] = df
         return self.data
 
