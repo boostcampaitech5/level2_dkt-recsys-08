@@ -32,7 +32,6 @@ def parse_args():
     parser.add_argument(
         "--learning_rate", default="0.001", type=float, help="learning rate"
     )
-    parser.add_argument("--iterations", default="100", type=int, help="iterations")
     parser.add_argument("--n_estimators", default="100", type=int, help="n_estimators")
     parser.add_argument("--max_depth", default="6", type=int, help="max_depth")
     parser.add_argument("--num_leaves", default="31", type=int, help="num_leaves")
