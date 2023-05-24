@@ -86,9 +86,16 @@ def basic_feature_engineering(df: pd.DataFrame):
         return cum_ans
 
     df["elapsed"] = elapsed_time(df)
-    df["elapsed_log"] = np.log1p(df["elapsed"])
     df["timeDelta_userAverage"] = timeDelta_from_user_average(df)
-    # 누적 푼 문제수, 누적 맞춘 문제 갯수
+    # 대분류 feature 추가
+    df["category_high"] = df["testId"].apply(lambda x: x[2])
+    # 문항 순서 Feature 추가
+    df["problem_num"] = df["assessmentItemID"].apply(lambda x: x[-3:])
+    # 시간 관련 요소 추가
+    df["hour"] = df["Timestamp"].dt.hour
+    df["weekofyear"] = df["Timestamp"].dt.isocalendar().week
+
+    # 유저별 누적 푼 문제수, 누적 맞춘 문제 갯수, 누적 정답률, 누적 푼 문제시간
     df["problem_correct_per_user"] = (
         df.loc[:, ["userID", "answerCode"]]
         .groupby("userID")
@@ -104,20 +111,48 @@ def basic_feature_engineering(df: pd.DataFrame):
         df["problem_correct_per_user"] / df["problem_solved_per_user"]
     )
 
+    df["acc_elapsed_per_user"] = (
+        df.loc[:, ["userID", "elapsed"]].groupby("userID").agg({"elapsed": "cumsum"})
+    )
+
+    # 대분류별 누적 풀린 횟수, 대분류별 누적 정답수, 대분류별 누적 정답률
+    df["correct_answer_per_cat"] = (
+        df.groupby(["userID", "category_high"])["answerCode"]
+        .transform(lambda x: x.cumsum().shift(1))
+        .fillna(0)
+    )
+    df["acc_count_per_cat"] = (
+        df.loc[:, ["category_high", "answerCode"]]
+        .groupby("category_high")
+        .agg({"answerCode": "cumcount"})
+    )
+    df["acc_answerRate_per_cat"] = (
+        df["correct_answer_per_cat"] / df["acc_count_per_cat"]
+    )
+
+    # week of year별 누적 풀린 횟수, 누적 정답수, 누적 정답률
+    # week of year
+    df["problem_correct_per_woy"] = (
+        df.loc[:, ["weekofyear", "answerCode"]]
+        .groupby("weekofyear")
+        .agg({"answerCode": "cumsum"})
+    )
+    df["problem_solved_per_woy"] = (
+        df.loc[:, ["weekofyear", "answerCode"]]
+        .groupby("weekofyear")
+        .agg({"answerCode": "cumcount"})
+        + 1
+    )
+    df["cum_answerRate_per_woy"] = (
+        df["problem_correct_per_woy"] / df["problem_solved_per_woy"]
+    )
+
     # 이 전에 정답을 맞췄는지로 시간적 요소 반영
     df["timestep_1"] = df.groupby("userID")["answerCode"].shift(1).fillna(1).astype(int)
     df["timestep_2"] = df.groupby("userID")["answerCode"].shift(2).fillna(1).astype(int)
     df["timestep_3"] = df.groupby("userID")["answerCode"].shift(3).fillna(1).astype(int)
     df["timestep_4"] = df.groupby("userID")["answerCode"].shift(4).fillna(1).astype(int)
     df["timestep_5"] = df.groupby("userID")["answerCode"].shift(5).fillna(1).astype(int)
-
-    # 대분류 feature 추가
-    df["category_high"] = df["testId"].apply(lambda x: x[2])
-    # 문항 순서 Feature 추가
-    df["problem_num"] = df["assessmentItemID"].apply(lambda x: x[-3:])
-    # 시간 관련 요소 추가
-    df["hour"] = df["Timestamp"].dt.hour
-    df["weekofyear"] = df["Timestamp"].dt.isocalendar().week
 
     return df
 
