@@ -33,10 +33,7 @@ def parse_args():
     parser.add_argument("--seed", default=42, type=int, help="seed")
     parser.add_argument("--device", default="cpu", type=str, help="cpu or gpu")
     parser.add_argument(
-        "--data_dir",
-        default="../data/",
-        type=str,
-        help="data directory",
+        "--data_dir", default="../data/", type=str, help="data directory"
     )
     parser.add_argument(
         "--asset_dir", default="asset/", type=str, help="data directory"
@@ -63,6 +60,9 @@ def parse_args():
     # Model(Transformer)
     parser.add_argument("--n_heads", default=2, type=int, help="number of heads")
     parser.add_argument("--mlp_dim", default=64, type=int, help="number of heads")
+    parser.add_argument(
+        "--emb_dim", default=16, type=int, help="embedding dimension size"
+    )
 
     # Model(LSTM, Transformer..)
     parser.add_argument(
@@ -73,7 +73,9 @@ def parse_args():
     parser.add_argument("--alpha", default=None, type=float, help="alpha")
 
     # Model(공통)
-    parser.add_argument("--activation", default="sigmoid", type=str, help="model type")
+    parser.add_argument(
+        "--activation_title", default="sigmoid", type=str, help="model type"
+    )
     parser.add_argument(
         "--hidden_dim", default=64, type=int, help="hidden dimension size"
     )
@@ -107,15 +109,43 @@ def parse_args():
     parser.add_argument("--num_workers", default=2, type=int, help="number of workers")
 
     # 중요
-    parser.add_argument("--dataset", default="DKTDataset", type=str, help="dataset")
     parser.add_argument(
-        "--model", default="TransformerEncoder", type=str, help="model type"
+        "--dataset_title", default="DKTDataset", type=str, help="dataset"
     )
     parser.add_argument(
-        "--data_loader", default="DKTDataLoader", type=str, help="data loader"
+        "--data_loader_title", default="DKTDataLoader", type=str, help="data loader"
     )
     parser.add_argument(
-        "--trainer", default="DKTTrainer", type=str, help="data trainer"
+        "--model_title", default="TransformerEncoder", type=str, help="model type"
+    )
+    parser.add_argument(
+        "--trainer_title", default="DKTTrainer", type=str, help="data trainer"
+    )
+
+    parser.add_argument(
+        "--cat_cols",
+        default=["beforeCorrect", "KnowledgeTag", "testId", "assessmentItemID"],
+        type=list,
+        help="categorical features",
+    )
+    parser.add_argument(
+        "--num_cols",
+        default=[
+            "mean_assessmentItemID_answerCode",
+            "mean_testId_answerCode",
+            "mean_KnowledgeTag_answerCode",
+            "mean_assessmentItemID_consumedTime",
+            "mean_testId_answerCode",
+            "mean_KnowledgeTag_answerCode",
+            "consumedTime",
+            "value_counts_assessmentItemID",
+            "value_counts_testId",
+        ],
+        type=list,
+        help="numerical features",
+    )
+    parser.add_argument(
+        "--tgt_col", default=["answerCode"], type=list, help="target feature"
     )
 
     args = parser.parse_args()

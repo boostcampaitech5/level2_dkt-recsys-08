@@ -15,15 +15,15 @@ def main(args):
     set_seeds(args.seed)
 
     logger.info("Preparing data ...")
-    args.data_loader = getattr(module_data_loader, args.data_loader)(args)
+    args.data_loader = getattr(module_data_loader, args.data_loader_title)(args)
     args.train_data, args.valid_data = args.data_loader.split_data(args)
 
     logger.info("Building Model ...")
     args.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    args.model = getattr(module_model, args.model)(args).to(args.device)
+    args.model = getattr(module_model, args.model_title)(args).to(args.device)
 
     logger.info("Start Training ...")
-    trainer = getattr(module_trainer, args.trainer)(args)
+    trainer = getattr(module_trainer, args.trainer_title)(args)
     trainer.run(args)
 
 
