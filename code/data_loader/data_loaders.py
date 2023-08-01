@@ -85,7 +85,7 @@ class FMDataLoader(BaseDataLoader):
         return dataset
 
 
-class LSTMDataLoader(BaseDataLoader):
+class DKTDataLoader(BaseDataLoader):
     def __init__(self, args, training=True):
         super().__init__()
         self.args = args
@@ -236,6 +236,52 @@ class DKTDataset(torch.utils.data.Dataset):
     def __len__(self) -> int:
         return len(self.data)
 
+
+class DKTDataset_split(torch.utils.data.Dataset):
+    def __init__(self, data: np.ndarray, args):
+        self.data = data
+        self.max_seq_len = args.max_seq_len
+
+    def __getitem__(self, index: int) -> dict:
+        row = self.data[index]
+
+        # Load from data
+        test, question, tag, correct = row[0], row[1], row[2], row[3]
+        data = {
+            "test": torch.tensor(test + 1, dtype=torch.int),
+            "question": torch.tensor(question + 1, dtype=torch.int),
+            "tag": torch.tensor(tag + 1, dtype=torch.int),
+            "correct": torch.tensor(correct, dtype=torch.int),
+        }
+
+        # Generate mask: max seq len을 고려하여서 이보다 길면 자르고 아닐 경우 그대로 냅둔다
+        seq_len = len(row[0])
+        if seq_len > self.max_seq_len:
+            for k, seq in data.items():
+                data[k] = seq[-self.max_seq_len:]
+            mask = torch.ones(self.max_seq_len, dtype=torch.int16)
+        else:
+            for k, seq in data.items():
+                # Pre-padding non-valid sequences
+                tmp = torch.zeros(self.max_seq_len)
+                tmp[self.max_seq_len - seq_len:] = data[k]
+                data[k] = tmp
+            mask = torch.zeros(self.max_seq_len, dtype=torch.int16)
+            mask[-seq_len:] = 1
+        data["mask"] = mask
+
+        # Generate interaction
+        interaction = data["correct"] + 1  # 패딩을 위해 correct값에 1을 더해준다.
+        interaction = interaction.roll(shifts=1)
+        interaction_mask = data["mask"].roll(shifts=1)
+        interaction_mask[0] = 0
+        interaction = (interaction * interaction_mask).to(torch.int64)
+        data["interaction"] = interaction
+        data = {k: v.int() for k, v in data.items()}
+        return data
+
+    def __len__(self) -> int:
+        return len(self.data)
 
 class GCNDataLoader:
     def __init__(self, args, training=True):
