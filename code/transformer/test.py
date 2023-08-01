@@ -12,26 +12,26 @@ def main(args):
     logger.info("Preparing data ...")
     args.shuffle = False
     args.split_ratio = 0.0
-    data_loader = getattr(module_data_loader, args.data_loader)(args, False)
+    data_loader = getattr(module_data_loader, args.data_loader_title)(args, False)
     test_data = data_loader.data
-    if args.dataset != "None":
-        dataset = getattr(module_data_loader, args.dataset)
+    if args.dataset_title != "None":
+        dataset = getattr(module_data_loader, args.dataset_title)
         test_data_loader = data_loader.get_loader(args, dataset, test_data, False)
 
     logger.info("Building Model ...")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = getattr(module_model, args.model)(args).to(device)
+    model = getattr(module_model, args.model_title)(args).to(device)
     save_path = os.path.join(args.save_dir, args.model_name)
     model.load_state_dict(torch.load(save_path)["state_dict"])
     model.eval()
 
     logger.info("Model Predict ...")
-    activation = getattr(torch, args.activation)
+    activation = getattr(torch, args.activation_title)
     total_outputs = []
     with torch.no_grad():
         for step, batch in enumerate(tqdm(test_data_loader)):
             batch = {k: v.to(device) for k, v in batch.items()}
-            output = model(**batch)
+            output = model(batch)
             output = activation(output[:, -1])
             total_outputs += list(output.cpu().detach().numpy())
     write_path = os.path.join(args.submit_dir, "submission.csv")

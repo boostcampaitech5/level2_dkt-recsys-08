@@ -15,10 +15,10 @@ import wandb
 logger = get_logger(logger_conf=logging_conf)
 
 
-class LSTMTrainer(BaseTrainer):
+class DKTTrainer(BaseTrainer):
     def __init__(self, args):
         super().__init__()
-        args.dataset = getattr(module_data_loader, args.dataset)
+        args.dataset = getattr(module_data_loader, args.dataset_title)
         args.train_loader = args.data_loader.get_loader(
             args, args.dataset, args.train_data, True
         )
@@ -31,7 +31,7 @@ class LSTMTrainer(BaseTrainer):
         ) * (args.n_epochs)
         args.warmup_steps = args.total_steps // 10
 
-        args.activation = getattr(torch, args.activation)
+        args.activation = getattr(torch, args.activation_title)
         args.criterion = getattr(module_loss, args.loss)
         args.lr_optimizer = get_optimizer(args)
         args.lr_scheduler = get_scheduler(args)
@@ -91,8 +91,8 @@ class LSTMTrainer(BaseTrainer):
         losses = []
         for step, batch in enumerate(args.train_loader):
             batch = {k: v.to(args.device) for k, v in batch.items()}
-            preds = args.model(**batch)
-            targets = batch["correct"].to(args.device)
+            preds = args.model(batch)
+            targets = batch["answerCode"].to(args.device)
 
             loss = self.compute_loss(args, targets, preds)
             self.update_params(args, loss)
@@ -126,8 +126,8 @@ class LSTMTrainer(BaseTrainer):
         with torch.no_grad():
             for step, batch in enumerate(args.valid_loader):
                 batch = {k: v.to(args.device) for k, v in batch.items()}
-                preds = args.model(**batch)
-                targets = batch["correct"].to(args.device)
+                preds = args.model(batch)
+                targets = batch["answerCode"].to(args.device)
 
                 # predictions
                 preds = args.activation(preds[:, -1])
