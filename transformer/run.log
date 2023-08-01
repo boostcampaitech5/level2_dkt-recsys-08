@@ -1,0 +1,1287 @@
+2023-05-29 22:43:43,190 - root - INFO - Preparing data ...
+2023-05-29 22:44:39,560 - root - INFO - Preparing data ...
+2023-05-29 22:46:09,317 - root - INFO - Preparing data ...
+2023-05-29 22:47:55,199 - root - INFO - Preparing data ...
+2023-05-29 22:48:48,841 - root - INFO - Building Model ...
+2023-05-29 22:49:16,459 - root - INFO - Preparing data ...
+2023-05-29 22:50:09,506 - root - INFO - Building Model ...
+2023-05-29 22:50:39,867 - root - INFO - Preparing data ...
+2023-05-29 22:51:32,763 - root - INFO - Building Model ...
+2023-05-29 22:51:32,771 - root - INFO - Start Training ...
+2023-05-29 22:52:17,085 - root - INFO - Preparing data ...
+2023-05-29 22:53:10,103 - root - INFO - Building Model ...
+2023-05-29 22:53:10,108 - root - INFO - Start Training ...
+2023-05-29 22:53:10,109 - root - INFO - Start Training: Epoch 1
+2023-05-29 22:54:01,303 - root - INFO - Preparing data ...
+2023-05-29 22:54:53,440 - root - INFO - Building Model ...
+2023-05-29 22:54:53,445 - root - INFO - Start Training ...
+2023-05-29 22:54:53,445 - root - INFO - Start Training: Epoch 1
+2023-05-29 22:55:06,752 - root - INFO - Training steps: 0 Loss: 0.7037
+2023-05-29 22:55:15,987 - root - INFO - Training steps: 50 Loss: 0.6121
+2023-05-29 22:55:27,317 - root - INFO - Training steps: 100 Loss: 0.5745
+2023-05-29 22:55:37,414 - root - INFO - Training steps: 150 Loss: 0.5782
+2023-05-29 22:55:46,848 - root - INFO - Training steps: 200 Loss: 0.5851
+2023-05-29 22:55:55,907 - root - INFO - Training steps: 250 Loss: 0.5420
+2023-05-29 22:56:04,242 - root - INFO - Training steps: 300 Loss: 0.5037
+2023-05-29 22:56:13,230 - root - INFO - Training steps: 350 Loss: 0.5545
+2023-05-29 22:56:22,986 - root - INFO - Training steps: 400 Loss: 0.5868
+2023-05-29 22:56:33,074 - root - INFO - Training steps: 450 Loss: 0.4827
+2023-05-29 22:56:48,236 - root - INFO - Training steps: 500 Loss: 0.4241
+2023-05-29 22:56:58,396 - root - INFO - Training steps: 550 Loss: 0.4750
+2023-05-29 22:57:08,045 - root - INFO - Training steps: 600 Loss: 0.5428
+2023-05-29 22:57:18,246 - root - INFO - Training steps: 650 Loss: 0.5077
+2023-05-29 22:57:28,273 - root - INFO - Training steps: 700 Loss: 0.5100
+2023-05-29 22:57:40,144 - root - INFO - Training steps: 750 Loss: 0.4931
+2023-05-29 22:57:50,658 - root - INFO - Training steps: 800 Loss: 0.5731
+2023-05-29 22:58:00,096 - root - INFO - Training steps: 850 Loss: 0.4085
+2023-05-29 22:58:10,006 - root - INFO - Training steps: 900 Loss: 0.5127
+2023-05-29 22:58:19,224 - root - INFO - Training steps: 950 Loss: 0.5139
+2023-05-29 22:58:29,519 - root - INFO - Training steps: 1000 Loss: 0.5230
+2023-05-29 22:58:39,488 - root - INFO - Training steps: 1050 Loss: 0.6776
+2023-05-29 22:58:48,562 - root - INFO - Training steps: 1100 Loss: 0.4955
+2023-05-29 22:58:59,269 - root - INFO - Training steps: 1150 Loss: 0.5184
+2023-05-29 22:59:10,238 - root - INFO - Training steps: 1200 Loss: 0.5276
+2023-05-29 22:59:21,740 - root - INFO - Training steps: 1250 Loss: 0.4136
+2023-05-29 22:59:32,145 - root - INFO - Training steps: 1300 Loss: 0.5123
+2023-05-29 22:59:45,299 - root - INFO - Training steps: 1350 Loss: 0.5417
+2023-05-29 23:00:01,992 - root - INFO - Training steps: 1400 Loss: 0.4535
+2023-05-29 23:00:10,629 - root - INFO - Training steps: 1450 Loss: 0.4962
+2023-05-29 23:00:22,670 - root - INFO - Training steps: 1500 Loss: 0.4978
+2023-05-29 23:00:56,477 - root - INFO - Training steps: 1550 Loss: 0.5114
+2023-05-29 23:01:07,592 - root - INFO - Training steps: 1600 Loss: 0.4272
+2023-05-29 23:01:21,001 - root - INFO - TRAIN AUC : 0.7778 ACC : 0.7441
+2023-05-29 23:02:15,006 - root - INFO - VALID AUC : 0.8067 ACC : 0.7629
+2023-05-29 23:02:15,008 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-29 23:02:15,015 - root - INFO - Start Training: Epoch 2
+2023-05-29 23:02:28,516 - root - INFO - Training steps: 0 Loss: 0.4889
+2023-05-29 23:02:37,081 - root - INFO - Training steps: 50 Loss: 0.4876
+2023-05-29 23:02:46,704 - root - INFO - Training steps: 100 Loss: 0.6736
+2023-05-29 23:02:56,176 - root - INFO - Training steps: 150 Loss: 0.4264
+2023-05-29 23:03:06,112 - root - INFO - Training steps: 200 Loss: 0.5573
+2023-05-29 23:03:17,048 - root - INFO - Training steps: 250 Loss: 0.4909
+2023-05-29 23:03:28,692 - root - INFO - Training steps: 300 Loss: 0.5393
+2023-05-29 23:03:39,302 - root - INFO - Training steps: 350 Loss: 0.5653
+2023-05-29 23:03:50,793 - root - INFO - Training steps: 400 Loss: 0.6465
+2023-05-29 23:04:01,723 - root - INFO - Training steps: 450 Loss: 0.4125
+2023-05-29 23:04:14,452 - root - INFO - Training steps: 500 Loss: 0.4456
+2023-05-29 23:04:26,037 - root - INFO - Training steps: 550 Loss: 0.4620
+2023-05-29 23:04:35,627 - root - INFO - Training steps: 600 Loss: 0.5038
+2023-05-29 23:04:46,028 - root - INFO - Training steps: 650 Loss: 0.4844
+2023-05-29 23:04:58,852 - root - INFO - Training steps: 700 Loss: 0.4850
+2023-05-29 23:05:08,291 - root - INFO - Training steps: 750 Loss: 0.5411
+2023-05-29 23:05:18,622 - root - INFO - Training steps: 800 Loss: 0.5204
+2023-05-29 23:05:29,910 - root - INFO - Training steps: 850 Loss: 0.4318
+2023-05-29 23:05:38,931 - root - INFO - Training steps: 900 Loss: 0.4473
+2023-05-29 23:05:48,283 - root - INFO - Training steps: 950 Loss: 0.5350
+2023-05-29 23:05:58,171 - root - INFO - Training steps: 1000 Loss: 0.4568
+2023-05-29 23:06:07,918 - root - INFO - Training steps: 1050 Loss: 0.4143
+2023-05-29 23:06:18,496 - root - INFO - Training steps: 1100 Loss: 0.4853
+2023-05-29 23:06:28,488 - root - INFO - Training steps: 1150 Loss: 0.5891
+2023-05-29 23:06:39,671 - root - INFO - Training steps: 1200 Loss: 0.4610
+2023-05-29 23:06:49,445 - root - INFO - Training steps: 1250 Loss: 0.6466
+2023-05-29 23:07:00,035 - root - INFO - Training steps: 1300 Loss: 0.5596
+2023-05-29 23:07:11,751 - root - INFO - Training steps: 1350 Loss: 0.5694
+2023-05-29 23:07:22,776 - root - INFO - Training steps: 1400 Loss: 0.4991
+2023-05-29 23:07:33,739 - root - INFO - Training steps: 1450 Loss: 0.4556
+2023-05-29 23:07:43,745 - root - INFO - Training steps: 1500 Loss: 0.5250
+2023-05-29 23:07:53,895 - root - INFO - Training steps: 1550 Loss: 0.4940
+2023-05-29 23:08:04,872 - root - INFO - Training steps: 1600 Loss: 0.4508
+2023-05-29 23:08:19,274 - root - INFO - TRAIN AUC : 0.8138 ACC : 0.7663
+2023-05-29 23:09:07,857 - root - INFO - VALID AUC : 0.8145 ACC : 0.7635
+2023-05-29 23:09:07,859 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-29 23:09:07,864 - root - INFO - Start Training: Epoch 3
+2023-05-29 23:09:21,318 - root - INFO - Training steps: 0 Loss: 0.5176
+2023-05-29 23:09:30,655 - root - INFO - Training steps: 50 Loss: 0.5915
+2023-05-29 23:09:40,753 - root - INFO - Training steps: 100 Loss: 0.4570
+2023-05-29 23:09:49,785 - root - INFO - Training steps: 150 Loss: 0.4561
+2023-05-29 23:09:58,764 - root - INFO - Training steps: 200 Loss: 0.6083
+2023-05-29 23:10:08,971 - root - INFO - Training steps: 250 Loss: 0.4840
+2023-05-29 23:10:18,053 - root - INFO - Training steps: 300 Loss: 0.4225
+2023-05-29 23:10:27,273 - root - INFO - Training steps: 350 Loss: 0.4839
+2023-05-29 23:10:35,857 - root - INFO - Training steps: 400 Loss: 0.4531
+2023-05-29 23:10:44,946 - root - INFO - Training steps: 450 Loss: 0.4671
+2023-05-29 23:10:54,972 - root - INFO - Training steps: 500 Loss: 0.4941
+2023-05-29 23:11:04,234 - root - INFO - Training steps: 550 Loss: 0.4572
+2023-05-29 23:11:14,317 - root - INFO - Training steps: 600 Loss: 0.4289
+2023-05-29 23:11:24,215 - root - INFO - Training steps: 650 Loss: 0.5305
+2023-05-29 23:11:33,465 - root - INFO - Training steps: 700 Loss: 0.4218
+2023-05-29 23:11:42,429 - root - INFO - Training steps: 750 Loss: 0.5224
+2023-05-29 23:11:51,727 - root - INFO - Training steps: 800 Loss: 0.5371
+2023-05-29 23:12:00,101 - root - INFO - Training steps: 850 Loss: 0.6349
+2023-05-29 23:12:10,116 - root - INFO - Training steps: 900 Loss: 0.5355
+2023-05-29 23:12:18,081 - root - INFO - Training steps: 950 Loss: 0.4680
+2023-05-29 23:12:26,730 - root - INFO - Training steps: 1000 Loss: 0.4388
+2023-05-29 23:12:35,664 - root - INFO - Training steps: 1050 Loss: 0.5243
+2023-05-29 23:12:45,773 - root - INFO - Training steps: 1100 Loss: 0.5259
+2023-05-29 23:12:56,841 - root - INFO - Training steps: 1150 Loss: 0.6037
+2023-05-29 23:13:05,824 - root - INFO - Training steps: 1200 Loss: 0.5589
+2023-05-29 23:13:14,274 - root - INFO - Training steps: 1250 Loss: 0.5790
+2023-05-29 23:13:25,384 - root - INFO - Training steps: 1300 Loss: 0.3960
+2023-05-29 23:13:36,667 - root - INFO - Training steps: 1350 Loss: 0.3705
+2023-05-29 23:13:45,475 - root - INFO - Training steps: 1400 Loss: 0.5505
+2023-05-29 23:13:55,489 - root - INFO - Training steps: 1450 Loss: 0.4964
+2023-05-29 23:14:05,248 - root - INFO - Training steps: 1500 Loss: 0.4718
+2023-05-29 23:14:15,374 - root - INFO - Training steps: 1550 Loss: 0.4385
+2023-05-29 23:14:25,355 - root - INFO - Training steps: 1600 Loss: 0.5193
+2023-05-29 23:14:40,446 - root - INFO - TRAIN AUC : 0.8187 ACC : 0.7686
+2023-05-29 23:15:28,831 - root - INFO - VALID AUC : 0.8179 ACC : 0.7694
+2023-05-29 23:15:28,833 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-29 23:15:28,837 - root - INFO - Start Training: Epoch 4
+2023-05-29 23:15:42,172 - root - INFO - Training steps: 0 Loss: 0.5682
+2023-05-29 23:15:49,648 - root - INFO - Training steps: 50 Loss: 0.6217
+2023-05-29 23:15:59,081 - root - INFO - Training steps: 100 Loss: 0.4563
+2023-05-29 23:16:07,698 - root - INFO - Training steps: 150 Loss: 0.3850
+2023-05-29 23:16:16,872 - root - INFO - Training steps: 200 Loss: 0.4911
+2023-05-29 23:16:30,214 - root - INFO - Training steps: 250 Loss: 0.5181
+2023-05-29 23:16:40,023 - root - INFO - Training steps: 300 Loss: 0.4836
+2023-05-29 23:16:51,489 - root - INFO - Training steps: 350 Loss: 0.5503
+2023-05-29 23:17:01,433 - root - INFO - Training steps: 400 Loss: 0.5685
+2023-05-29 23:17:14,157 - root - INFO - Training steps: 450 Loss: 0.5301
+2023-05-29 23:17:25,548 - root - INFO - Training steps: 500 Loss: 0.4503
+2023-05-29 23:17:36,401 - root - INFO - Training steps: 550 Loss: 0.5203
+2023-05-29 23:17:45,046 - root - INFO - Training steps: 600 Loss: 0.4251
+2023-05-29 23:17:54,495 - root - INFO - Training steps: 650 Loss: 0.5732
+2023-05-29 23:18:02,905 - root - INFO - Training steps: 700 Loss: 0.5570
+2023-05-29 23:18:11,349 - root - INFO - Training steps: 750 Loss: 0.6359
+2023-05-29 23:18:22,351 - root - INFO - Training steps: 800 Loss: 0.5300
+2023-05-29 23:18:30,483 - root - INFO - Training steps: 850 Loss: 0.3595
+2023-05-29 23:18:41,334 - root - INFO - Training steps: 900 Loss: 0.5515
+2023-05-29 23:18:52,485 - root - INFO - Preparing data ...
+2023-05-29 23:19:04,104 - root - INFO - Building Model ...
+2023-05-29 23:19:04,117 - root - INFO - Model Predict ...
+2023-05-29 23:19:18,293 - root - INFO - Successfully saved submission as submit/submission.csv
+2023-05-29 23:58:43,498 - root - INFO - Preparing data ...
+2023-05-29 23:59:36,019 - root - INFO - Building Model ...
+2023-05-29 23:59:36,073 - root - INFO - Start Training ...
+2023-05-29 23:59:36,073 - root - INFO - Start Training: Epoch 1
+2023-05-30 00:01:31,624 - root - INFO - Preparing data ...
+2023-05-30 00:02:24,630 - root - INFO - Building Model ...
+2023-05-30 00:02:47,762 - root - INFO - Preparing data ...
+2023-05-30 00:03:40,558 - root - INFO - Building Model ...
+2023-05-30 00:03:40,583 - root - INFO - Start Training ...
+2023-05-30 00:03:40,583 - root - INFO - Start Training: Epoch 1
+2023-05-30 00:03:58,438 - root - INFO - Training steps: 0 Loss: 0.7066
+2023-05-30 00:04:00,470 - root - INFO - Training steps: 50 Loss: 0.6103
+2023-05-30 00:04:02,419 - root - INFO - Training steps: 100 Loss: 0.5701
+2023-05-30 00:04:04,341 - root - INFO - Training steps: 150 Loss: 0.5787
+2023-05-30 00:04:06,265 - root - INFO - Training steps: 200 Loss: 0.5910
+2023-05-30 00:04:08,183 - root - INFO - Training steps: 250 Loss: 0.5475
+2023-05-30 00:04:10,098 - root - INFO - Training steps: 300 Loss: 0.5041
+2023-05-30 00:04:12,093 - root - INFO - Training steps: 350 Loss: 0.5730
+2023-05-30 00:04:14,026 - root - INFO - Training steps: 400 Loss: 0.5822
+2023-05-30 00:04:15,956 - root - INFO - Training steps: 450 Loss: 0.4785
+2023-05-30 00:04:17,866 - root - INFO - Training steps: 500 Loss: 0.4210
+2023-05-30 00:04:19,787 - root - INFO - Training steps: 550 Loss: 0.4729
+2023-05-30 00:04:21,694 - root - INFO - Training steps: 600 Loss: 0.5470
+2023-05-30 00:04:23,645 - root - INFO - Training steps: 650 Loss: 0.4926
+2023-05-30 00:04:25,924 - root - INFO - Training steps: 700 Loss: 0.4983
+2023-05-30 00:04:27,858 - root - INFO - Training steps: 750 Loss: 0.4920
+2023-05-30 00:04:29,832 - root - INFO - Training steps: 800 Loss: 0.5905
+2023-05-30 00:04:31,832 - root - INFO - Training steps: 850 Loss: 0.4144
+2023-05-30 00:04:33,793 - root - INFO - Training steps: 900 Loss: 0.5099
+2023-05-30 00:04:35,720 - root - INFO - Training steps: 950 Loss: 0.5154
+2023-05-30 00:04:37,984 - root - INFO - Training steps: 1000 Loss: 0.5308
+2023-05-30 00:04:40,328 - root - INFO - Training steps: 1050 Loss: 0.6850
+2023-05-30 00:04:42,554 - root - INFO - Training steps: 1100 Loss: 0.5003
+2023-05-30 00:04:44,860 - root - INFO - Training steps: 1150 Loss: 0.5288
+2023-05-30 00:04:46,845 - root - INFO - Training steps: 1200 Loss: 0.5219
+2023-05-30 00:04:48,794 - root - INFO - Training steps: 1250 Loss: 0.4136
+2023-05-30 00:04:51,104 - root - INFO - Training steps: 1300 Loss: 0.5333
+2023-05-30 00:04:53,282 - root - INFO - Training steps: 1350 Loss: 0.5438
+2023-05-30 00:04:55,198 - root - INFO - Training steps: 1400 Loss: 0.4617
+2023-05-30 00:04:57,119 - root - INFO - Training steps: 1450 Loss: 0.4952
+2023-05-30 00:04:59,051 - root - INFO - Training steps: 1500 Loss: 0.5012
+2023-05-30 00:05:00,966 - root - INFO - Training steps: 1550 Loss: 0.5242
+2023-05-30 00:05:02,913 - root - INFO - Training steps: 1600 Loss: 0.4135
+2023-05-30 00:05:15,088 - root - INFO - TRAIN AUC : 0.7779 ACC : 0.7431
+2023-05-30 00:05:36,013 - root - INFO - VALID AUC : 0.8067 ACC : 0.7631
+2023-05-30 00:05:36,014 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:05:36,025 - root - INFO - Start Training: Epoch 2
+2023-05-30 00:05:49,621 - root - INFO - Training steps: 0 Loss: 0.4413
+2023-05-30 00:05:51,683 - root - INFO - Training steps: 50 Loss: 0.4963
+2023-05-30 00:05:53,628 - root - INFO - Training steps: 100 Loss: 0.5315
+2023-05-30 00:05:55,558 - root - INFO - Training steps: 150 Loss: 0.4593
+2023-05-30 00:05:57,490 - root - INFO - Training steps: 200 Loss: 0.5134
+2023-05-30 00:05:59,416 - root - INFO - Training steps: 250 Loss: 0.5096
+2023-05-30 00:06:01,346 - root - INFO - Training steps: 300 Loss: 0.5000
+2023-05-30 00:06:03,275 - root - INFO - Training steps: 350 Loss: 0.4784
+2023-05-30 00:06:05,245 - root - INFO - Training steps: 400 Loss: 0.4017
+2023-05-30 00:06:07,173 - root - INFO - Training steps: 450 Loss: 0.4795
+2023-05-30 00:06:09,093 - root - INFO - Training steps: 500 Loss: 0.5050
+2023-05-30 00:06:11,028 - root - INFO - Training steps: 550 Loss: 0.4802
+2023-05-30 00:06:12,954 - root - INFO - Training steps: 600 Loss: 0.5746
+2023-05-30 00:06:14,878 - root - INFO - Training steps: 650 Loss: 0.5281
+2023-05-30 00:06:16,799 - root - INFO - Training steps: 700 Loss: 0.5088
+2023-05-30 00:06:18,730 - root - INFO - Training steps: 750 Loss: 0.4848
+2023-05-30 00:06:20,680 - root - INFO - Training steps: 800 Loss: 0.4718
+2023-05-30 00:06:22,699 - root - INFO - Training steps: 850 Loss: 0.5750
+2023-05-30 00:06:25,098 - root - INFO - Training steps: 900 Loss: 0.4971
+2023-05-30 00:06:27,337 - root - INFO - Training steps: 950 Loss: 0.3930
+2023-05-30 00:06:29,544 - root - INFO - Training steps: 1000 Loss: 0.5381
+2023-05-30 00:06:31,841 - root - INFO - Training steps: 1050 Loss: 0.4976
+2023-05-30 00:06:33,822 - root - INFO - Training steps: 1100 Loss: 0.5692
+2023-05-30 00:06:35,764 - root - INFO - Training steps: 1150 Loss: 0.5383
+2023-05-30 00:06:37,895 - root - INFO - Training steps: 1200 Loss: 0.6053
+2023-05-30 00:06:39,859 - root - INFO - Training steps: 1250 Loss: 0.4419
+2023-05-30 00:06:41,841 - root - INFO - Training steps: 1300 Loss: 0.4479
+2023-05-30 00:06:43,781 - root - INFO - Training steps: 1350 Loss: 0.5019
+2023-05-30 00:06:45,717 - root - INFO - Training steps: 1400 Loss: 0.5048
+2023-05-30 00:06:47,703 - root - INFO - Training steps: 1450 Loss: 0.5253
+2023-05-30 00:06:49,646 - root - INFO - Training steps: 1500 Loss: 0.5570
+2023-05-30 00:06:51,588 - root - INFO - Training steps: 1550 Loss: 0.5372
+2023-05-30 00:06:54,491 - root - INFO - Training steps: 1600 Loss: 0.6266
+2023-05-30 00:07:06,073 - root - INFO - TRAIN AUC : 0.8138 ACC : 0.7669
+2023-05-30 00:07:27,823 - root - INFO - VALID AUC : 0.8145 ACC : 0.7673
+2023-05-30 00:07:27,823 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:07:27,837 - root - INFO - Start Training: Epoch 3
+2023-05-30 00:07:41,839 - root - INFO - Training steps: 0 Loss: 0.4878
+2023-05-30 00:07:43,944 - root - INFO - Training steps: 50 Loss: 0.5455
+2023-05-30 00:07:45,919 - root - INFO - Training steps: 100 Loss: 0.4735
+2023-05-30 00:07:47,894 - root - INFO - Training steps: 150 Loss: 0.5183
+2023-05-30 00:07:49,878 - root - INFO - Training steps: 200 Loss: 0.3669
+2023-05-30 00:07:52,074 - root - INFO - Training steps: 250 Loss: 0.6354
+2023-05-30 00:07:54,483 - root - INFO - Training steps: 300 Loss: 0.5083
+2023-05-30 00:07:56,500 - root - INFO - Training steps: 350 Loss: 0.4776
+2023-05-30 00:07:58,515 - root - INFO - Training steps: 400 Loss: 0.4665
+2023-05-30 00:08:00,518 - root - INFO - Training steps: 450 Loss: 0.5448
+2023-05-30 00:08:02,550 - root - INFO - Training steps: 500 Loss: 0.5191
+2023-05-30 00:08:04,588 - root - INFO - Training steps: 550 Loss: 0.4803
+2023-05-30 00:08:06,605 - root - INFO - Training steps: 600 Loss: 0.4611
+2023-05-30 00:08:08,649 - root - INFO - Training steps: 650 Loss: 0.4789
+2023-05-30 00:08:10,680 - root - INFO - Training steps: 700 Loss: 0.4140
+2023-05-30 00:08:12,710 - root - INFO - Training steps: 750 Loss: 0.5504
+2023-05-30 00:08:14,682 - root - INFO - Training steps: 800 Loss: 0.4421
+2023-05-30 00:08:16,627 - root - INFO - Training steps: 850 Loss: 0.5974
+2023-05-30 00:08:18,605 - root - INFO - Training steps: 900 Loss: 0.3662
+2023-05-30 00:08:20,569 - root - INFO - Training steps: 950 Loss: 0.4571
+2023-05-30 00:08:22,546 - root - INFO - Training steps: 1000 Loss: 0.5555
+2023-05-30 00:08:24,532 - root - INFO - Training steps: 1050 Loss: 0.4948
+2023-05-30 00:08:26,486 - root - INFO - Training steps: 1100 Loss: 0.4487
+2023-05-30 00:08:28,441 - root - INFO - Training steps: 1150 Loss: 0.4567
+2023-05-30 00:08:30,405 - root - INFO - Training steps: 1200 Loss: 0.5597
+2023-05-30 00:08:32,382 - root - INFO - Training steps: 1250 Loss: 0.4862
+2023-05-30 00:08:34,330 - root - INFO - Training steps: 1300 Loss: 0.5037
+2023-05-30 00:08:36,329 - root - INFO - Training steps: 1350 Loss: 0.4676
+2023-05-30 00:08:38,374 - root - INFO - Training steps: 1400 Loss: 0.4264
+2023-05-30 00:08:40,340 - root - INFO - Training steps: 1450 Loss: 0.5274
+2023-05-30 00:08:42,297 - root - INFO - Training steps: 1500 Loss: 0.6021
+2023-05-30 00:08:44,254 - root - INFO - Training steps: 1550 Loss: 0.3952
+2023-05-30 00:08:46,237 - root - INFO - Training steps: 1600 Loss: 0.5213
+2023-05-30 00:08:57,397 - root - INFO - TRAIN AUC : 0.8184 ACC : 0.7680
+2023-05-30 00:09:18,043 - root - INFO - VALID AUC : 0.8177 ACC : 0.7691
+2023-05-30 00:09:18,045 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:09:18,058 - root - INFO - Start Training: Epoch 4
+2023-05-30 00:09:31,217 - root - INFO - Training steps: 0 Loss: 0.4946
+2023-05-30 00:09:33,342 - root - INFO - Training steps: 50 Loss: 0.5019
+2023-05-30 00:09:35,344 - root - INFO - Training steps: 100 Loss: 0.4597
+2023-05-30 00:09:37,350 - root - INFO - Training steps: 150 Loss: 0.6157
+2023-05-30 00:09:39,457 - root - INFO - Training steps: 200 Loss: 0.4851
+2023-05-30 00:09:41,486 - root - INFO - Training steps: 250 Loss: 0.6081
+2023-05-30 00:09:43,507 - root - INFO - Training steps: 300 Loss: 0.4012
+2023-05-30 00:09:45,551 - root - INFO - Training steps: 350 Loss: 0.5211
+2023-05-30 00:09:47,590 - root - INFO - Training steps: 400 Loss: 0.4462
+2023-05-30 00:09:49,631 - root - INFO - Training steps: 450 Loss: 0.4063
+2023-05-30 00:09:51,665 - root - INFO - Training steps: 500 Loss: 0.5393
+2023-05-30 00:09:53,727 - root - INFO - Training steps: 550 Loss: 0.5328
+2023-05-30 00:09:55,776 - root - INFO - Training steps: 600 Loss: 0.5237
+2023-05-30 00:09:57,838 - root - INFO - Training steps: 650 Loss: 0.4901
+2023-05-30 00:09:59,888 - root - INFO - Training steps: 700 Loss: 0.4923
+2023-05-30 00:10:01,937 - root - INFO - Training steps: 750 Loss: 0.5083
+2023-05-30 00:10:03,905 - root - INFO - Training steps: 800 Loss: 0.5189
+2023-05-30 00:10:05,863 - root - INFO - Training steps: 850 Loss: 0.4425
+2023-05-30 00:10:07,807 - root - INFO - Training steps: 900 Loss: 0.5127
+2023-05-30 00:10:09,785 - root - INFO - Training steps: 950 Loss: 0.5036
+2023-05-30 00:10:11,758 - root - INFO - Training steps: 1000 Loss: 0.4392
+2023-05-30 00:10:13,728 - root - INFO - Training steps: 1050 Loss: 0.3809
+2023-05-30 00:10:15,728 - root - INFO - Training steps: 1100 Loss: 0.5621
+2023-05-30 00:10:17,868 - root - INFO - Training steps: 1150 Loss: 0.5389
+2023-05-30 00:10:20,043 - root - INFO - Training steps: 1200 Loss: 0.5087
+2023-05-30 00:10:22,113 - root - INFO - Training steps: 1250 Loss: 0.4360
+2023-05-30 00:10:24,137 - root - INFO - Training steps: 1300 Loss: 0.3710
+2023-05-30 00:10:26,097 - root - INFO - Training steps: 1350 Loss: 0.5665
+2023-05-30 00:10:28,042 - root - INFO - Training steps: 1400 Loss: 0.5851
+2023-05-30 00:10:30,001 - root - INFO - Training steps: 1450 Loss: 0.5444
+2023-05-30 00:10:32,007 - root - INFO - Training steps: 1500 Loss: 0.3872
+2023-05-30 00:10:33,955 - root - INFO - Training steps: 1550 Loss: 0.6813
+2023-05-30 00:10:35,913 - root - INFO - Training steps: 1600 Loss: 0.5335
+2023-05-30 00:10:47,056 - root - INFO - TRAIN AUC : 0.8205 ACC : 0.7708
+2023-05-30 00:11:07,881 - root - INFO - VALID AUC : 0.8193 ACC : 0.7702
+2023-05-30 00:11:07,882 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:11:07,896 - root - INFO - Start Training: Epoch 5
+2023-05-30 00:11:21,873 - root - INFO - Training steps: 0 Loss: 0.4236
+2023-05-30 00:11:24,019 - root - INFO - Training steps: 50 Loss: 0.4760
+2023-05-30 00:11:25,997 - root - INFO - Training steps: 100 Loss: 0.4357
+2023-05-30 00:11:27,955 - root - INFO - Training steps: 150 Loss: 0.5889
+2023-05-30 00:11:30,095 - root - INFO - Training steps: 200 Loss: 0.4433
+2023-05-30 00:11:32,057 - root - INFO - Training steps: 250 Loss: 0.4405
+2023-05-30 00:11:34,057 - root - INFO - Training steps: 300 Loss: 0.4977
+2023-05-30 00:11:36,055 - root - INFO - Training steps: 350 Loss: 0.5652
+2023-05-30 00:11:38,050 - root - INFO - Training steps: 400 Loss: 0.4895
+2023-05-30 00:11:40,056 - root - INFO - Training steps: 450 Loss: 0.5254
+2023-05-30 00:11:42,105 - root - INFO - Training steps: 500 Loss: 0.4680
+2023-05-30 00:11:44,125 - root - INFO - Training steps: 550 Loss: 0.4732
+2023-05-30 00:11:46,144 - root - INFO - Training steps: 600 Loss: 0.3806
+2023-05-30 00:11:48,162 - root - INFO - Training steps: 650 Loss: 0.4704
+2023-05-30 00:11:50,234 - root - INFO - Training steps: 700 Loss: 0.4096
+2023-05-30 00:11:52,292 - root - INFO - Training steps: 750 Loss: 0.4020
+2023-05-30 00:11:54,345 - root - INFO - Training steps: 800 Loss: 0.4580
+2023-05-30 00:11:56,397 - root - INFO - Training steps: 850 Loss: 0.6038
+2023-05-30 00:11:58,413 - root - INFO - Training steps: 900 Loss: 0.6149
+2023-05-30 00:12:00,414 - root - INFO - Training steps: 950 Loss: 0.4599
+2023-05-30 00:12:02,402 - root - INFO - Training steps: 1000 Loss: 0.5195
+2023-05-30 00:12:04,395 - root - INFO - Training steps: 1050 Loss: 0.5186
+2023-05-30 00:12:06,404 - root - INFO - Training steps: 1100 Loss: 0.4829
+2023-05-30 00:12:08,393 - root - INFO - Training steps: 1150 Loss: 0.4553
+2023-05-30 00:12:10,381 - root - INFO - Training steps: 1200 Loss: 0.5567
+2023-05-30 00:12:12,362 - root - INFO - Training steps: 1250 Loss: 0.5359
+2023-05-30 00:12:14,320 - root - INFO - Training steps: 1300 Loss: 0.4934
+2023-05-30 00:12:16,278 - root - INFO - Training steps: 1350 Loss: 0.5574
+2023-05-30 00:12:18,239 - root - INFO - Training steps: 1400 Loss: 0.3630
+2023-05-30 00:12:20,180 - root - INFO - Training steps: 1450 Loss: 0.4262
+2023-05-30 00:12:22,119 - root - INFO - Training steps: 1500 Loss: 0.5710
+2023-05-30 00:12:24,083 - root - INFO - Training steps: 1550 Loss: 0.4227
+2023-05-30 00:12:26,084 - root - INFO - Training steps: 1600 Loss: 0.5051
+2023-05-30 00:12:37,232 - root - INFO - TRAIN AUC : 0.8216 ACC : 0.7708
+2023-05-30 00:12:57,704 - root - INFO - VALID AUC : 0.8191 ACC : 0.7685
+2023-05-30 00:12:57,705 - root - INFO - Start Training: Epoch 6
+2023-05-30 00:13:11,364 - root - INFO - Training steps: 0 Loss: 0.4286
+2023-05-30 00:13:13,883 - root - INFO - Training steps: 50 Loss: 0.4909
+2023-05-30 00:13:16,051 - root - INFO - Training steps: 100 Loss: 0.3939
+2023-05-30 00:13:18,222 - root - INFO - Training steps: 150 Loss: 0.4815
+2023-05-30 00:13:20,381 - root - INFO - Training steps: 200 Loss: 0.4158
+2023-05-30 00:13:22,515 - root - INFO - Training steps: 250 Loss: 0.3676
+2023-05-30 00:13:24,546 - root - INFO - Training steps: 300 Loss: 0.5254
+2023-05-30 00:13:26,588 - root - INFO - Training steps: 350 Loss: 0.5291
+2023-05-30 00:13:28,673 - root - INFO - Training steps: 400 Loss: 0.4651
+2023-05-30 00:13:30,707 - root - INFO - Training steps: 450 Loss: 0.5024
+2023-05-30 00:13:32,729 - root - INFO - Training steps: 500 Loss: 0.3863
+2023-05-30 00:13:34,755 - root - INFO - Training steps: 550 Loss: 0.3987
+2023-05-30 00:13:36,776 - root - INFO - Training steps: 600 Loss: 0.3714
+2023-05-30 00:13:38,839 - root - INFO - Training steps: 650 Loss: 0.4543
+2023-05-30 00:13:40,883 - root - INFO - Training steps: 700 Loss: 0.4320
+2023-05-30 00:13:42,919 - root - INFO - Training steps: 750 Loss: 0.4335
+2023-05-30 00:13:45,037 - root - INFO - Training steps: 800 Loss: 0.4908
+2023-05-30 00:13:47,092 - root - INFO - Training steps: 850 Loss: 0.4773
+2023-05-30 00:13:49,349 - root - INFO - Training steps: 900 Loss: 0.4934
+2023-05-30 00:13:51,487 - root - INFO - Training steps: 950 Loss: 0.5673
+2023-05-30 00:13:53,644 - root - INFO - Training steps: 1000 Loss: 0.3960
+2023-05-30 00:13:55,791 - root - INFO - Training steps: 1050 Loss: 0.4669
+2023-05-30 00:13:57,804 - root - INFO - Training steps: 1100 Loss: 0.5432
+2023-05-30 00:13:59,862 - root - INFO - Training steps: 1150 Loss: 0.5766
+2023-05-30 00:14:02,011 - root - INFO - Training steps: 1200 Loss: 0.5662
+2023-05-30 00:14:04,165 - root - INFO - Training steps: 1250 Loss: 0.4669
+2023-05-30 00:14:06,147 - root - INFO - Training steps: 1300 Loss: 0.4383
+2023-05-30 00:14:08,237 - root - INFO - Training steps: 1350 Loss: 0.5527
+2023-05-30 00:14:10,420 - root - INFO - Training steps: 1400 Loss: 0.6514
+2023-05-30 00:14:12,593 - root - INFO - Training steps: 1450 Loss: 0.5496
+2023-05-30 00:14:14,571 - root - INFO - Training steps: 1500 Loss: 0.4761
+2023-05-30 00:14:16,539 - root - INFO - Training steps: 1550 Loss: 0.3821
+2023-05-30 00:14:18,531 - root - INFO - Training steps: 1600 Loss: 0.5191
+2023-05-30 00:14:29,729 - root - INFO - TRAIN AUC : 0.8224 ACC : 0.7710
+2023-05-30 00:14:50,303 - root - INFO - VALID AUC : 0.8200 ACC : 0.7706
+2023-05-30 00:14:50,304 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:14:50,318 - root - INFO - Start Training: Epoch 7
+2023-05-30 00:15:04,913 - root - INFO - Training steps: 0 Loss: 0.4975
+2023-05-30 00:15:07,108 - root - INFO - Training steps: 50 Loss: 0.4321
+2023-05-30 00:15:09,121 - root - INFO - Training steps: 100 Loss: 0.4359
+2023-05-30 00:15:11,175 - root - INFO - Training steps: 150 Loss: 0.5210
+2023-05-30 00:15:13,180 - root - INFO - Training steps: 200 Loss: 0.4251
+2023-05-30 00:15:15,247 - root - INFO - Training steps: 250 Loss: 0.5455
+2023-05-30 00:15:17,265 - root - INFO - Training steps: 300 Loss: 0.5095
+2023-05-30 00:15:19,328 - root - INFO - Training steps: 350 Loss: 0.4213
+2023-05-30 00:15:21,381 - root - INFO - Training steps: 400 Loss: 0.3990
+2023-05-30 00:15:23,412 - root - INFO - Training steps: 450 Loss: 0.5490
+2023-05-30 00:15:25,434 - root - INFO - Training steps: 500 Loss: 0.5098
+2023-05-30 00:15:27,457 - root - INFO - Training steps: 550 Loss: 0.4245
+2023-05-30 00:15:29,535 - root - INFO - Training steps: 600 Loss: 0.5236
+2023-05-30 00:15:31,575 - root - INFO - Training steps: 650 Loss: 0.4314
+2023-05-30 00:15:33,885 - root - INFO - Training steps: 700 Loss: 0.5373
+2023-05-30 00:15:36,116 - root - INFO - Training steps: 750 Loss: 0.4832
+2023-05-30 00:15:38,181 - root - INFO - Training steps: 800 Loss: 0.4339
+2023-05-30 00:15:40,235 - root - INFO - Training steps: 850 Loss: 0.4783
+2023-05-30 00:15:42,297 - root - INFO - Training steps: 900 Loss: 0.5496
+2023-05-30 00:15:44,513 - root - INFO - Training steps: 950 Loss: 0.5056
+2023-05-30 00:15:46,686 - root - INFO - Training steps: 1000 Loss: 0.5740
+2023-05-30 00:15:48,960 - root - INFO - Training steps: 1050 Loss: 0.5124
+2023-05-30 00:15:51,069 - root - INFO - Training steps: 1100 Loss: 0.5091
+2023-05-30 00:15:53,114 - root - INFO - Training steps: 1150 Loss: 0.4427
+2023-05-30 00:15:55,190 - root - INFO - Training steps: 1200 Loss: 0.4511
+2023-05-30 00:15:57,246 - root - INFO - Training steps: 1250 Loss: 0.4773
+2023-05-30 00:15:59,259 - root - INFO - Training steps: 1300 Loss: 0.5335
+2023-05-30 00:16:01,278 - root - INFO - Training steps: 1350 Loss: 0.4877
+2023-05-30 00:16:03,393 - root - INFO - Training steps: 1400 Loss: 0.4682
+2023-05-30 00:16:05,408 - root - INFO - Training steps: 1450 Loss: 0.5791
+2023-05-30 00:16:07,438 - root - INFO - Training steps: 1500 Loss: 0.4512
+2023-05-30 00:16:09,427 - root - INFO - Training steps: 1550 Loss: 0.5297
+2023-05-30 00:16:11,438 - root - INFO - Training steps: 1600 Loss: 0.3999
+2023-05-30 00:16:22,574 - root - INFO - TRAIN AUC : 0.8231 ACC : 0.7714
+2023-05-30 00:16:43,080 - root - INFO - VALID AUC : 0.8205 ACC : 0.7716
+2023-05-30 00:16:43,081 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:16:43,093 - root - INFO - Start Training: Epoch 8
+2023-05-30 00:16:56,662 - root - INFO - Training steps: 0 Loss: 0.4024
+2023-05-30 00:16:58,760 - root - INFO - Training steps: 50 Loss: 0.4936
+2023-05-30 00:17:00,941 - root - INFO - Training steps: 100 Loss: 0.5333
+2023-05-30 00:17:02,942 - root - INFO - Training steps: 150 Loss: 0.5285
+2023-05-30 00:17:04,919 - root - INFO - Training steps: 200 Loss: 0.5843
+2023-05-30 00:17:06,902 - root - INFO - Training steps: 250 Loss: 0.5072
+2023-05-30 00:17:08,994 - root - INFO - Training steps: 300 Loss: 0.4811
+2023-05-30 00:17:11,006 - root - INFO - Training steps: 350 Loss: 0.6008
+2023-05-30 00:17:13,075 - root - INFO - Training steps: 400 Loss: 0.5606
+2023-05-30 00:17:15,107 - root - INFO - Training steps: 450 Loss: 0.5851
+2023-05-30 00:17:17,139 - root - INFO - Training steps: 500 Loss: 0.5123
+2023-05-30 00:17:19,194 - root - INFO - Training steps: 550 Loss: 0.5112
+2023-05-30 00:17:21,229 - root - INFO - Training steps: 600 Loss: 0.4500
+2023-05-30 00:17:23,280 - root - INFO - Training steps: 650 Loss: 0.4307
+2023-05-30 00:17:25,321 - root - INFO - Training steps: 700 Loss: 0.3589
+2023-05-30 00:17:27,354 - root - INFO - Training steps: 750 Loss: 0.4562
+2023-05-30 00:17:29,405 - root - INFO - Training steps: 800 Loss: 0.4002
+2023-05-30 00:17:31,503 - root - INFO - Training steps: 850 Loss: 0.4987
+2023-05-30 00:17:33,580 - root - INFO - Training steps: 900 Loss: 0.5947
+2023-05-30 00:17:35,636 - root - INFO - Training steps: 950 Loss: 0.4054
+2023-05-30 00:17:37,709 - root - INFO - Training steps: 1000 Loss: 0.4145
+2023-05-30 00:17:39,739 - root - INFO - Training steps: 1050 Loss: 0.4596
+2023-05-30 00:17:41,775 - root - INFO - Training steps: 1100 Loss: 0.5674
+2023-05-30 00:17:43,794 - root - INFO - Training steps: 1150 Loss: 0.4134
+2023-05-30 00:17:45,799 - root - INFO - Training steps: 1200 Loss: 0.4797
+2023-05-30 00:17:47,816 - root - INFO - Training steps: 1250 Loss: 0.4445
+2023-05-30 00:17:49,769 - root - INFO - Training steps: 1300 Loss: 0.4454
+2023-05-30 00:17:51,730 - root - INFO - Training steps: 1350 Loss: 0.5191
+2023-05-30 00:17:53,680 - root - INFO - Training steps: 1400 Loss: 0.4985
+2023-05-30 00:17:55,623 - root - INFO - Training steps: 1450 Loss: 0.4014
+2023-05-30 00:17:57,575 - root - INFO - Training steps: 1500 Loss: 0.5711
+2023-05-30 00:17:59,501 - root - INFO - Training steps: 1550 Loss: 0.5027
+2023-05-30 00:18:01,421 - root - INFO - Training steps: 1600 Loss: 0.5167
+2023-05-30 00:18:12,559 - root - INFO - TRAIN AUC : 0.8236 ACC : 0.7723
+2023-05-30 00:18:33,141 - root - INFO - VALID AUC : 0.8206 ACC : 0.7707
+2023-05-30 00:18:33,143 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:18:33,154 - root - INFO - Start Training: Epoch 9
+2023-05-30 00:18:47,067 - root - INFO - Training steps: 0 Loss: 0.6043
+2023-05-30 00:18:49,171 - root - INFO - Training steps: 50 Loss: 0.5213
+2023-05-30 00:18:51,157 - root - INFO - Training steps: 100 Loss: 0.4563
+2023-05-30 00:18:53,130 - root - INFO - Training steps: 150 Loss: 0.4269
+2023-05-30 00:18:55,084 - root - INFO - Training steps: 200 Loss: 0.4115
+2023-05-30 00:18:57,043 - root - INFO - Training steps: 250 Loss: 0.4980
+2023-05-30 00:18:59,013 - root - INFO - Training steps: 300 Loss: 0.4973
+2023-05-30 00:19:01,012 - root - INFO - Training steps: 350 Loss: 0.3939
+2023-05-30 00:19:03,045 - root - INFO - Training steps: 400 Loss: 0.4579
+2023-05-30 00:19:05,053 - root - INFO - Training steps: 450 Loss: 0.4016
+2023-05-30 00:19:07,065 - root - INFO - Training steps: 500 Loss: 0.4538
+2023-05-30 00:19:09,443 - root - INFO - Training steps: 550 Loss: 0.4060
+2023-05-30 00:19:11,770 - root - INFO - Training steps: 600 Loss: 0.4843
+2023-05-30 00:19:13,871 - root - INFO - Training steps: 650 Loss: 0.4492
+2023-05-30 00:19:15,996 - root - INFO - Training steps: 700 Loss: 0.4767
+2023-05-30 00:19:18,119 - root - INFO - Training steps: 750 Loss: 0.3973
+2023-05-30 00:19:20,189 - root - INFO - Training steps: 800 Loss: 0.4792
+2023-05-30 00:19:22,238 - root - INFO - Training steps: 850 Loss: 0.4309
+2023-05-30 00:19:24,291 - root - INFO - Training steps: 900 Loss: 0.5304
+2023-05-30 00:19:26,339 - root - INFO - Training steps: 950 Loss: 0.5916
+2023-05-30 00:19:28,414 - root - INFO - Training steps: 1000 Loss: 0.4525
+2023-05-30 00:19:30,475 - root - INFO - Training steps: 1050 Loss: 0.5076
+2023-05-30 00:19:32,505 - root - INFO - Training steps: 1100 Loss: 0.5359
+2023-05-30 00:19:34,561 - root - INFO - Training steps: 1150 Loss: 0.4837
+2023-05-30 00:19:36,578 - root - INFO - Training steps: 1200 Loss: 0.4553
+2023-05-30 00:19:38,584 - root - INFO - Training steps: 1250 Loss: 0.5684
+2023-05-30 00:19:40,552 - root - INFO - Training steps: 1300 Loss: 0.6094
+2023-05-30 00:19:42,515 - root - INFO - Training steps: 1350 Loss: 0.5931
+2023-05-30 00:19:44,478 - root - INFO - Training steps: 1400 Loss: 0.4408
+2023-05-30 00:19:46,445 - root - INFO - Training steps: 1450 Loss: 0.6112
+2023-05-30 00:19:48,418 - root - INFO - Training steps: 1500 Loss: 0.5285
+2023-05-30 00:19:50,427 - root - INFO - Training steps: 1550 Loss: 0.6472
+2023-05-30 00:19:52,441 - root - INFO - Training steps: 1600 Loss: 0.4381
+2023-05-30 00:20:03,647 - root - INFO - TRAIN AUC : 0.8236 ACC : 0.7718
+2023-05-30 00:20:24,687 - root - INFO - VALID AUC : 0.8204 ACC : 0.7713
+2023-05-30 00:20:24,688 - root - INFO - Start Training: Epoch 10
+2023-05-30 00:20:38,583 - root - INFO - Training steps: 0 Loss: 0.6036
+2023-05-30 00:20:40,707 - root - INFO - Training steps: 50 Loss: 0.5031
+2023-05-30 00:20:42,807 - root - INFO - Training steps: 100 Loss: 0.4392
+2023-05-30 00:20:44,800 - root - INFO - Training steps: 150 Loss: 0.5240
+2023-05-30 00:20:46,985 - root - INFO - Training steps: 200 Loss: 0.5573
+2023-05-30 00:20:49,058 - root - INFO - Training steps: 250 Loss: 0.5911
+2023-05-30 00:20:51,191 - root - INFO - Training steps: 300 Loss: 0.3841
+2023-05-30 00:20:53,352 - root - INFO - Training steps: 350 Loss: 0.3970
+2023-05-30 00:20:55,650 - root - INFO - Training steps: 400 Loss: 0.4866
+2023-05-30 00:20:57,708 - root - INFO - Training steps: 450 Loss: 0.5938
+2023-05-30 00:20:59,839 - root - INFO - Training steps: 500 Loss: 0.5662
+2023-05-30 00:21:02,062 - root - INFO - Training steps: 550 Loss: 0.4582
+2023-05-30 00:21:04,222 - root - INFO - Training steps: 600 Loss: 0.4035
+2023-05-30 00:21:06,272 - root - INFO - Training steps: 650 Loss: 0.5041
+2023-05-30 00:21:08,322 - root - INFO - Training steps: 700 Loss: 0.4875
+2023-05-30 00:21:10,381 - root - INFO - Training steps: 750 Loss: 0.4706
+2023-05-30 00:21:12,431 - root - INFO - Training steps: 800 Loss: 0.4179
+2023-05-30 00:21:14,497 - root - INFO - Training steps: 850 Loss: 0.4849
+2023-05-30 00:21:16,544 - root - INFO - Training steps: 900 Loss: 0.4953
+2023-05-30 00:21:18,615 - root - INFO - Training steps: 950 Loss: 0.5069
+2023-05-30 00:21:20,663 - root - INFO - Training steps: 1000 Loss: 0.3765
+2023-05-30 00:21:22,707 - root - INFO - Training steps: 1050 Loss: 0.5455
+2023-05-30 00:21:24,767 - root - INFO - Training steps: 1100 Loss: 0.4061
+2023-05-30 00:21:26,822 - root - INFO - Training steps: 1150 Loss: 0.5274
+2023-05-30 00:21:28,849 - root - INFO - Training steps: 1200 Loss: 0.4116
+2023-05-30 00:21:30,856 - root - INFO - Training steps: 1250 Loss: 0.3807
+2023-05-30 00:21:32,870 - root - INFO - Training steps: 1300 Loss: 0.3976
+2023-05-30 00:21:34,826 - root - INFO - Training steps: 1350 Loss: 0.4859
+2023-05-30 00:21:36,777 - root - INFO - Training steps: 1400 Loss: 0.4887
+2023-05-30 00:21:38,735 - root - INFO - Training steps: 1450 Loss: 0.4593
+2023-05-30 00:21:40,671 - root - INFO - Training steps: 1500 Loss: 0.5577
+2023-05-30 00:21:42,609 - root - INFO - Training steps: 1550 Loss: 0.4753
+2023-05-30 00:21:44,545 - root - INFO - Training steps: 1600 Loss: 0.5194
+2023-05-30 00:21:55,706 - root - INFO - TRAIN AUC : 0.8241 ACC : 0.7721
+2023-05-30 00:22:16,301 - root - INFO - VALID AUC : 0.8210 ACC : 0.7711
+2023-05-30 00:22:16,302 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:22:16,333 - root - INFO - Start Training: Epoch 11
+2023-05-30 00:22:30,584 - root - INFO - Training steps: 0 Loss: 0.4303
+2023-05-30 00:22:32,965 - root - INFO - Training steps: 50 Loss: 0.5332
+2023-05-30 00:22:35,074 - root - INFO - Training steps: 100 Loss: 0.4900
+2023-05-30 00:22:37,368 - root - INFO - Training steps: 150 Loss: 0.3980
+2023-05-30 00:22:39,589 - root - INFO - Training steps: 200 Loss: 0.5676
+2023-05-30 00:22:41,674 - root - INFO - Training steps: 250 Loss: 0.4195
+2023-05-30 00:22:43,796 - root - INFO - Training steps: 300 Loss: 0.4049
+2023-05-30 00:22:45,890 - root - INFO - Training steps: 350 Loss: 0.5218
+2023-05-30 00:22:48,072 - root - INFO - Training steps: 400 Loss: 0.4256
+2023-05-30 00:22:50,406 - root - INFO - Training steps: 450 Loss: 0.4426
+2023-05-30 00:22:52,741 - root - INFO - Training steps: 500 Loss: 0.3788
+2023-05-30 00:22:55,118 - root - INFO - Training steps: 550 Loss: 0.5693
+2023-05-30 00:22:57,246 - root - INFO - Training steps: 600 Loss: 0.5097
+2023-05-30 00:22:59,325 - root - INFO - Training steps: 650 Loss: 0.5054
+2023-05-30 00:23:01,378 - root - INFO - Training steps: 700 Loss: 0.4707
+2023-05-30 00:23:04,001 - root - INFO - Training steps: 750 Loss: 0.4252
+2023-05-30 00:23:06,070 - root - INFO - Training steps: 800 Loss: 0.5491
+2023-05-30 00:23:08,134 - root - INFO - Training steps: 850 Loss: 0.5263
+2023-05-30 00:23:10,294 - root - INFO - Training steps: 900 Loss: 0.5842
+2023-05-30 00:23:12,401 - root - INFO - Training steps: 950 Loss: 0.4047
+2023-05-30 00:23:14,457 - root - INFO - Training steps: 1000 Loss: 0.5282
+2023-05-30 00:23:16,530 - root - INFO - Training steps: 1050 Loss: 0.4566
+2023-05-30 00:23:18,635 - root - INFO - Training steps: 1100 Loss: 0.5099
+2023-05-30 00:23:20,683 - root - INFO - Training steps: 1150 Loss: 0.5211
+2023-05-30 00:23:22,727 - root - INFO - Training steps: 1200 Loss: 0.5674
+2023-05-30 00:23:24,807 - root - INFO - Training steps: 1250 Loss: 0.5262
+2023-05-30 00:23:27,230 - root - INFO - Training steps: 1300 Loss: 0.4968
+2023-05-30 00:23:29,321 - root - INFO - Training steps: 1350 Loss: 0.4361
+2023-05-30 00:23:31,329 - root - INFO - Training steps: 1400 Loss: 0.4559
+2023-05-30 00:23:33,407 - root - INFO - Training steps: 1450 Loss: 0.5762
+2023-05-30 00:23:35,438 - root - INFO - Training steps: 1500 Loss: 0.4667
+2023-05-30 00:23:37,404 - root - INFO - Training steps: 1550 Loss: 0.5307
+2023-05-30 00:23:39,362 - root - INFO - Training steps: 1600 Loss: 0.3945
+2023-05-30 00:23:50,520 - root - INFO - TRAIN AUC : 0.8244 ACC : 0.7737
+2023-05-30 00:24:11,645 - root - INFO - VALID AUC : 0.8210 ACC : 0.7721
+2023-05-30 00:24:11,646 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:24:11,660 - root - INFO - Start Training: Epoch 12
+2023-05-30 00:24:25,369 - root - INFO - Training steps: 0 Loss: 0.5172
+2023-05-30 00:24:27,513 - root - INFO - Training steps: 50 Loss: 0.4507
+2023-05-30 00:24:29,504 - root - INFO - Training steps: 100 Loss: 0.5298
+2023-05-30 00:24:31,480 - root - INFO - Training steps: 150 Loss: 0.4664
+2023-05-30 00:24:33,458 - root - INFO - Training steps: 200 Loss: 0.5269
+2023-05-30 00:24:35,431 - root - INFO - Training steps: 250 Loss: 0.5460
+2023-05-30 00:24:37,421 - root - INFO - Training steps: 300 Loss: 0.4633
+2023-05-30 00:24:39,432 - root - INFO - Training steps: 350 Loss: 0.5927
+2023-05-30 00:24:41,471 - root - INFO - Training steps: 400 Loss: 0.4841
+2023-05-30 00:24:43,493 - root - INFO - Training steps: 450 Loss: 0.4049
+2023-05-30 00:24:45,538 - root - INFO - Training steps: 500 Loss: 0.5407
+2023-05-30 00:24:47,569 - root - INFO - Training steps: 550 Loss: 0.4953
+2023-05-30 00:24:49,617 - root - INFO - Training steps: 600 Loss: 0.6354
+2023-05-30 00:24:51,829 - root - INFO - Training steps: 650 Loss: 0.4998
+2023-05-30 00:24:53,871 - root - INFO - Training steps: 700 Loss: 0.4808
+2023-05-30 00:24:56,009 - root - INFO - Training steps: 750 Loss: 0.5258
+2023-05-30 00:24:58,058 - root - INFO - Training steps: 800 Loss: 0.5847
+2023-05-30 00:25:00,111 - root - INFO - Training steps: 850 Loss: 0.4477
+2023-05-30 00:25:02,148 - root - INFO - Training steps: 900 Loss: 0.5272
+2023-05-30 00:25:04,327 - root - INFO - Training steps: 950 Loss: 0.4469
+2023-05-30 00:25:06,379 - root - INFO - Training steps: 1000 Loss: 0.6145
+2023-05-30 00:25:08,422 - root - INFO - Training steps: 1050 Loss: 0.4963
+2023-05-30 00:25:10,463 - root - INFO - Training steps: 1100 Loss: 0.4450
+2023-05-30 00:25:12,475 - root - INFO - Training steps: 1150 Loss: 0.5323
+2023-05-30 00:25:14,469 - root - INFO - Training steps: 1200 Loss: 0.4985
+2023-05-30 00:25:16,483 - root - INFO - Training steps: 1250 Loss: 0.5231
+2023-05-30 00:25:18,491 - root - INFO - Training steps: 1300 Loss: 0.5625
+2023-05-30 00:25:20,463 - root - INFO - Training steps: 1350 Loss: 0.4827
+2023-05-30 00:25:22,451 - root - INFO - Training steps: 1400 Loss: 0.4392
+2023-05-30 00:25:24,428 - root - INFO - Training steps: 1450 Loss: 0.5264
+2023-05-30 00:25:26,395 - root - INFO - Training steps: 1500 Loss: 0.4135
+2023-05-30 00:25:28,324 - root - INFO - Training steps: 1550 Loss: 0.3897
+2023-05-30 00:25:30,280 - root - INFO - Training steps: 1600 Loss: 0.5527
+2023-05-30 00:25:41,455 - root - INFO - TRAIN AUC : 0.8249 ACC : 0.7730
+2023-05-30 00:26:02,682 - root - INFO - VALID AUC : 0.8213 ACC : 0.7731
+2023-05-30 00:26:02,685 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:26:02,698 - root - INFO - Start Training: Epoch 13
+2023-05-30 00:26:16,815 - root - INFO - Training steps: 0 Loss: 0.5348
+2023-05-30 00:26:19,250 - root - INFO - Training steps: 50 Loss: 0.5116
+2023-05-30 00:26:21,451 - root - INFO - Training steps: 100 Loss: 0.4441
+2023-05-30 00:26:23,507 - root - INFO - Training steps: 150 Loss: 0.3429
+2023-05-30 00:26:25,562 - root - INFO - Training steps: 200 Loss: 0.5711
+2023-05-30 00:26:27,557 - root - INFO - Training steps: 250 Loss: 0.4667
+2023-05-30 00:26:29,536 - root - INFO - Training steps: 300 Loss: 0.6050
+2023-05-30 00:26:31,528 - root - INFO - Training steps: 350 Loss: 0.4592
+2023-05-30 00:26:33,530 - root - INFO - Training steps: 400 Loss: 0.4014
+2023-05-30 00:26:35,562 - root - INFO - Training steps: 450 Loss: 0.4337
+2023-05-30 00:26:37,640 - root - INFO - Training steps: 500 Loss: 0.4376
+2023-05-30 00:26:39,803 - root - INFO - Training steps: 550 Loss: 0.5638
+2023-05-30 00:26:41,919 - root - INFO - Training steps: 600 Loss: 0.4283
+2023-05-30 00:26:44,006 - root - INFO - Training steps: 650 Loss: 0.5132
+2023-05-30 00:26:46,071 - root - INFO - Training steps: 700 Loss: 0.5189
+2023-05-30 00:26:48,222 - root - INFO - Training steps: 750 Loss: 0.4486
+2023-05-30 00:26:50,454 - root - INFO - Training steps: 800 Loss: 0.5346
+2023-05-30 00:26:52,639 - root - INFO - Training steps: 850 Loss: 0.5798
+2023-05-30 00:26:54,748 - root - INFO - Training steps: 900 Loss: 0.4550
+2023-05-30 00:26:56,806 - root - INFO - Training steps: 950 Loss: 0.3674
+2023-05-30 00:26:58,864 - root - INFO - Training steps: 1000 Loss: 0.5053
+2023-05-30 00:27:00,913 - root - INFO - Training steps: 1050 Loss: 0.5754
+2023-05-30 00:27:02,955 - root - INFO - Training steps: 1100 Loss: 0.4597
+2023-05-30 00:27:04,969 - root - INFO - Training steps: 1150 Loss: 0.4794
+2023-05-30 00:27:06,974 - root - INFO - Training steps: 1200 Loss: 0.6468
+2023-05-30 00:27:09,024 - root - INFO - Training steps: 1250 Loss: 0.4271
+2023-05-30 00:27:11,003 - root - INFO - Training steps: 1300 Loss: 0.4352
+2023-05-30 00:27:12,988 - root - INFO - Training steps: 1350 Loss: 0.5372
+2023-05-30 00:27:14,953 - root - INFO - Training steps: 1400 Loss: 0.3894
+2023-05-30 00:27:16,986 - root - INFO - Training steps: 1450 Loss: 0.3807
+2023-05-30 00:27:18,967 - root - INFO - Training steps: 1500 Loss: 0.5033
+2023-05-30 00:27:20,929 - root - INFO - Training steps: 1550 Loss: 0.4039
+2023-05-30 00:27:22,963 - root - INFO - Training steps: 1600 Loss: 0.5916
+2023-05-30 00:27:34,137 - root - INFO - TRAIN AUC : 0.8251 ACC : 0.7731
+2023-05-30 00:27:54,740 - root - INFO - VALID AUC : 0.8218 ACC : 0.7725
+2023-05-30 00:27:54,743 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:27:54,756 - root - INFO - Start Training: Epoch 14
+2023-05-30 00:28:08,348 - root - INFO - Training steps: 0 Loss: 0.6509
+2023-05-30 00:28:10,548 - root - INFO - Training steps: 50 Loss: 0.4874
+2023-05-30 00:28:12,592 - root - INFO - Training steps: 100 Loss: 0.5097
+2023-05-30 00:28:14,594 - root - INFO - Training steps: 150 Loss: 0.4451
+2023-05-30 00:28:16,585 - root - INFO - Training steps: 200 Loss: 0.5710
+2023-05-30 00:28:18,684 - root - INFO - Training steps: 250 Loss: 0.4841
+2023-05-30 00:28:20,722 - root - INFO - Training steps: 300 Loss: 0.5123
+2023-05-30 00:28:22,745 - root - INFO - Training steps: 350 Loss: 0.5700
+2023-05-30 00:28:24,775 - root - INFO - Training steps: 400 Loss: 0.4831
+2023-05-30 00:28:26,792 - root - INFO - Training steps: 450 Loss: 0.5438
+2023-05-30 00:28:28,823 - root - INFO - Training steps: 500 Loss: 0.4199
+2023-05-30 00:28:30,850 - root - INFO - Training steps: 550 Loss: 0.5888
+2023-05-30 00:28:32,916 - root - INFO - Training steps: 600 Loss: 0.4806
+2023-05-30 00:28:34,989 - root - INFO - Training steps: 650 Loss: 0.4183
+2023-05-30 00:28:37,051 - root - INFO - Training steps: 700 Loss: 0.5175
+2023-05-30 00:28:39,200 - root - INFO - Training steps: 750 Loss: 0.4424
+2023-05-30 00:28:41,257 - root - INFO - Training steps: 800 Loss: 0.4189
+2023-05-30 00:28:43,531 - root - INFO - Training steps: 850 Loss: 0.5490
+2023-05-30 00:28:45,839 - root - INFO - Training steps: 900 Loss: 0.3961
+2023-05-30 00:28:48,131 - root - INFO - Training steps: 950 Loss: 0.5464
+2023-05-30 00:28:50,342 - root - INFO - Training steps: 1000 Loss: 0.6273
+2023-05-30 00:28:52,443 - root - INFO - Training steps: 1050 Loss: 0.5304
+2023-05-30 00:28:54,525 - root - INFO - Training steps: 1100 Loss: 0.4036
+2023-05-30 00:28:56,576 - root - INFO - Training steps: 1150 Loss: 0.4722
+2023-05-30 00:28:58,770 - root - INFO - Training steps: 1200 Loss: 0.5128
+2023-05-30 00:29:00,989 - root - INFO - Training steps: 1250 Loss: 0.5491
+2023-05-30 00:29:03,015 - root - INFO - Training steps: 1300 Loss: 0.4946
+2023-05-30 00:29:05,140 - root - INFO - Training steps: 1350 Loss: 0.5729
+2023-05-30 00:29:07,285 - root - INFO - Training steps: 1400 Loss: 0.4859
+2023-05-30 00:29:09,296 - root - INFO - Training steps: 1450 Loss: 0.4295
+2023-05-30 00:29:11,270 - root - INFO - Training steps: 1500 Loss: 0.4114
+2023-05-30 00:29:13,374 - root - INFO - Training steps: 1550 Loss: 0.4825
+2023-05-30 00:29:15,439 - root - INFO - Training steps: 1600 Loss: 0.4907
+2023-05-30 00:29:26,635 - root - INFO - TRAIN AUC : 0.8254 ACC : 0.7729
+2023-05-30 00:29:47,599 - root - INFO - VALID AUC : 0.8222 ACC : 0.7720
+2023-05-30 00:29:47,602 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:29:47,616 - root - INFO - Start Training: Epoch 15
+2023-05-30 00:30:01,527 - root - INFO - Training steps: 0 Loss: 0.4817
+2023-05-30 00:30:03,838 - root - INFO - Training steps: 50 Loss: 0.4556
+2023-05-30 00:30:05,892 - root - INFO - Training steps: 100 Loss: 0.4286
+2023-05-30 00:30:07,888 - root - INFO - Training steps: 150 Loss: 0.5579
+2023-05-30 00:30:09,865 - root - INFO - Training steps: 200 Loss: 0.4744
+2023-05-30 00:30:11,856 - root - INFO - Training steps: 250 Loss: 0.4961
+2023-05-30 00:30:13,867 - root - INFO - Training steps: 300 Loss: 0.5347
+2023-05-30 00:30:15,931 - root - INFO - Training steps: 350 Loss: 0.4988
+2023-05-30 00:30:18,282 - root - INFO - Training steps: 400 Loss: 0.5633
+2023-05-30 00:30:20,485 - root - INFO - Training steps: 450 Loss: 0.5493
+2023-05-30 00:30:22,756 - root - INFO - Training steps: 500 Loss: 0.5190
+2023-05-30 00:30:24,873 - root - INFO - Training steps: 550 Loss: 0.4740
+2023-05-30 00:30:26,993 - root - INFO - Training steps: 600 Loss: 0.5990
+2023-05-30 00:30:29,191 - root - INFO - Training steps: 650 Loss: 0.6822
+2023-05-30 00:30:31,287 - root - INFO - Training steps: 700 Loss: 0.4651
+2023-05-30 00:30:33,410 - root - INFO - Training steps: 750 Loss: 0.5796
+2023-05-30 00:30:35,524 - root - INFO - Training steps: 800 Loss: 0.4880
+2023-05-30 00:30:37,567 - root - INFO - Training steps: 850 Loss: 0.4978
+2023-05-30 00:30:39,783 - root - INFO - Training steps: 900 Loss: 0.4171
+2023-05-30 00:30:41,967 - root - INFO - Training steps: 950 Loss: 0.4465
+2023-05-30 00:30:44,065 - root - INFO - Training steps: 1000 Loss: 0.4052
+2023-05-30 00:30:46,225 - root - INFO - Training steps: 1050 Loss: 0.6145
+2023-05-30 00:30:48,285 - root - INFO - Training steps: 1100 Loss: 0.4932
+2023-05-30 00:30:50,387 - root - INFO - Training steps: 1150 Loss: 0.5043
+2023-05-30 00:30:52,452 - root - INFO - Training steps: 1200 Loss: 0.4803
+2023-05-30 00:30:54,576 - root - INFO - Training steps: 1250 Loss: 0.3651
+2023-05-30 00:30:56,637 - root - INFO - Training steps: 1300 Loss: 0.5214
+2023-05-30 00:30:58,759 - root - INFO - Training steps: 1350 Loss: 0.6099
+2023-05-30 00:31:00,761 - root - INFO - Training steps: 1400 Loss: 0.5419
+2023-05-30 00:31:02,757 - root - INFO - Training steps: 1450 Loss: 0.5214
+2023-05-30 00:31:04,770 - root - INFO - Training steps: 1500 Loss: 0.4903
+2023-05-30 00:31:06,793 - root - INFO - Training steps: 1550 Loss: 0.5185
+2023-05-30 00:31:08,783 - root - INFO - Training steps: 1600 Loss: 0.4809
+2023-05-30 00:31:19,988 - root - INFO - TRAIN AUC : 0.8255 ACC : 0.7734
+2023-05-30 00:31:41,429 - root - INFO - VALID AUC : 0.8231 ACC : 0.7719
+2023-05-30 00:31:41,430 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:31:41,443 - root - INFO - Start Training: Epoch 16
+2023-05-30 00:31:54,945 - root - INFO - Training steps: 0 Loss: 0.4392
+2023-05-30 00:31:57,152 - root - INFO - Training steps: 50 Loss: 0.4446
+2023-05-30 00:31:59,240 - root - INFO - Training steps: 100 Loss: 0.5177
+2023-05-30 00:32:01,408 - root - INFO - Training steps: 150 Loss: 0.5677
+2023-05-30 00:32:03,404 - root - INFO - Training steps: 200 Loss: 0.4082
+2023-05-30 00:32:05,439 - root - INFO - Training steps: 250 Loss: 0.5565
+2023-05-30 00:32:07,682 - root - INFO - Training steps: 300 Loss: 0.4605
+2023-05-30 00:32:09,778 - root - INFO - Training steps: 350 Loss: 0.4000
+2023-05-30 00:32:11,964 - root - INFO - Training steps: 400 Loss: 0.5464
+2023-05-30 00:32:14,251 - root - INFO - Training steps: 450 Loss: 0.5082
+2023-05-30 00:32:16,301 - root - INFO - Training steps: 500 Loss: 0.5783
+2023-05-30 00:32:18,524 - root - INFO - Training steps: 550 Loss: 0.4859
+2023-05-30 00:32:20,724 - root - INFO - Training steps: 600 Loss: 0.4594
+2023-05-30 00:32:23,004 - root - INFO - Training steps: 650 Loss: 0.4326
+2023-05-30 00:32:25,256 - root - INFO - Training steps: 700 Loss: 0.4259
+2023-05-30 00:32:27,471 - root - INFO - Training steps: 750 Loss: 0.4940
+2023-05-30 00:32:29,521 - root - INFO - Training steps: 800 Loss: 0.5168
+2023-05-30 00:32:31,574 - root - INFO - Training steps: 850 Loss: 0.3334
+2023-05-30 00:32:33,645 - root - INFO - Training steps: 900 Loss: 0.5481
+2023-05-30 00:32:35,687 - root - INFO - Training steps: 950 Loss: 0.4767
+2023-05-30 00:32:37,717 - root - INFO - Training steps: 1000 Loss: 0.5208
+2023-05-30 00:32:39,750 - root - INFO - Training steps: 1050 Loss: 0.4885
+2023-05-30 00:32:41,791 - root - INFO - Training steps: 1100 Loss: 0.3691
+2023-05-30 00:32:43,824 - root - INFO - Training steps: 1150 Loss: 0.5746
+2023-05-30 00:32:45,859 - root - INFO - Training steps: 1200 Loss: 0.4721
+2023-05-30 00:32:47,946 - root - INFO - Training steps: 1250 Loss: 0.4630
+2023-05-30 00:32:49,942 - root - INFO - Training steps: 1300 Loss: 0.4117
+2023-05-30 00:32:51,940 - root - INFO - Training steps: 1350 Loss: 0.4738
+2023-05-30 00:32:53,902 - root - INFO - Training steps: 1400 Loss: 0.4746
+2023-05-30 00:32:55,849 - root - INFO - Training steps: 1450 Loss: 0.5020
+2023-05-30 00:32:57,801 - root - INFO - Training steps: 1500 Loss: 0.3190
+2023-05-30 00:32:59,747 - root - INFO - Training steps: 1550 Loss: 0.4566
+2023-05-30 00:33:01,750 - root - INFO - Training steps: 1600 Loss: 0.5394
+2023-05-30 00:33:12,902 - root - INFO - TRAIN AUC : 0.8259 ACC : 0.7735
+2023-05-30 00:33:33,683 - root - INFO - VALID AUC : 0.8225 ACC : 0.7720
+2023-05-30 00:33:33,684 - root - INFO - Start Training: Epoch 17
+2023-05-30 00:33:46,806 - root - INFO - Training steps: 0 Loss: 0.5438
+2023-05-30 00:33:48,994 - root - INFO - Training steps: 50 Loss: 0.6741
+2023-05-30 00:33:50,981 - root - INFO - Training steps: 100 Loss: 0.4941
+2023-05-30 00:33:52,954 - root - INFO - Training steps: 150 Loss: 0.5650
+2023-05-30 00:33:54,929 - root - INFO - Training steps: 200 Loss: 0.5118
+2023-05-30 00:33:56,922 - root - INFO - Training steps: 250 Loss: 0.5189
+2023-05-30 00:33:58,902 - root - INFO - Training steps: 300 Loss: 0.6040
+2023-05-30 00:34:00,911 - root - INFO - Training steps: 350 Loss: 0.4500
+2023-05-30 00:34:02,924 - root - INFO - Training steps: 400 Loss: 0.5282
+2023-05-30 00:34:04,937 - root - INFO - Training steps: 450 Loss: 0.4012
+2023-05-30 00:34:06,967 - root - INFO - Training steps: 500 Loss: 0.4648
+2023-05-30 00:34:09,056 - root - INFO - Training steps: 550 Loss: 0.5442
+2023-05-30 00:34:11,105 - root - INFO - Training steps: 600 Loss: 0.4692
+2023-05-30 00:34:13,151 - root - INFO - Training steps: 650 Loss: 0.4794
+2023-05-30 00:34:15,186 - root - INFO - Training steps: 700 Loss: 0.5683
+2023-05-30 00:34:17,217 - root - INFO - Training steps: 750 Loss: 0.6046
+2023-05-30 00:34:19,294 - root - INFO - Training steps: 800 Loss: 0.4603
+2023-05-30 00:34:21,337 - root - INFO - Training steps: 850 Loss: 0.4813
+2023-05-30 00:34:23,383 - root - INFO - Training steps: 900 Loss: 0.4237
+2023-05-30 00:34:25,434 - root - INFO - Training steps: 950 Loss: 0.4359
+2023-05-30 00:34:27,459 - root - INFO - Training steps: 1000 Loss: 0.4176
+2023-05-30 00:34:29,492 - root - INFO - Training steps: 1050 Loss: 0.4226
+2023-05-30 00:34:31,518 - root - INFO - Training steps: 1100 Loss: 0.3787
+2023-05-30 00:34:33,512 - root - INFO - Training steps: 1150 Loss: 0.6386
+2023-05-30 00:34:35,493 - root - INFO - Training steps: 1200 Loss: 0.4913
+2023-05-30 00:34:37,450 - root - INFO - Training steps: 1250 Loss: 0.4859
+2023-05-30 00:34:39,411 - root - INFO - Training steps: 1300 Loss: 0.4432
+2023-05-30 00:34:41,375 - root - INFO - Training steps: 1350 Loss: 0.4895
+2023-05-30 00:34:43,338 - root - INFO - Training steps: 1400 Loss: 0.4916
+2023-05-30 00:34:45,283 - root - INFO - Training steps: 1450 Loss: 0.4563
+2023-05-30 00:34:47,275 - root - INFO - Training steps: 1500 Loss: 0.3750
+2023-05-30 00:34:49,228 - root - INFO - Training steps: 1550 Loss: 0.5188
+2023-05-30 00:34:51,170 - root - INFO - Training steps: 1600 Loss: 0.4415
+2023-05-30 00:35:02,340 - root - INFO - TRAIN AUC : 0.8261 ACC : 0.7737
+2023-05-30 00:35:23,205 - root - INFO - VALID AUC : 0.8221 ACC : 0.7724
+2023-05-30 00:35:23,206 - root - INFO - Start Training: Epoch 18
+2023-05-30 00:35:36,548 - root - INFO - Training steps: 0 Loss: 0.4622
+2023-05-30 00:35:38,704 - root - INFO - Training steps: 50 Loss: 0.4674
+2023-05-30 00:35:40,721 - root - INFO - Training steps: 100 Loss: 0.4202
+2023-05-30 00:35:42,705 - root - INFO - Training steps: 150 Loss: 0.6322
+2023-05-30 00:35:44,690 - root - INFO - Training steps: 200 Loss: 0.4941
+2023-05-30 00:35:46,668 - root - INFO - Training steps: 250 Loss: 0.5226
+2023-05-30 00:35:48,700 - root - INFO - Training steps: 300 Loss: 0.5341
+2023-05-30 00:35:50,744 - root - INFO - Training steps: 350 Loss: 0.4605
+2023-05-30 00:35:52,748 - root - INFO - Training steps: 400 Loss: 0.5100
+2023-05-30 00:35:54,777 - root - INFO - Training steps: 450 Loss: 0.4791
+2023-05-30 00:35:56,802 - root - INFO - Training steps: 500 Loss: 0.3713
+2023-05-30 00:35:58,841 - root - INFO - Training steps: 550 Loss: 0.4260
+2023-05-30 00:36:00,932 - root - INFO - Training steps: 600 Loss: 0.5338
+2023-05-30 00:36:02,998 - root - INFO - Training steps: 650 Loss: 0.5939
+2023-05-30 00:36:05,077 - root - INFO - Training steps: 700 Loss: 0.3715
+2023-05-30 00:36:07,168 - root - INFO - Training steps: 750 Loss: 0.4062
+2023-05-30 00:36:09,211 - root - INFO - Training steps: 800 Loss: 0.5658
+2023-05-30 00:36:11,306 - root - INFO - Training steps: 850 Loss: 0.5506
+2023-05-30 00:36:13,395 - root - INFO - Training steps: 900 Loss: 0.5348
+2023-05-30 00:36:15,571 - root - INFO - Training steps: 950 Loss: 0.5439
+2023-05-30 00:36:17,818 - root - INFO - Training steps: 1000 Loss: 0.4594
+2023-05-30 00:36:19,982 - root - INFO - Training steps: 1050 Loss: 0.3854
+2023-05-30 00:36:22,220 - root - INFO - Training steps: 1100 Loss: 0.5207
+2023-05-30 00:36:24,381 - root - INFO - Training steps: 1150 Loss: 0.4920
+2023-05-30 00:36:26,445 - root - INFO - Training steps: 1200 Loss: 0.4312
+2023-05-30 00:36:28,459 - root - INFO - Training steps: 1250 Loss: 0.5091
+2023-05-30 00:36:30,509 - root - INFO - Training steps: 1300 Loss: 0.4459
+2023-05-30 00:36:32,521 - root - INFO - Training steps: 1350 Loss: 0.4542
+2023-05-30 00:36:34,643 - root - INFO - Training steps: 1400 Loss: 0.4526
+2023-05-30 00:36:36,607 - root - INFO - Training steps: 1450 Loss: 0.3641
+2023-05-30 00:36:38,664 - root - INFO - Training steps: 1500 Loss: 0.5028
+2023-05-30 00:36:40,708 - root - INFO - Training steps: 1550 Loss: 0.5054
+2023-05-30 00:36:42,777 - root - INFO - Training steps: 1600 Loss: 0.4544
+2023-05-30 00:36:54,089 - root - INFO - TRAIN AUC : 0.8261 ACC : 0.7735
+2023-05-30 00:37:15,725 - root - INFO - VALID AUC : 0.8221 ACC : 0.7720
+2023-05-30 00:37:15,726 - root - INFO - Start Training: Epoch 19
+2023-05-30 00:37:29,790 - root - INFO - Training steps: 0 Loss: 0.4661
+2023-05-30 00:37:32,201 - root - INFO - Training steps: 50 Loss: 0.5143
+2023-05-30 00:37:34,263 - root - INFO - Training steps: 100 Loss: 0.5112
+2023-05-30 00:37:36,623 - root - INFO - Training steps: 150 Loss: 0.6103
+2023-05-30 00:37:38,682 - root - INFO - Training steps: 200 Loss: 0.5417
+2023-05-30 00:37:40,798 - root - INFO - Training steps: 250 Loss: 0.3816
+2023-05-30 00:37:42,912 - root - INFO - Training steps: 300 Loss: 0.4210
+2023-05-30 00:37:45,057 - root - INFO - Training steps: 350 Loss: 0.3969
+2023-05-30 00:37:47,237 - root - INFO - Training steps: 400 Loss: 0.4507
+2023-05-30 00:37:49,477 - root - INFO - Training steps: 450 Loss: 0.4674
+2023-05-30 00:37:51,547 - root - INFO - Training steps: 500 Loss: 0.5537
+2023-05-30 00:37:53,774 - root - INFO - Training steps: 550 Loss: 0.4782
+2023-05-30 00:37:55,990 - root - INFO - Training steps: 600 Loss: 0.5957
+2023-05-30 00:37:58,260 - root - INFO - Training steps: 650 Loss: 0.5736
+2023-05-30 00:38:00,417 - root - INFO - Training steps: 700 Loss: 0.4696
+2023-05-30 00:38:02,500 - root - INFO - Training steps: 750 Loss: 0.4557
+2023-05-30 00:38:04,745 - root - INFO - Training steps: 800 Loss: 0.4319
+2023-05-30 00:38:07,289 - root - INFO - Training steps: 850 Loss: 0.5355
+2023-05-30 00:38:09,538 - root - INFO - Training steps: 900 Loss: 0.4779
+2023-05-30 00:38:11,679 - root - INFO - Training steps: 950 Loss: 0.4517
+2023-05-30 00:38:13,748 - root - INFO - Training steps: 1000 Loss: 0.4658
+2023-05-30 00:38:15,874 - root - INFO - Training steps: 1050 Loss: 0.4776
+2023-05-30 00:38:17,974 - root - INFO - Training steps: 1100 Loss: 0.4138
+2023-05-30 00:38:20,040 - root - INFO - Training steps: 1150 Loss: 0.4830
+2023-05-30 00:38:22,110 - root - INFO - Training steps: 1200 Loss: 0.4877
+2023-05-30 00:38:24,153 - root - INFO - Training steps: 1250 Loss: 0.4216
+2023-05-30 00:38:26,187 - root - INFO - Training steps: 1300 Loss: 0.4232
+2023-05-30 00:38:28,171 - root - INFO - Training steps: 1350 Loss: 0.4226
+2023-05-30 00:38:30,173 - root - INFO - Training steps: 1400 Loss: 0.4817
+2023-05-30 00:38:32,180 - root - INFO - Training steps: 1450 Loss: 0.4977
+2023-05-30 00:38:34,311 - root - INFO - Training steps: 1500 Loss: 0.5273
+2023-05-30 00:38:36,267 - root - INFO - Training steps: 1550 Loss: 0.4867
+2023-05-30 00:38:38,213 - root - INFO - Training steps: 1600 Loss: 0.5439
+2023-05-30 00:38:49,400 - root - INFO - TRAIN AUC : 0.8263 ACC : 0.7736
+2023-05-30 00:39:10,492 - root - INFO - VALID AUC : 0.8233 ACC : 0.7746
+2023-05-30 00:39:10,493 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:39:10,507 - root - INFO - Start Training: Epoch 20
+2023-05-30 00:39:23,812 - root - INFO - Training steps: 0 Loss: 0.5097
+2023-05-30 00:39:25,912 - root - INFO - Training steps: 50 Loss: 0.5000
+2023-05-30 00:39:27,945 - root - INFO - Training steps: 100 Loss: 0.3497
+2023-05-30 00:39:29,931 - root - INFO - Training steps: 150 Loss: 0.4005
+2023-05-30 00:39:31,934 - root - INFO - Training steps: 200 Loss: 0.3929
+2023-05-30 00:39:34,039 - root - INFO - Training steps: 250 Loss: 0.6646
+2023-05-30 00:39:36,020 - root - INFO - Training steps: 300 Loss: 0.5483
+2023-05-30 00:39:37,998 - root - INFO - Training steps: 350 Loss: 0.5796
+2023-05-30 00:39:40,047 - root - INFO - Training steps: 400 Loss: 0.5038
+2023-05-30 00:39:42,083 - root - INFO - Training steps: 450 Loss: 0.4490
+2023-05-30 00:39:44,133 - root - INFO - Training steps: 500 Loss: 0.4158
+2023-05-30 00:39:46,463 - root - INFO - Training steps: 550 Loss: 0.4700
+2023-05-30 00:39:48,602 - root - INFO - Training steps: 600 Loss: 0.5536
+2023-05-30 00:39:50,818 - root - INFO - Training steps: 650 Loss: 0.5128
+2023-05-30 00:39:52,882 - root - INFO - Training steps: 700 Loss: 0.4449
+2023-05-30 00:39:54,931 - root - INFO - Training steps: 750 Loss: 0.5000
+2023-05-30 00:39:56,994 - root - INFO - Training steps: 800 Loss: 0.4354
+2023-05-30 00:39:59,039 - root - INFO - Training steps: 850 Loss: 0.5355
+2023-05-30 00:40:01,089 - root - INFO - Training steps: 900 Loss: 0.4822
+2023-05-30 00:40:03,163 - root - INFO - Training steps: 950 Loss: 0.3940
+2023-05-30 00:40:05,217 - root - INFO - Training steps: 1000 Loss: 0.4374
+2023-05-30 00:40:07,285 - root - INFO - Training steps: 1050 Loss: 0.4585
+2023-05-30 00:40:09,341 - root - INFO - Training steps: 1100 Loss: 0.4170
+2023-05-30 00:40:11,387 - root - INFO - Training steps: 1150 Loss: 0.7038
+2023-05-30 00:40:13,359 - root - INFO - Training steps: 1200 Loss: 0.5154
+2023-05-30 00:40:15,352 - root - INFO - Training steps: 1250 Loss: 0.4581
+2023-05-30 00:40:17,342 - root - INFO - Training steps: 1300 Loss: 0.5270
+2023-05-30 00:40:19,394 - root - INFO - Training steps: 1350 Loss: 0.5088
+2023-05-30 00:40:21,352 - root - INFO - Training steps: 1400 Loss: 0.4122
+2023-05-30 00:40:23,296 - root - INFO - Training steps: 1450 Loss: 0.4389
+2023-05-30 00:40:25,254 - root - INFO - Training steps: 1500 Loss: 0.6251
+2023-05-30 00:40:27,197 - root - INFO - Training steps: 1550 Loss: 0.3682
+2023-05-30 00:40:29,142 - root - INFO - Training steps: 1600 Loss: 0.4888
+2023-05-30 00:40:40,302 - root - INFO - TRAIN AUC : 0.8265 ACC : 0.7739
+2023-05-30 00:41:00,976 - root - INFO - VALID AUC : 0.8233 ACC : 0.7733
+2023-05-30 00:41:00,978 - root - INFO - Start Training: Epoch 21
+2023-05-30 00:41:14,810 - root - INFO - Training steps: 0 Loss: 0.5448
+2023-05-30 00:41:17,032 - root - INFO - Training steps: 50 Loss: 0.5388
+2023-05-30 00:41:19,053 - root - INFO - Training steps: 100 Loss: 0.4620
+2023-05-30 00:41:21,031 - root - INFO - Training steps: 150 Loss: 0.4252
+2023-05-30 00:41:23,010 - root - INFO - Training steps: 200 Loss: 0.4849
+2023-05-30 00:41:24,986 - root - INFO - Training steps: 250 Loss: 0.4595
+2023-05-30 00:41:26,964 - root - INFO - Training steps: 300 Loss: 0.5610
+2023-05-30 00:41:28,952 - root - INFO - Training steps: 350 Loss: 0.4313
+2023-05-30 00:41:30,999 - root - INFO - Training steps: 400 Loss: 0.4896
+2023-05-30 00:41:33,069 - root - INFO - Training steps: 450 Loss: 0.5506
+2023-05-30 00:41:35,345 - root - INFO - Training steps: 500 Loss: 0.5807
+2023-05-30 00:41:37,384 - root - INFO - Training steps: 550 Loss: 0.4419
+2023-05-30 00:41:39,436 - root - INFO - Training steps: 600 Loss: 0.5592
+2023-05-30 00:41:41,518 - root - INFO - Training steps: 650 Loss: 0.5708
+2023-05-30 00:41:43,580 - root - INFO - Training steps: 700 Loss: 0.4603
+2023-05-30 00:41:45,747 - root - INFO - Training steps: 750 Loss: 0.4554
+2023-05-30 00:41:47,820 - root - INFO - Training steps: 800 Loss: 0.4540
+2023-05-30 00:41:49,981 - root - INFO - Training steps: 850 Loss: 0.3828
+2023-05-30 00:41:52,092 - root - INFO - Training steps: 900 Loss: 0.4576
+2023-05-30 00:41:54,215 - root - INFO - Training steps: 950 Loss: 0.5308
+2023-05-30 00:41:56,532 - root - INFO - Training steps: 1000 Loss: 0.5787
+2023-05-30 00:41:59,084 - root - INFO - Training steps: 1050 Loss: 0.4580
+2023-05-30 00:42:01,361 - root - INFO - Training steps: 1100 Loss: 0.4604
+2023-05-30 00:42:03,537 - root - INFO - Training steps: 1150 Loss: 0.3810
+2023-05-30 00:42:05,712 - root - INFO - Training steps: 1200 Loss: 0.5094
+2023-05-30 00:42:07,845 - root - INFO - Training steps: 1250 Loss: 0.4624
+2023-05-30 00:42:09,871 - root - INFO - Training steps: 1300 Loss: 0.4210
+2023-05-30 00:42:11,947 - root - INFO - Training steps: 1350 Loss: 0.4664
+2023-05-30 00:42:13,920 - root - INFO - Training steps: 1400 Loss: 0.4786
+2023-05-30 00:42:15,929 - root - INFO - Training steps: 1450 Loss: 0.3494
+2023-05-30 00:42:17,879 - root - INFO - Training steps: 1500 Loss: 0.4514
+2023-05-30 00:42:19,831 - root - INFO - Training steps: 1550 Loss: 0.3693
+2023-05-30 00:42:21,827 - root - INFO - Training steps: 1600 Loss: 0.3835
+2023-05-30 00:42:33,143 - root - INFO - TRAIN AUC : 0.8267 ACC : 0.7733
+2023-05-30 00:42:54,923 - root - INFO - VALID AUC : 0.8228 ACC : 0.7727
+2023-05-30 00:42:54,924 - root - INFO - Start Training: Epoch 22
+2023-05-30 00:43:08,886 - root - INFO - Training steps: 0 Loss: 0.4795
+2023-05-30 00:43:11,104 - root - INFO - Training steps: 50 Loss: 0.4748
+2023-05-30 00:43:13,175 - root - INFO - Training steps: 100 Loss: 0.4499
+2023-05-30 00:43:15,175 - root - INFO - Training steps: 150 Loss: 0.4660
+2023-05-30 00:43:17,204 - root - INFO - Training steps: 200 Loss: 0.5535
+2023-05-30 00:43:19,225 - root - INFO - Training steps: 250 Loss: 0.4979
+2023-05-30 00:43:21,220 - root - INFO - Training steps: 300 Loss: 0.3954
+2023-05-30 00:43:23,211 - root - INFO - Training steps: 350 Loss: 0.4421
+2023-05-30 00:43:25,224 - root - INFO - Training steps: 400 Loss: 0.4151
+2023-05-30 00:43:27,260 - root - INFO - Training steps: 450 Loss: 0.4661
+2023-05-30 00:43:29,285 - root - INFO - Training steps: 500 Loss: 0.5000
+2023-05-30 00:43:31,463 - root - INFO - Training steps: 550 Loss: 0.5324
+2023-05-30 00:43:33,664 - root - INFO - Training steps: 600 Loss: 0.4594
+2023-05-30 00:43:35,796 - root - INFO - Training steps: 650 Loss: 0.4544
+2023-05-30 00:43:37,981 - root - INFO - Training steps: 700 Loss: 0.4215
+2023-05-30 00:43:40,253 - root - INFO - Training steps: 750 Loss: 0.4603
+2023-05-30 00:43:42,352 - root - INFO - Training steps: 800 Loss: 0.5284
+2023-05-30 00:43:44,512 - root - INFO - Training steps: 850 Loss: 0.5655
+2023-05-30 00:43:46,580 - root - INFO - Training steps: 900 Loss: 0.5272
+2023-05-30 00:43:48,838 - root - INFO - Training steps: 950 Loss: 0.5277
+2023-05-30 00:43:50,993 - root - INFO - Training steps: 1000 Loss: 0.4446
+2023-05-30 00:43:53,157 - root - INFO - Training steps: 1050 Loss: 0.4377
+2023-05-30 00:43:55,399 - root - INFO - Training steps: 1100 Loss: 0.5023
+2023-05-30 00:43:57,607 - root - INFO - Training steps: 1150 Loss: 0.4597
+2023-05-30 00:43:59,686 - root - INFO - Training steps: 1200 Loss: 0.3847
+2023-05-30 00:44:01,860 - root - INFO - Training steps: 1250 Loss: 0.4290
+2023-05-30 00:44:03,936 - root - INFO - Training steps: 1300 Loss: 0.4837
+2023-05-30 00:44:06,030 - root - INFO - Training steps: 1350 Loss: 0.5139
+2023-05-30 00:44:08,030 - root - INFO - Training steps: 1400 Loss: 0.5474
+2023-05-30 00:44:10,117 - root - INFO - Training steps: 1450 Loss: 0.4389
+2023-05-30 00:44:12,088 - root - INFO - Training steps: 1500 Loss: 0.5380
+2023-05-30 00:44:14,051 - root - INFO - Training steps: 1550 Loss: 0.5327
+2023-05-30 00:44:16,027 - root - INFO - Training steps: 1600 Loss: 0.4556
+2023-05-30 00:44:27,188 - root - INFO - TRAIN AUC : 0.8268 ACC : 0.7742
+2023-05-30 00:44:48,224 - root - INFO - VALID AUC : 0.8239 ACC : 0.7740
+2023-05-30 00:44:48,225 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:44:48,237 - root - INFO - Start Training: Epoch 23
+2023-05-30 00:45:02,360 - root - INFO - Training steps: 0 Loss: 0.4386
+2023-05-30 00:45:04,611 - root - INFO - Training steps: 50 Loss: 0.5024
+2023-05-30 00:45:06,855 - root - INFO - Training steps: 100 Loss: 0.4791
+2023-05-30 00:45:09,023 - root - INFO - Training steps: 150 Loss: 0.5779
+2023-05-30 00:45:11,268 - root - INFO - Training steps: 200 Loss: 0.5227
+2023-05-30 00:45:13,340 - root - INFO - Training steps: 250 Loss: 0.4403
+2023-05-30 00:45:15,473 - root - INFO - Training steps: 300 Loss: 0.5076
+2023-05-30 00:45:17,542 - root - INFO - Training steps: 350 Loss: 0.5637
+2023-05-30 00:45:19,560 - root - INFO - Training steps: 400 Loss: 0.4351
+2023-05-30 00:45:21,786 - root - INFO - Training steps: 450 Loss: 0.5420
+2023-05-30 00:45:23,897 - root - INFO - Training steps: 500 Loss: 0.5198
+2023-05-30 00:45:26,094 - root - INFO - Training steps: 550 Loss: 0.4527
+2023-05-30 00:45:28,204 - root - INFO - Training steps: 600 Loss: 0.4844
+2023-05-30 00:45:30,285 - root - INFO - Training steps: 650 Loss: 0.4075
+2023-05-30 00:45:32,379 - root - INFO - Training steps: 700 Loss: 0.4836
+2023-05-30 00:45:34,458 - root - INFO - Training steps: 750 Loss: 0.5277
+2023-05-30 00:45:36,526 - root - INFO - Training steps: 800 Loss: 0.5305
+2023-05-30 00:45:38,614 - root - INFO - Training steps: 850 Loss: 0.4402
+2023-05-30 00:45:40,740 - root - INFO - Training steps: 900 Loss: 0.5056
+2023-05-30 00:45:43,016 - root - INFO - Training steps: 950 Loss: 0.5300
+2023-05-30 00:45:45,205 - root - INFO - Training steps: 1000 Loss: 0.5562
+2023-05-30 00:45:47,517 - root - INFO - Training steps: 1050 Loss: 0.5738
+2023-05-30 00:45:49,678 - root - INFO - Training steps: 1100 Loss: 0.4150
+2023-05-30 00:45:51,913 - root - INFO - Training steps: 1150 Loss: 0.4892
+2023-05-30 00:45:54,153 - root - INFO - Training steps: 1200 Loss: 0.4941
+2023-05-30 00:45:56,226 - root - INFO - Training steps: 1250 Loss: 0.5079
+2023-05-30 00:45:58,234 - root - INFO - Training steps: 1300 Loss: 0.5272
+2023-05-30 00:46:00,207 - root - INFO - Training steps: 1350 Loss: 0.6427
+2023-05-30 00:46:02,175 - root - INFO - Training steps: 1400 Loss: 0.4591
+2023-05-30 00:46:04,133 - root - INFO - Training steps: 1450 Loss: 0.3599
+2023-05-30 00:46:06,070 - root - INFO - Training steps: 1500 Loss: 0.5733
+2023-05-30 00:46:08,200 - root - INFO - Training steps: 1550 Loss: 0.3849
+2023-05-30 00:46:10,163 - root - INFO - Training steps: 1600 Loss: 0.5093
+2023-05-30 00:46:21,335 - root - INFO - TRAIN AUC : 0.8271 ACC : 0.7743
+2023-05-30 00:46:42,828 - root - INFO - VALID AUC : 0.8243 ACC : 0.7747
+2023-05-30 00:46:42,829 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:46:42,843 - root - INFO - Start Training: Epoch 24
+2023-05-30 00:46:57,019 - root - INFO - Training steps: 0 Loss: 0.4355
+2023-05-30 00:46:59,197 - root - INFO - Training steps: 50 Loss: 0.3499
+2023-05-30 00:47:01,231 - root - INFO - Training steps: 100 Loss: 0.5025
+2023-05-30 00:47:03,201 - root - INFO - Training steps: 150 Loss: 0.4000
+2023-05-30 00:47:05,339 - root - INFO - Training steps: 200 Loss: 0.5168
+2023-05-30 00:47:07,337 - root - INFO - Training steps: 250 Loss: 0.4390
+2023-05-30 00:47:09,339 - root - INFO - Training steps: 300 Loss: 0.4489
+2023-05-30 00:47:11,530 - root - INFO - Training steps: 350 Loss: 0.4265
+2023-05-30 00:47:13,803 - root - INFO - Training steps: 400 Loss: 0.4946
+2023-05-30 00:47:16,180 - root - INFO - Training steps: 450 Loss: 0.5034
+2023-05-30 00:47:18,402 - root - INFO - Training steps: 500 Loss: 0.4621
+2023-05-30 00:47:20,518 - root - INFO - Training steps: 550 Loss: 0.3710
+2023-05-30 00:47:22,565 - root - INFO - Training steps: 600 Loss: 0.5571
+2023-05-30 00:47:24,774 - root - INFO - Training steps: 650 Loss: 0.4998
+2023-05-30 00:47:26,863 - root - INFO - Training steps: 700 Loss: 0.3804
+2023-05-30 00:47:28,942 - root - INFO - Training steps: 750 Loss: 0.3473
+2023-05-30 00:47:30,990 - root - INFO - Training steps: 800 Loss: 0.4028
+2023-05-30 00:47:33,033 - root - INFO - Training steps: 850 Loss: 0.4652
+2023-05-30 00:47:35,092 - root - INFO - Training steps: 900 Loss: 0.5494
+2023-05-30 00:47:37,140 - root - INFO - Training steps: 950 Loss: 0.5743
+2023-05-30 00:47:39,227 - root - INFO - Training steps: 1000 Loss: 0.6073
+2023-05-30 00:47:41,414 - root - INFO - Training steps: 1050 Loss: 0.3804
+2023-05-30 00:47:43,549 - root - INFO - Training steps: 1100 Loss: 0.4236
+2023-05-30 00:47:45,599 - root - INFO - Training steps: 1150 Loss: 0.4463
+2023-05-30 00:47:48,036 - root - INFO - Training steps: 1200 Loss: 0.4223
+2023-05-30 00:47:50,107 - root - INFO - Training steps: 1250 Loss: 0.4705
+2023-05-30 00:47:52,182 - root - INFO - Training steps: 1300 Loss: 0.3850
+2023-05-30 00:47:54,233 - root - INFO - Training steps: 1350 Loss: 0.4506
+2023-05-30 00:47:56,281 - root - INFO - Training steps: 1400 Loss: 0.4918
+2023-05-30 00:47:58,440 - root - INFO - Training steps: 1450 Loss: 0.4727
+2023-05-30 00:48:00,404 - root - INFO - Training steps: 1500 Loss: 0.4974
+2023-05-30 00:48:02,347 - root - INFO - Training steps: 1550 Loss: 0.6004
+2023-05-30 00:48:04,303 - root - INFO - Training steps: 1600 Loss: 0.4620
+2023-05-30 00:48:15,469 - root - INFO - TRAIN AUC : 0.8275 ACC : 0.7747
+2023-05-30 00:48:36,730 - root - INFO - VALID AUC : 0.8241 ACC : 0.7741
+2023-05-30 00:48:36,733 - root - INFO - Start Training: Epoch 25
+2023-05-30 00:48:50,088 - root - INFO - Training steps: 0 Loss: 0.4626
+2023-05-30 00:48:52,249 - root - INFO - Training steps: 50 Loss: 0.5421
+2023-05-30 00:48:54,254 - root - INFO - Training steps: 100 Loss: 0.4085
+2023-05-30 00:48:56,242 - root - INFO - Training steps: 150 Loss: 0.4140
+2023-05-30 00:48:58,233 - root - INFO - Training steps: 200 Loss: 0.5110
+2023-05-30 00:49:00,216 - root - INFO - Training steps: 250 Loss: 0.4175
+2023-05-30 00:49:02,209 - root - INFO - Training steps: 300 Loss: 0.3664
+2023-05-30 00:49:04,215 - root - INFO - Training steps: 350 Loss: 0.4955
+2023-05-30 00:49:06,267 - root - INFO - Training steps: 400 Loss: 0.4027
+2023-05-30 00:49:08,289 - root - INFO - Training steps: 450 Loss: 0.4762
+2023-05-30 00:49:10,321 - root - INFO - Training steps: 500 Loss: 0.5010
+2023-05-30 00:49:12,364 - root - INFO - Training steps: 550 Loss: 0.4013
+2023-05-30 00:49:14,380 - root - INFO - Training steps: 600 Loss: 0.5715
+2023-05-30 00:49:16,418 - root - INFO - Training steps: 650 Loss: 0.4399
+2023-05-30 00:49:18,466 - root - INFO - Training steps: 700 Loss: 0.4684
+2023-05-30 00:49:20,484 - root - INFO - Training steps: 750 Loss: 0.5403
+2023-05-30 00:49:22,510 - root - INFO - Training steps: 800 Loss: 0.4994
+2023-05-30 00:49:24,543 - root - INFO - Training steps: 850 Loss: 0.4687
+2023-05-30 00:49:26,600 - root - INFO - Training steps: 900 Loss: 0.4287
+2023-05-30 00:49:28,641 - root - INFO - Training steps: 950 Loss: 0.3461
+2023-05-30 00:49:30,680 - root - INFO - Training steps: 1000 Loss: 0.4270
+2023-05-30 00:49:32,713 - root - INFO - Training steps: 1050 Loss: 0.5254
+2023-05-30 00:49:34,727 - root - INFO - Training steps: 1100 Loss: 0.5115
+2023-05-30 00:49:36,712 - root - INFO - Training steps: 1150 Loss: 0.5552
+2023-05-30 00:49:38,694 - root - INFO - Training steps: 1200 Loss: 0.4465
+2023-05-30 00:49:40,650 - root - INFO - Training steps: 1250 Loss: 0.4053
+2023-05-30 00:49:42,599 - root - INFO - Training steps: 1300 Loss: 0.4153
+2023-05-30 00:49:44,614 - root - INFO - Training steps: 1350 Loss: 0.5137
+2023-05-30 00:49:46,566 - root - INFO - Training steps: 1400 Loss: 0.4915
+2023-05-30 00:49:48,517 - root - INFO - Training steps: 1450 Loss: 0.5351
+2023-05-30 00:49:50,473 - root - INFO - Training steps: 1500 Loss: 0.4454
+2023-05-30 00:49:52,426 - root - INFO - Training steps: 1550 Loss: 0.5051
+2023-05-30 00:49:54,369 - root - INFO - Training steps: 1600 Loss: 0.5272
+2023-05-30 00:50:05,520 - root - INFO - TRAIN AUC : 0.8283 ACC : 0.7752
+2023-05-30 00:50:26,320 - root - INFO - VALID AUC : 0.8249 ACC : 0.7744
+2023-05-30 00:50:26,322 - root - INFO - saving model as saved_models/best_model.pt...
+2023-05-30 00:50:26,334 - root - INFO - Start Training: Epoch 26
+2023-05-30 00:50:39,891 - root - INFO - Training steps: 0 Loss: 0.4762
+2023-05-30 00:50:42,080 - root - INFO - Training steps: 50 Loss: 0.4745
+2023-05-30 00:50:44,124 - root - INFO - Training steps: 100 Loss: 0.4741
+2023-05-30 00:50:46,111 - root - INFO - Training steps: 150 Loss: 0.4158
+2023-05-30 00:50:48,120 - root - INFO - Training steps: 200 Loss: 0.6775
+2023-05-30 00:50:50,345 - root - INFO - Training steps: 250 Loss: 0.5069
+2023-05-30 00:50:52,503 - root - INFO - Training steps: 300 Loss: 0.4550
+2023-05-30 00:50:54,670 - root - INFO - Training steps: 350 Loss: 0.5269
+2023-05-30 00:50:56,731 - root - INFO - Training steps: 400 Loss: 0.5465
+2023-05-30 00:50:59,032 - root - INFO - Training steps: 450 Loss: 0.4782
+2023-05-30 00:51:01,276 - root - INFO - Training steps: 500 Loss: 0.4637
+2023-05-30 00:51:03,584 - root - INFO - Training steps: 550 Loss: 0.4405
+2023-05-30 00:51:05,866 - root - INFO - Training steps: 600 Loss: 0.4917
+2023-05-30 00:51:08,081 - root - INFO - Training steps: 650 Loss: 0.4947
+2023-05-30 00:51:10,153 - root - INFO - Training steps: 700 Loss: 0.4992
+2023-05-30 00:51:12,207 - root - INFO - Training steps: 750 Loss: 0.4696
+2023-05-30 00:51:14,274 - root - INFO - Training steps: 800 Loss: 0.5051
+2023-05-30 00:51:16,480 - root - INFO - Training steps: 850 Loss: 0.4920
+2023-05-30 00:51:18,599 - root - INFO - Training steps: 900 Loss: 0.4819
+2023-05-30 00:51:20,748 - root - INFO - Training steps: 950 Loss: 0.4320
+2023-05-30 00:51:22,811 - root - INFO - Training steps: 1000 Loss: 0.4112
+2023-05-30 00:51:24,863 - root - INFO - Training steps: 1050 Loss: 0.3748
+2023-05-30 00:51:26,994 - root - INFO - Training steps: 1100 Loss: 0.4919
+2023-05-30 00:51:29,296 - root - INFO - Training steps: 1150 Loss: 0.4203
+2023-05-30 00:51:31,509 - root - INFO - Training steps: 1200 Loss: 0.5487
+2023-05-30 00:51:33,556 - root - INFO - Training steps: 1250 Loss: 0.3818
+2023-05-30 00:51:35,711 - root - INFO - Training steps: 1300 Loss: 0.4417
+2023-05-30 00:51:37,804 - root - INFO - Training steps: 1350 Loss: 0.4556
+2023-05-30 00:51:39,842 - root - INFO - Training steps: 1400 Loss: 0.4717
+2023-05-30 00:51:41,960 - root - INFO - Training steps: 1450 Loss: 0.5283
+2023-05-30 00:51:43,989 - root - INFO - Training steps: 1500 Loss: 0.5470
+2023-05-30 00:51:46,013 - root - INFO - Training steps: 1550 Loss: 0.5053
+2023-05-30 00:51:48,050 - root - INFO - Training steps: 1600 Loss: 0.4899
+2023-05-30 00:51:59,310 - root - INFO - TRAIN AUC : 0.8295 ACC : 0.7760
+2023-05-30 00:52:20,437 - root - INFO - VALID AUC : 0.8248 ACC : 0.7749
+2023-05-30 00:52:20,439 - root - INFO - Start Training: Epoch 27
+2023-05-30 00:52:33,767 - root - INFO - Training steps: 0 Loss: 0.4778
+2023-05-30 00:52:35,896 - root - INFO - Training steps: 50 Loss: 0.3974
+2023-05-30 00:52:37,893 - root - INFO - Training steps: 100 Loss: 0.4631
+2023-05-30 00:52:39,873 - root - INFO - Training steps: 150 Loss: 0.5482
+2023-05-30 00:52:41,877 - root - INFO - Training steps: 200 Loss: 0.4968
+2023-05-30 00:52:43,853 - root - INFO - Training steps: 250 Loss: 0.5894
+2023-05-30 00:52:45,829 - root - INFO - Training steps: 300 Loss: 0.4929
+2023-05-30 00:52:47,826 - root - INFO - Training steps: 350 Loss: 0.4941
+2023-05-30 00:52:49,873 - root - INFO - Training steps: 400 Loss: 0.5319
+2023-05-30 00:52:51,914 - root - INFO - Training steps: 450 Loss: 0.4477
+2023-05-30 00:52:53,931 - root - INFO - Training steps: 500 Loss: 0.5263
+2023-05-30 00:52:55,977 - root - INFO - Training steps: 550 Loss: 0.4698
+2023-05-30 00:52:58,208 - root - INFO - Training steps: 600 Loss: 0.5143
+2023-05-30 00:53:00,478 - root - INFO - Training steps: 650 Loss: 0.5640
+2023-05-30 00:53:02,567 - root - INFO - Training steps: 700 Loss: 0.4356
+2023-05-30 00:53:04,610 - root - INFO - Training steps: 750 Loss: 0.4668
+2023-05-30 00:53:06,682 - root - INFO - Training steps: 800 Loss: 0.4372
+2023-05-30 00:53:08,707 - root - INFO - Training steps: 850 Loss: 0.5266
+2023-05-30 00:53:10,755 - root - INFO - Training steps: 900 Loss: 0.5762
+2023-05-30 00:53:12,834 - root - INFO - Training steps: 950 Loss: 0.6102
+2023-05-30 00:53:14,900 - root - INFO - Training steps: 1000 Loss: 0.3418
+2023-05-30 00:53:17,123 - root - INFO - Training steps: 1050 Loss: 0.4134
+2023-05-30 00:53:19,184 - root - INFO - Training steps: 1100 Loss: 0.4539
+2023-05-30 00:53:21,226 - root - INFO - Training steps: 1150 Loss: 0.4095
+2023-05-30 00:53:23,248 - root - INFO - Training steps: 1200 Loss: 0.4178
+2023-05-30 00:53:25,292 - root - INFO - Training steps: 1250 Loss: 0.3914
+2023-05-30 00:53:27,539 - root - INFO - Training steps: 1300 Loss: 0.4960
+2023-05-30 00:53:29,531 - root - INFO - Training steps: 1350 Loss: 0.4154
+2023-05-30 00:53:31,567 - root - INFO - Training steps: 1400 Loss: 0.4419
+2023-05-30 00:53:33,635 - root - INFO - Training steps: 1450 Loss: 0.5018
+2023-05-30 00:53:35,629 - root - INFO - Training steps: 1500 Loss: 0.4589
+2023-05-30 00:53:37,592 - root - INFO - Training steps: 1550 Loss: 0.4973
+2023-05-30 00:53:39,578 - root - INFO - Training steps: 1600 Loss: 0.4501
+2023-05-30 00:53:50,735 - root - INFO - TRAIN AUC : 0.8308 ACC : 0.7755
+2023-05-30 00:54:12,197 - root - INFO - VALID AUC : 0.8243 ACC : 0.7717
+2023-05-30 00:54:12,199 - root - INFO - Start Training: Epoch 28
+2023-05-30 00:54:26,086 - root - INFO - Training steps: 0 Loss: 0.5048
+2023-05-30 00:54:28,306 - root - INFO - Training steps: 50 Loss: 0.3929
+2023-05-30 00:54:30,314 - root - INFO - Training steps: 100 Loss: 0.4998
+2023-05-30 00:54:32,307 - root - INFO - Training steps: 150 Loss: 0.3888
+2023-05-30 00:54:34,308 - root - INFO - Training steps: 200 Loss: 0.4156
+2023-05-30 00:54:36,567 - root - INFO - Training steps: 250 Loss: 0.5018
+2023-05-30 00:54:38,604 - root - INFO - Training steps: 300 Loss: 0.4817
+2023-05-30 00:54:40,863 - root - INFO - Training steps: 350 Loss: 0.4467
+2023-05-30 00:54:43,140 - root - INFO - Training steps: 400 Loss: 0.4449
+2023-05-30 00:54:45,273 - root - INFO - Training steps: 450 Loss: 0.4712
+2023-05-30 00:54:47,356 - root - INFO - Training steps: 500 Loss: 0.4130
+2023-05-30 00:54:49,500 - root - INFO - Training steps: 550 Loss: 0.3745
+2023-05-30 00:54:51,623 - root - INFO - Training steps: 600 Loss: 0.3929
+2023-05-30 00:54:53,781 - root - INFO - Training steps: 650 Loss: 0.4535
+2023-05-30 00:54:55,950 - root - INFO - Training steps: 700 Loss: 0.4528
+2023-05-30 00:54:58,160 - root - INFO - Training steps: 750 Loss: 0.4665
+2023-05-30 00:55:00,329 - root - INFO - Training steps: 800 Loss: 0.4743
+2023-05-30 00:55:02,618 - root - INFO - Training steps: 850 Loss: 0.4779
+2023-05-30 00:55:04,700 - root - INFO - Training steps: 900 Loss: 0.5813
+2023-05-30 00:55:06,955 - root - INFO - Training steps: 950 Loss: 0.4464
+2023-05-30 00:55:09,108 - root - INFO - Training steps: 1000 Loss: 0.4137
+2023-05-30 00:55:11,287 - root - INFO - Training steps: 1050 Loss: 0.5891
+2023-05-30 00:55:13,375 - root - INFO - Training steps: 1100 Loss: 0.4057
+2023-05-30 00:55:15,744 - root - INFO - Training steps: 1150 Loss: 0.4838
+2023-05-30 00:55:18,004 - root - INFO - Training steps: 1200 Loss: 0.5750
+2023-05-30 00:55:20,255 - root - INFO - Training steps: 1250 Loss: 0.4303
+2023-05-30 00:55:22,453 - root - INFO - Training steps: 1300 Loss: 0.3965
+2023-05-30 00:55:24,514 - root - INFO - Training steps: 1350 Loss: 0.4911
+2023-05-30 00:55:26,513 - root - INFO - Training steps: 1400 Loss: 0.4836
+2023-05-30 00:55:28,586 - root - INFO - Training steps: 1450 Loss: 0.5129
+2023-05-30 00:55:30,718 - root - INFO - Training steps: 1500 Loss: 0.4069
+2023-05-30 00:55:32,836 - root - INFO - Training steps: 1550 Loss: 0.4706
+2023-05-30 00:55:34,927 - root - INFO - Training steps: 1600 Loss: 0.5497
+2023-05-30 00:55:46,257 - root - INFO - TRAIN AUC : 0.8331 ACC : 0.7771
+2023-05-30 00:56:07,995 - root - INFO - VALID AUC : 0.8243 ACC : 0.7733
+2023-05-30 00:56:07,996 - root - INFO - Start Training: Epoch 29
+2023-05-30 00:56:22,692 - root - INFO - Training steps: 0 Loss: 0.7053
+2023-05-30 00:56:25,037 - root - INFO - Training steps: 50 Loss: 0.3296
+2023-05-30 00:56:27,251 - root - INFO - Training steps: 100 Loss: 0.3800
+2023-05-30 00:56:29,421 - root - INFO - Training steps: 150 Loss: 0.4520
+2023-05-30 00:56:31,636 - root - INFO - Training steps: 200 Loss: 0.4986
+2023-05-30 00:56:33,648 - root - INFO - Training steps: 250 Loss: 0.4474
+2023-05-30 00:56:35,835 - root - INFO - Training steps: 300 Loss: 0.5309
+2023-05-30 00:56:38,012 - root - INFO - Training steps: 350 Loss: 0.6296
+2023-05-30 00:56:40,229 - root - INFO - Training steps: 400 Loss: 0.4710
+2023-05-30 00:56:42,441 - root - INFO - Training steps: 450 Loss: 0.4361
+2023-05-30 00:56:44,707 - root - INFO - Training steps: 500 Loss: 0.4090
+2023-05-30 00:56:46,796 - root - INFO - Training steps: 550 Loss: 0.3587
+2023-05-30 00:56:48,873 - root - INFO - Training steps: 600 Loss: 0.5038
+2023-05-30 00:56:51,052 - root - INFO - Training steps: 650 Loss: 0.3905
+2023-05-30 00:56:53,294 - root - INFO - Training steps: 700 Loss: 0.3840
+2023-05-30 00:56:55,404 - root - INFO - Training steps: 750 Loss: 0.4344
+2023-05-30 00:56:57,520 - root - INFO - Training steps: 800 Loss: 0.3051
+2023-05-30 00:56:59,591 - root - INFO - Training steps: 850 Loss: 0.5003
+2023-05-30 00:57:01,644 - root - INFO - Training steps: 900 Loss: 0.3969
+2023-05-30 00:57:03,672 - root - INFO - Training steps: 950 Loss: 0.4687
+2023-05-30 00:57:05,723 - root - INFO - Training steps: 1000 Loss: 0.4640
+2023-05-30 00:57:07,801 - root - INFO - Training steps: 1050 Loss: 0.5118
+2023-05-30 00:57:09,839 - root - INFO - Training steps: 1100 Loss: 0.4993
+2023-05-30 00:57:11,906 - root - INFO - Training steps: 1150 Loss: 0.3953
+2023-05-30 00:57:13,952 - root - INFO - Training steps: 1200 Loss: 0.5099
+2023-05-30 00:57:15,976 - root - INFO - Training steps: 1250 Loss: 0.4976
+2023-05-30 00:57:18,022 - root - INFO - Training steps: 1300 Loss: 0.4337
+2023-05-30 00:57:20,009 - root - INFO - Training steps: 1350 Loss: 0.5238
+2023-05-30 00:57:21,981 - root - INFO - Training steps: 1400 Loss: 0.4064
+2023-05-30 00:57:23,984 - root - INFO - Training steps: 1450 Loss: 0.3635
+2023-05-30 00:57:25,982 - root - INFO - Training steps: 1500 Loss: 0.4213
+2023-05-30 00:57:27,952 - root - INFO - Training steps: 1550 Loss: 0.5213
+2023-05-30 00:57:29,965 - root - INFO - Training steps: 1600 Loss: 0.4531
+2023-05-30 00:57:41,147 - root - INFO - TRAIN AUC : 0.8399 ACC : 0.7801
+2023-05-30 00:58:02,389 - root - INFO - VALID AUC : 0.8206 ACC : 0.7710
+2023-05-30 00:58:02,391 - root - INFO - Start Training: Epoch 30
+2023-05-30 00:58:15,707 - root - INFO - Training steps: 0 Loss: 0.4093
+2023-05-30 00:58:17,872 - root - INFO - Training steps: 50 Loss: 0.4563
+2023-05-30 00:58:19,882 - root - INFO - Training steps: 100 Loss: 0.3938
+2023-05-30 00:58:21,880 - root - INFO - Training steps: 150 Loss: 0.5285
+2023-05-30 00:58:23,854 - root - INFO - Training steps: 200 Loss: 0.4937
+2023-05-30 00:58:25,841 - root - INFO - Training steps: 250 Loss: 0.5259
+2023-05-30 00:58:27,826 - root - INFO - Training steps: 300 Loss: 0.4074
+2023-05-30 00:58:29,835 - root - INFO - Training steps: 350 Loss: 0.4933
+2023-05-30 00:58:31,874 - root - INFO - Training steps: 400 Loss: 0.3780
+2023-05-30 00:58:33,882 - root - INFO - Training steps: 450 Loss: 0.4953
+2023-05-30 00:58:35,906 - root - INFO - Training steps: 500 Loss: 0.5213
+2023-05-30 00:58:37,953 - root - INFO - Training steps: 550 Loss: 0.5510
+2023-05-30 00:58:40,040 - root - INFO - Training steps: 600 Loss: 0.4995
+2023-05-30 00:58:42,121 - root - INFO - Training steps: 650 Loss: 0.4837
+2023-05-30 00:58:44,640 - root - INFO - Training steps: 700 Loss: 0.5502
+2023-05-30 00:58:46,781 - root - INFO - Training steps: 750 Loss: 0.4156
+2023-05-30 00:58:49,126 - root - INFO - Training steps: 800 Loss: 0.4853
+2023-05-30 00:58:51,229 - root - INFO - Training steps: 850 Loss: 0.4991
+2023-05-30 00:58:53,417 - root - INFO - Training steps: 900 Loss: 0.4609
+2023-05-30 00:58:55,606 - root - INFO - Training steps: 950 Loss: 0.4717
+2023-05-30 00:58:57,793 - root - INFO - Training steps: 1000 Loss: 0.3826
+2023-05-30 00:58:59,853 - root - INFO - Training steps: 1050 Loss: 0.3696
+2023-05-30 00:59:01,928 - root - INFO - Training steps: 1100 Loss: 0.4198
+2023-05-30 00:59:03,952 - root - INFO - Training steps: 1150 Loss: 0.5533
+2023-05-30 00:59:05,944 - root - INFO - Training steps: 1200 Loss: 0.4303
+2023-05-30 00:59:07,937 - root - INFO - Training steps: 1250 Loss: 0.4074
+2023-05-30 00:59:09,934 - root - INFO - Training steps: 1300 Loss: 0.4408
+2023-05-30 00:59:11,891 - root - INFO - Training steps: 1350 Loss: 0.4634
+2023-05-30 00:59:13,851 - root - INFO - Training steps: 1400 Loss: 0.6195
+2023-05-30 00:59:15,917 - root - INFO - Training steps: 1450 Loss: 0.3223
+2023-05-30 00:59:18,265 - root - INFO - Training steps: 1500 Loss: 0.4996
+2023-05-30 00:59:20,245 - root - INFO - Training steps: 1550 Loss: 0.4769
+2023-05-30 00:59:22,209 - root - INFO - Training steps: 1600 Loss: 0.4579
+2023-05-30 00:59:33,421 - root - INFO - TRAIN AUC : 0.8476 ACC : 0.7848
+2023-05-30 00:59:54,852 - root - INFO - VALID AUC : 0.8173 ACC : 0.7694
+2023-05-30 00:59:54,853 - root - INFO - EarlyStopping counter: 5 out of 5
+2023-06-09 15:56:18,864 - root - INFO - Preparing data ...
+2023-06-09 15:57:59,842 - root - INFO - Building Model ...
+2023-06-09 15:58:00,014 - root - INFO - Start Training ...
+2023-06-09 15:58:00,015 - root - INFO - Start Training: Epoch 1
+2023-06-09 15:58:27,384 - root - INFO - Training steps: 0 Loss: 0.7014
+2023-06-09 15:58:29,963 - root - INFO - Training steps: 50 Loss: 0.6018
+2023-06-09 15:58:32,485 - root - INFO - Training steps: 100 Loss: 0.5719
+2023-06-09 15:58:35,025 - root - INFO - Training steps: 150 Loss: 0.5800
+2023-06-09 15:58:37,532 - root - INFO - Training steps: 200 Loss: 0.5868
+2023-06-09 15:58:40,071 - root - INFO - Training steps: 250 Loss: 0.5512
+2023-06-09 15:58:42,597 - root - INFO - Training steps: 300 Loss: 0.5062
+2023-06-09 15:58:45,107 - root - INFO - Training steps: 350 Loss: 0.5708
+2023-06-09 15:58:47,631 - root - INFO - Training steps: 400 Loss: 0.5780
+2023-06-09 15:58:50,168 - root - INFO - Training steps: 450 Loss: 0.4845
+2023-06-09 15:58:52,684 - root - INFO - Training steps: 500 Loss: 0.4167
+2023-06-09 15:58:55,210 - root - INFO - Training steps: 550 Loss: 0.4772
+2023-06-09 16:00:11,817 - root - INFO - Preparing data ...
+2023-06-09 16:01:47,022 - root - INFO - Building Model ...
+2023-06-09 16:04:04,658 - root - INFO - Preparing data ...
+2023-06-09 16:05:45,008 - root - INFO - Building Model ...
+2023-06-09 16:05:45,016 - root - INFO - Start Training ...
+2023-06-09 16:05:45,017 - root - INFO - Start Training: Epoch 1
+2023-06-09 16:06:03,883 - root - INFO - Training steps: 0 Loss: 0.6990
+2023-06-09 16:06:05,046 - root - INFO - Training steps: 50 Loss: 0.6028
+2023-06-09 16:06:06,054 - root - INFO - Training steps: 100 Loss: 0.5753
+2023-06-09 16:06:07,064 - root - INFO - Training steps: 150 Loss: 0.5791
+2023-06-09 16:06:08,067 - root - INFO - Training steps: 200 Loss: 0.5797
+2023-06-09 16:06:09,095 - root - INFO - Training steps: 250 Loss: 0.5435

@@ -37,6 +37,7 @@ __pycache__/
 /code/notebook/
 /code/saved_models/
 /code/submit/
+/code/asset/
 /code/model/model.py
 /code/run.log
 
@@ -47,3 +48,4 @@ __pycache__/
 *.csv
 *.pt
 *.json
+*.npy
