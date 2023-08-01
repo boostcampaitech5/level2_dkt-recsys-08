@@ -62,6 +62,8 @@ def parse_args():
 
     # Model(LSTM, Transformer..)
     parser.add_argument("--n_heads", default=2, type=int, help="number of heads")
+    parser.add_argument("--mlp_dim", default=64, type=int, help="number of heads")
+    parser.add_argument("--use_each_position", default=False, type=bool, help="Positional Embedding in Transformer")
     parser.add_argument(
         "--max_seq_len", default=20, type=int, help="max sequence length"
     )
