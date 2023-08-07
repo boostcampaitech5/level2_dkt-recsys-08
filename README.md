@@ -36,19 +36,19 @@
   </tr>
   <tr height="80px">
     <td align="center" width="150px">
-      <a href="https://github.com/ghwns82">김지우_T5063</a>
+      <a href="https://github.com/rlawldn117032">김지우_T5063</a>
     </td>
     <td align="center" width="150px">
-      <a href="https://github.com/dhkim77000">박수현_T5085</a>
+      <a href="https://github.com/Sh-IT0311">박수현_T5085</a>
     </td>
     <td align="center" width="150px">
-      <a href="https://github.com/sangwu99">석예림_T5110</a>
+      <a href="https://github.com/rimmiya">석예림_T5110</a>
     </td>
     <td align="center" width="150px">
-      <a href="https://github.com/y2r1m">임소영_T5172</a>
+      <a href="https://github.com/AI-soyoung">임소영_T5172</a>
     </td>
     <td align="center" width="150px">
-      <a href="https://github.com/AI-soyoung">전증원_T5185</a>
+      <a href="https://github.com/1132jjw">전증원_T5185</a>
     </td>
   </tr>
   <tr height="140px">
@@ -82,8 +82,46 @@
 ## 🗂️ Folder Structure
 
 ```
-
-
+📦code
+ ┣ 📂base
+ ┃ ┗ 📂__pycache__
+ ┃ ┃ ┣ 📜__init__.cpython-38.pyc
+ ┃ ┃ ┣ 📜base_data_loader.cpython-38.pyc
+ ┃ ┃ ┣ 📜base_model.cpython-38.pyc
+ ┃ ┃ ┗ 📜base_trainer.cpython-38.pyc
+ ┣ 📂data_loader
+ ┃ ┗ 📂__pycache__
+ ┃ ┃ ┣ 📜__init__.cpython-38.pyc
+ ┃ ┃ ┗ 📜data_loaders.cpython-38.pyc
+ ┣ 📂logger
+ ┃ ┗ 📂__pycache__
+ ┃ ┃ ┣ 📜__init__.cpython-38.pyc
+ ┃ ┃ ┣ 📜logger.cpython-38.pyc
+ ┃ ┃ ┗ 📜visualization.cpython-38.pyc
+ ┣ 📂model
+ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┣ 📜loss.cpython-38.pyc
+ ┃ ┃ ┣ 📜metric.cpython-38.pyc
+ ┃ ┃ ┣ 📜model.cpython-38.pyc
+ ┃ ┃ ┗ 📜position_encoding.cpython-38.pyc
+ ┃ ┗ 📜model.py
+ ┣ 📂saved
+ ┃ ┗ 📜best_model.pt
+ ┣ 📂saved_models
+ ┃ ┗ 📜best_model.pt
+ ┣ 📂submit
+ ┃ ┗ 📜submission.csv
+ ┣ 📂trainer
+ ┃ ┗ 📂__pycache__
+ ┃ ┃ ┣ 📜__init__.cpython-38.pyc
+ ┃ ┃ ┣ 📜optimizer.cpython-38.pyc
+ ┃ ┃ ┣ 📜scheduler.cpython-38.pyc
+ ┃ ┃ ┗ 📜trainer.cpython-38.pyc
+ ┣ 📂utils
+ ┃ ┗ 📂__pycache__
+ ┃ ┃ ┣ 📜__init__.cpython-38.pyc
+ ┃ ┃ ┗ 📜util.cpython-38.pyc
+ ┗ 📜run.log
 ```
 ## 💻 Project Report
 [Wrap-Up Report Link](docs/DKT대회_RecSys_팀%20리포트(08조).pdf)
